@@ -298,10 +298,10 @@
     new WOW().init();
 
 // 11. ---- Mailchimp js --------//  
-    function mailChimp() {
-      $('#mc_embed_signup').find('form').ajaxChimp();
-    }
-    mailChimp();
+    // function mailChimp() {
+    //   $('#mc_embed_signup').find('form').ajaxChimp();
+    // }
+    // mailChimp();
 
 
 // 12 Pop Up Img
@@ -324,10 +324,10 @@
     }
 
 /* 14. counterUp*/
-    $('.counter').counterUp({
-      delay: 10,
-      time: 3000
-    });
+    // $('.counter').counterUp({
+    //   delay: 10,
+    //   time: 3000
+    // });
 
 
 //15. click counter Number js

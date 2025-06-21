@@ -33,15 +33,23 @@
             ],
             "styles": [
               "public/assets/css/bootstrap.min.css",
-              "public/assets/css/owl.carousel.min.css",
-              "public/assets/css/slick.css",
-              "public/assets/css/slicknav.css",
-
+        
+              "public/assets/css/animate.min.css",
+              "public/assets/css/nice-select.css",
               "public/assets/css/style.css",
 
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "public/assets/js/vendor/jquery-1.12.4.min.js",
+              "public/assets/js/bootstrap.min.js",
+              "public/assets/js/owl.carousel.min.js",
+              "public/assets/js/slick.min.js",
+              "public/assets/js/jquery.slicknav.min.js",
+              "public/assets/js/wow.min.js",
+              "public/assets/js/plugins.js",
+              "public/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
