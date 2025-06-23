@@ -36,13 +36,16 @@
               "public/assets/css/animate.min.css",
               "node_modules/slick-carousel/slick/slick.scss",
               "node_modules/slick-carousel/slick/slick-theme.scss",
+              "public/assets/css/slick.css",         
               "public/assets/css/style.css",
               "src/styles.scss"
             ],
             "scripts": [
               "public/assets/js/bootstrap.min.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/slick-carousel/slick/slick.min.js"
+              "public/asets/js/slick.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
+              "public/assets/js/main.js"
             ]
           },
           "configurations": {
