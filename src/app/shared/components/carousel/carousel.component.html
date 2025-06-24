@@ -1,18 +1,96 @@
- <ngx-slick-carousel class="carousel" 
-                        #slickModal="slick-carousel" 
-                        [config]="slideConfig" 
-                        (init)="slickInit($event)"
-                        (breakpoint)="breakpoint($event)"
-                        (afterChange)="afterChange($event)"
-                        (beforeChange)="beforeChange($event)">
-        @for (slide of slides; track slide.img) {
-            <div ngxSlickItem class="slide">
-                  <img src="{{ slide.img }}" alt="" width="100%">
+<!-- <carousel [pauseOnFocus]="true">
+    <slide>
+        <div class="properties pb-30">
+            <div class="properties-card">
+                <div class="properties-img">
+                    <a href="pro-details.html"><img src="/assets/img/gallery/latest1.jpg.webp" alt=""></a>
+                    <div class="socal_icon">
+                        <a href="#"><i class="ti-shopping-cart"></i></a>
+                        <a href="#"><i class="ti-heart"></i></a>
+                        <a href="#"><i class="ti-zoom-in"></i></a>
+                    </div>
+                </div>
+                <div class="properties-caption properties-caption2">
+                    <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                    <div class="properties-footer">
+                        <div class="price">
+                            <span>$98.00 <span>$120.00</span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        }
-    </ngx-slick-carousel>
-    
-    <button (click)="addSlide()">Add</button>
-    <button (click)="removeSlide()">Remove</button>
-    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
-    <button (click)="slickModal.unslick()">unslick</button>
+        </div>
+    </slide>
+    <slide>
+        <div class="properties pb-30">
+            <div class="properties-card">
+                <div class="properties-img">
+                    <a href="pro-details.html"><img src="/assets/img/gallery/latest1.jpg.webp" alt=""></a>
+                    <div class="socal_icon">
+                        <a href="#"><i class="ti-shopping-cart"></i></a>
+                        <a href="#"><i class="ti-heart"></i></a>
+                        <a href="#"><i class="ti-zoom-in"></i></a>
+                    </div>
+                </div>
+                <div class="properties-caption properties-caption2">
+                    <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                    <div class="properties-footer">
+                        <div class="price">
+                            <span>$98.00 <span>$120.00</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide>
+        <div class="properties pb-30">
+            <div class="properties-card">
+                <div class="properties-img">
+                    <a href="pro-details.html"><img src="/assets/img/gallery/latest1.jpg.webp" alt=""></a>
+                    <div class="socal_icon">
+                        <a href="#"><i class="ti-shopping-cart"></i></a>
+                        <a href="#"><i class="ti-heart"></i></a>
+                        <a href="#"><i class="ti-zoom-in"></i></a>
+                    </div>
+                </div>
+                <div class="properties-caption properties-caption2">
+                    <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                    <div class="properties-footer">
+                        <div class="price">
+                            <span>$98.00 <span>$120.00</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+</carousel> -->
+
+<carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="5000" [indicatorsByChunk]="true">
+    @for(slide of slides; track slide){
+    <slide>
+        <div class="properties pb-30">
+            <div class="properties-card">
+                <div class="properties-img">
+                    <a href="pro-details.html">
+                        <img src="{{slide.img}}" alt=""></a>
+                    <div class="socal_icon">
+                        <a href="#"><i class="ti-shopping-cart"></i></a>
+                        <a href="#"><i class="ti-heart"></i></a>
+                        <a href="#"><i class="ti-zoom-in"></i></a>
+                    </div>
+                </div>
+                <div class="properties-caption properties-caption2">
+                    <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                    <div class="properties-footer">
+                        <div class="price">
+                            <span>$98.00 <span>$120.00</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    }
+</carousel>

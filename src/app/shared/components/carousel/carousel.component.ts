@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 @Component({
   selector: 'app-carousel',
-  imports: [SlickCarouselModule],
+  imports: [CarouselModule],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'
 })
 export class CarouselComponent {
+  itemsPerSlide = 4;
   slides = [
-    { img: "/assets/img/hero/h1_hero1.jpg.webp" },
-    { img: "/assets/img/hero/h1_hero2.jpg.webp" },
+    { img: "/assets/img/gallery/latest1.jpg.webp" },
+    { img: "/assets/img/gallery/latest2.jpg.webp" },
+    { img: "/assets/img/gallery/latest3.jpg.webp" },
+    { img: "/assets/img/gallery/latest4.jpg.webp" },
   ];
-  slideConfig = { "slidesToShow": 4, "slidesToScroll": 4 };
+  slideConfig = { "slidesToShow": 3, "slidesToScroll": 6 };
 
   addSlide() {
     this.slides.push({ img: "http://placehold.it/350x150/777777" })
