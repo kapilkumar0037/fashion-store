@@ -1,27 +1,40 @@
+export interface IProductVariant {
+  id: string;            // unique variant ID
+  size: string;          // e.g., "M"
+  color: string;         // e.g., "Red"
+  stock: number;         // stock for this size+color combo
+  price?: number;        // optional override
+  images?: string[];     // optional variant-specific images
+}
+export type FashionAudience = 'Men' | 'Women' | 'Kids' | 'Unisex';
+
+
 export interface IFashionProduct {
   id: string;
   name: string;
   brand: string;
-  category: string; // e.g., "Shirt", "Shoes", "Handbag"
-  subCategory?: string; // e.g., "T-Shirt", "Sneakers"
+  category: string;
+  subCategory?: string;
   description?: string;
   price: number;
-  discount?: number; // percentage, e.g., 20 for 20%
-  currency: string; // e.g., "USD", "INR"
+  discount?: number;
+  currency: string;
 
-  sizes?: string[]; // e.g., ["S", "M", "L", "XL"]
-  colors?: string[]; // e.g., ["red", "black"]
+  sizes?: string[];
+  colors?: string[];
+  variants?: IProductVariant[]; // 🔥 variant-level inventory
 
-  images: string[]; // URLs to product images
+  images: string[];
 
-  stock: number;
   isAvailable: boolean;
 
-  ratings?: number; // average rating
+  ratings?: number;
   reviewsCount?: number;
 
-  tags?: string[]; // e.g., ["new", "sale", "summer"]
+  tags?: string[];
+  genderTarget: FashionAudience[];
 
-  createdAt?: string; // ISO date
+  createdAt?: string;
   updatedAt?: string;
 }
+
