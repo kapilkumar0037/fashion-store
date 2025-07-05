@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { NewsLetterComponent } from '../../../shared';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [NewsLetterComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
