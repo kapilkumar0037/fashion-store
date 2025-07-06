@@ -27,7 +27,8 @@ export interface IFashionProduct {
   images: string[];
 
   isAvailable: boolean;
-
+  isFeatured?: boolean;
+  isTrending?: boolean;
   ratings?: number;
   reviewsCount?: number;
 
