@@ -8,6 +8,8 @@ export const routes: Routes = [
              loadComponent: () => import('./features/home/home.component').then(m => m.HomeComponent) },
              { path: 'product-details/:id',
              loadComponent: () => import('./shared/components/product-details/product-details.component').then(m => m.ProductDetailsComponent) },
+             { path: 'checkout',
+             loadComponent: () => import('./features/checkout/checkout.component').then(m => m.CheckoutComponent) },
     ]},
     { path: "**", redirectTo: 'auth', pathMatch: 'full' }
 
