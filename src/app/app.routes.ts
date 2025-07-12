@@ -5,11 +5,11 @@ export const routes: Routes = [
     { path: '', redirectTo: 'auth', pathMatch: 'full' },
     { path: 'auth', component: AuthLayoutComponent, children: [
         { path: '',
-             loadComponent: () => import('./features/home/home.component').then(m => m.HomeComponent) },
+             loadComponent: () => import('./features/home/home.component') },
              { path: 'product-details/:id',
-             loadComponent: () => import('./shared/components/product-details/product-details.component').then(m => m.ProductDetailsComponent) },
+             loadComponent: () => import('./features/products/components/product-details/product-details.component')},
              { path: 'checkout',
-             loadComponent: () => import('./features/checkout/checkout.component').then(m => m.CheckoutComponent) },
+             loadComponent: () => import('./features/checkout/checkout.component') },
     ]},
     { path: "**", redirectTo: 'auth', pathMatch: 'full' }
 

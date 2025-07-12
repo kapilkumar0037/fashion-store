@@ -8,7 +8,7 @@ import { BlogCardComponent } from '../../shared/components/blog-card/blog-card.c
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export default class HomeComponent {
 selectedTab = 'men'
 
   onTabChange(_selectedTab: string){
