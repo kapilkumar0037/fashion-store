@@ -1150,7 +1150,7 @@ hr {
 }
 @media (max-width: 575px) {
   .header-area .header-mid .menu-wrapper .header-right {
-    position: absolute;
+    /* position: absolute; */
     top: 165px;
     z-index: 3;
     right: 14px;
