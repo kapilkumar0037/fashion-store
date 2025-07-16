@@ -29,6 +29,10 @@ export const routes: Routes = [
                 path: 'terms-of-service',
                 loadComponent: () => import('./features/static-pages/terms-and-conditions/terms-and-conditions.component')
             },
+            {
+                path: 'cart',
+                loadComponent: () => import('./features/cart/components/cart/cart.component')
+            },
         ]
     },
 
