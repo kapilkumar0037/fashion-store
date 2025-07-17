@@ -4,3 +4,4 @@ export {CarouselComponent} from './components/carousel/carousel.component';
 export {NewsLetterComponent} from './components/news-letter/news-letter.component';
 export {BreadcrumbComponent} from './components/breadcrumb/breadcrumb.component';
 export {ProductCardComponent} from './components/product-card/product-card.component';
+export {BlogCardComponent} from './components/blog-card/blog-card.component';
