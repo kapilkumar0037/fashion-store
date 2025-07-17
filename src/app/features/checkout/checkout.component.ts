@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { BreadcrumbComponent } from '@shared/index';
 
 @Component({
   selector: 'app-checkout',
-  imports: [],
+  imports: [BreadcrumbComponent],
   templateUrl: './checkout.component.html',
   styleUrl: './checkout.component.scss'
 })
