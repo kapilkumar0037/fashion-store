@@ -7,10 +7,11 @@ import {
 
 @Component({
   selector: 'app-home',
-  imports: [FeaturedCarouselComponent,
-     TestimonialCarouselComponent,
-      CarouselComponent,
-       BlogCardComponent],
+  imports: [
+    FeaturedCarouselComponent,
+    TestimonialCarouselComponent,
+    CarouselComponent,
+    BlogCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

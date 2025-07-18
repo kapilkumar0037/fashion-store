@@ -1,1415 +1,1417 @@
-[
-  {
-    "id": "prod-1",
-    "name": "Adidas Watches 1",
-    "brand": "H&M",
-    "category": "Accessories",
-    "subCategory": "Watches",
-    "description": "A stylish Watches from our Accessories range.",
-    "price": 21.52,
-    "discount": null,
-    "currency": "USD",
-    "sizes": [
-      "S",
-      "M",
-      "XL"
-    ],
-    "colors": [
-      "Blue",
-      "Black"
-    ],
-    "variants": [
-      {
-        "id": "var-4402",
-        "size": "S",
-        "color": "Blue",
-        "stock": 0,
-        "price": 26.55,
-        "images": [
-          "https://example.com/images/blue_s.jpg"
-        ]
-      },
-      {
-        "id": "var-8382",
-        "size": "S",
-        "color": "Black",
-        "stock": 6,
-        "price": 42.31,
-        "images": [
-          "https://example.com/images/black_s.jpg"
-        ]
-      },
-      {
-        "id": "var-1969",
-        "size": "M",
-        "color": "Blue",
-        "stock": 0,
-        "price": 32.68,
-        "images": [
-          "https://example.com/images/blue_m.jpg"
-        ]
-      },
-      {
-        "id": "var-2662",
-        "size": "M",
-        "color": "Black",
-        "stock": 0,
-        "price": 31.3,
-        "images": [
-          "https://example.com/images/black_m.jpg"
-        ]
-      },
-      {
-        "id": "var-1687",
-        "size": "XL",
-        "color": "Blue",
-        "stock": 2,
-        "price": 45.59,
-        "images": [
-          "https://example.com/images/blue_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-4873",
-        "size": "XL",
-        "color": "Black",
-        "stock": 9,
-        "price": 25.37,
-        "images": [
-          "https://example.com/images/black_xl.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/watches_1.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": false,
-    "isTrending": true,
-    "ratings": 4.5,
-    "reviewsCount": 72,
-    "tags": [
-      "summer",
-      "casual",
-      "new"
-    ],
-    "genderTarget": [
-      "Women"
-    ],
-    "createdAt": "2025-05-20T07:09:15.979093",
-    "updatedAt": "2025-07-06T07:09:15.979138"
-  },
-  {
-    "id": "prod-2",
-    "name": "Zara Belts 2",
-    "brand": "H&M",
-    "category": "Accessories",
-    "subCategory": "Belts",
-    "description": "A stylish Belts from our Accessories range.",
-    "price": 98.13,
-    "discount": null,
-    "currency": "USD",
-    "sizes": [
-      "XL",
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "White",
-      "Blue",
-      "Black"
-    ],
-    "variants": [
-      {
-        "id": "var-3558",
-        "size": "XL",
-        "color": "White",
-        "stock": 0,
-        "price": 30.58,
-        "images": [
-          "https://example.com/images/white_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-6279",
-        "size": "XL",
-        "color": "Blue",
-        "stock": 19,
-        "price": 43.04,
-        "images": [
-          "https://example.com/images/blue_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-8074",
-        "size": "XL",
-        "color": "Black",
-        "stock": 13,
-        "price": 30.3,
-        "images": [
-          "https://example.com/images/black_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-9698",
-        "size": "S",
-        "color": "White",
-        "stock": 13,
-        "price": 24.93,
-        "images": [
-          "https://example.com/images/white_s.jpg"
-        ]
-      },
-      {
-        "id": "var-9777",
-        "size": "S",
-        "color": "Blue",
-        "stock": 7,
-        "price": 28.51,
-        "images": [
-          "https://example.com/images/blue_s.jpg"
-        ]
-      },
-      {
-        "id": "var-9354",
-        "size": "S",
-        "color": "Black",
-        "stock": 3,
-        "price": 48.78,
-        "images": [
-          "https://example.com/images/black_s.jpg"
-        ]
-      },
-      {
-        "id": "var-7544",
-        "size": "M",
-        "color": "White",
-        "stock": 6,
-        "price": 39.53,
-        "images": [
-          "https://example.com/images/white_m.jpg"
-        ]
-      },
-      {
-        "id": "var-9550",
-        "size": "M",
-        "color": "Blue",
-        "stock": 5,
-        "price": 11.23,
-        "images": [
-          "https://example.com/images/blue_m.jpg"
-        ]
-      },
-      {
-        "id": "var-3985",
-        "size": "M",
-        "color": "Black",
-        "stock": 7,
-        "price": 49.29,
-        "images": [
-          "https://example.com/images/black_m.jpg"
-        ]
-      },
-      {
-        "id": "var-5672",
-        "size": "L",
-        "color": "White",
-        "stock": 8,
-        "price": 11.04,
-        "images": [
-          "https://example.com/images/white_l.jpg"
-        ]
-      },
-      {
-        "id": "var-1028",
-        "size": "L",
-        "color": "Blue",
-        "stock": 3,
-        "price": 16.73,
-        "images": [
-          "https://example.com/images/blue_l.jpg"
-        ]
-      },
-      {
-        "id": "var-2180",
-        "size": "L",
-        "color": "Black",
-        "stock": 12,
-        "price": 19.02,
-        "images": [
-          "https://example.com/images/black_l.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/belts_2.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": false,
-    "isTrending": true,
-    "ratings": 3.6,
-    "reviewsCount": 93,
-    "tags": [
-      "sale",
-      "casual",
-      "new"
-    ],
-    "genderTarget": [
-      "Women"
-    ],
-    "createdAt": "2024-11-25T07:09:15.979219",
-    "updatedAt": "2025-07-06T07:09:15.979245"
-  },
-  {
-    "id": "prod-3",
-    "name": "H&M Sneakers 3",
-    "brand": "Zara",
-    "category": "Footwear",
-    "subCategory": "Sneakers",
-    "description": "A stylish Sneakers from our Footwear range.",
-    "price": 56.66,
-    "discount": 15,
-    "currency": "USD",
-    "sizes": [
-      "L",
-      "M",
-      "S"
-    ],
-    "colors": [
-      "Black",
-      "Green"
-    ],
-    "variants": [
-      {
-        "id": "var-9651",
-        "size": "L",
-        "color": "Black",
-        "stock": 9,
-        "price": 35.8,
-        "images": [
-          "https://example.com/images/black_l.jpg"
-        ]
-      },
-      {
-        "id": "var-4976",
-        "size": "L",
-        "color": "Green",
-        "stock": 9,
-        "price": 32.77,
-        "images": [
-          "https://example.com/images/green_l.jpg"
-        ]
-      },
-      {
-        "id": "var-7379",
-        "size": "M",
-        "color": "Black",
-        "stock": 16,
-        "price": 24.59,
-        "images": [
-          "https://example.com/images/black_m.jpg"
-        ]
-      },
-      {
-        "id": "var-2337",
-        "size": "M",
-        "color": "Green",
-        "stock": 8,
-        "price": 45.5,
-        "images": [
-          "https://example.com/images/green_m.jpg"
-        ]
-      },
-      {
-        "id": "var-2121",
-        "size": "S",
-        "color": "Black",
-        "stock": 17,
-        "price": 14.06,
-        "images": [
-          "https://example.com/images/black_s.jpg"
-        ]
-      },
-      {
-        "id": "var-2653",
-        "size": "S",
-        "color": "Green",
-        "stock": 7,
-        "price": 31.03,
-        "images": [
-          "https://example.com/images/green_s.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/sneakers_3.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": true,
-    "isTrending": false,
-    "ratings": 3.8,
-    "reviewsCount": 79,
-    "tags": [
-      "sale",
-      "trendy",
-      "new"
-    ],
-    "genderTarget": [
-      "Women"
-    ],
-    "createdAt": "2024-12-18T07:09:15.979291",
-    "updatedAt": "2025-07-06T07:09:15.979313"
-  },
-  {
-    "id": "prod-4",
-    "name": "Zara Shirts 4",
-    "brand": "Nike",
-    "category": "Clothing",
-    "subCategory": "Shirts",
-    "description": "A stylish Shirts from our Clothing range.",
-    "price": 27.21,
-    "discount": 5,
-    "currency": "USD",
-    "sizes": [
-      "L",
-      "M",
-      "S",
-      "XL"
-    ],
-    "colors": [
-      "Red",
-      "Black",
-      "Green"
-    ],
-    "variants": [
-      {
-        "id": "var-3287",
-        "size": "L",
-        "color": "Red",
-        "stock": 5,
-        "price": 39.22,
-        "images": [
-          "https://example.com/images/red_l.jpg"
-        ]
-      },
-      {
-        "id": "var-6413",
-        "size": "L",
-        "color": "Black",
-        "stock": 9,
-        "price": 41.82,
-        "images": [
-          "https://example.com/images/black_l.jpg"
-        ]
-      },
-      {
-        "id": "var-7383",
-        "size": "L",
-        "color": "Green",
-        "stock": 18,
-        "price": 48.91,
-        "images": [
-          "https://example.com/images/green_l.jpg"
-        ]
-      },
-      {
-        "id": "var-7196",
-        "size": "M",
-        "color": "Red",
-        "stock": 1,
-        "price": 27.1,
-        "images": [
-          "https://example.com/images/red_m.jpg"
-        ]
-      },
-      {
-        "id": "var-5926",
-        "size": "M",
-        "color": "Black",
-        "stock": 4,
-        "price": 13.95,
-        "images": [
-          "https://example.com/images/black_m.jpg"
-        ]
-      },
-      {
-        "id": "var-4581",
-        "size": "M",
-        "color": "Green",
-        "stock": 16,
-        "price": 32.45,
-        "images": [
-          "https://example.com/images/green_m.jpg"
-        ]
-      },
-      {
-        "id": "var-3193",
-        "size": "S",
-        "color": "Red",
-        "stock": 16,
-        "price": 46.16,
-        "images": [
-          "https://example.com/images/red_s.jpg"
-        ]
-      },
-      {
-        "id": "var-3699",
-        "size": "S",
-        "color": "Black",
-        "stock": 6,
-        "price": 35.34,
-        "images": [
-          "https://example.com/images/black_s.jpg"
-        ]
-      },
-      {
-        "id": "var-4082",
-        "size": "S",
-        "color": "Green",
-        "stock": 5,
-        "price": 33.73,
-        "images": [
-          "https://example.com/images/green_s.jpg"
-        ]
-      },
-      {
-        "id": "var-3623",
-        "size": "XL",
-        "color": "Red",
-        "stock": 13,
-        "price": 34.83,
-        "images": [
-          "https://example.com/images/red_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-2400",
-        "size": "XL",
-        "color": "Black",
-        "stock": 8,
-        "price": 48.01,
-        "images": [
-          "https://example.com/images/black_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-1078",
-        "size": "XL",
-        "color": "Green",
-        "stock": 8,
-        "price": 29.01,
-        "images": [
-          "https://example.com/images/green_xl.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/shirts_4.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": false,
-    "isTrending": false,
-    "ratings": 4.8,
-    "reviewsCount": 96,
-    "tags": [
-      "summer",
-      "sale",
-      "trendy"
-    ],
-    "genderTarget": [
-      "Men"
-    ],
-    "createdAt": "2025-01-02T07:09:15.979385",
-    "updatedAt": "2025-07-06T07:09:15.979409"
-  },
-  {
-    "id": "prod-5",
-    "name": "Levi's Sandals 5",
-    "brand": "Nike",
-    "category": "Footwear",
-    "subCategory": "Sandals",
-    "description": "A stylish Sandals from our Footwear range.",
-    "price": 35.37,
-    "discount": 10,
-    "currency": "USD",
-    "sizes": [
-      "M",
-      "S",
-      "XL"
-    ],
-    "colors": [
-      "Red",
-      "Green",
-      "Blue"
-    ],
-    "variants": [
-      {
-        "id": "var-6436",
-        "size": "M",
-        "color": "Red",
-        "stock": 19,
-        "price": 11.07,
-        "images": [
-          "https://example.com/images/red_m.jpg"
-        ]
-      },
-      {
-        "id": "var-4882",
-        "size": "M",
-        "color": "Green",
-        "stock": 12,
-        "price": 28.14,
-        "images": [
-          "https://example.com/images/green_m.jpg"
-        ]
-      },
-      {
-        "id": "var-5109",
-        "size": "M",
-        "color": "Blue",
-        "stock": 0,
-        "price": 40.63,
-        "images": [
-          "https://example.com/images/blue_m.jpg"
-        ]
-      },
-      {
-        "id": "var-5593",
-        "size": "S",
-        "color": "Red",
-        "stock": 20,
-        "price": 15.92,
-        "images": [
-          "https://example.com/images/red_s.jpg"
-        ]
-      },
-      {
-        "id": "var-9548",
-        "size": "S",
-        "color": "Green",
-        "stock": 11,
-        "price": 23.52,
-        "images": [
-          "https://example.com/images/green_s.jpg"
-        ]
-      },
-      {
-        "id": "var-7810",
-        "size": "S",
-        "color": "Blue",
-        "stock": 17,
-        "price": 32.6,
-        "images": [
-          "https://example.com/images/blue_s.jpg"
-        ]
-      },
-      {
-        "id": "var-3601",
-        "size": "XL",
-        "color": "Red",
-        "stock": 1,
-        "price": 21.12,
-        "images": [
-          "https://example.com/images/red_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-4713",
-        "size": "XL",
-        "color": "Green",
-        "stock": 1,
-        "price": 40.51,
-        "images": [
-          "https://example.com/images/green_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-5623",
-        "size": "XL",
-        "color": "Blue",
-        "stock": 7,
-        "price": 17.1,
-        "images": [
-          "https://example.com/images/blue_xl.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/sandals_5.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": true,
-    "isTrending": false,
-    "ratings": 4.9,
-    "reviewsCount": 40,
-    "tags": [
-      "sale",
-      "new",
-      "casual"
-    ],
-    "genderTarget": [
-      "Men"
-    ],
-    "createdAt": "2024-09-29T07:09:15.979464",
-    "updatedAt": "2025-07-06T07:09:15.979486"
-  },
-  {
-    "id": "prod-6",
-    "name": "H&M Shirts 6",
-    "brand": "Levi's",
-    "category": "Clothing",
-    "subCategory": "Shirts",
-    "description": "A stylish Shirts from our Clothing range.",
-    "price": 47.29,
-    "discount": 5,
-    "currency": "USD",
-    "sizes": [
-      "XL",
-      "S",
-      "M"
-    ],
-    "colors": [
-      "White",
-      "Red",
-      "Blue"
-    ],
-    "variants": [
-      {
-        "id": "var-6730",
-        "size": "XL",
-        "color": "White",
-        "stock": 18,
-        "price": 46.92,
-        "images": [
-          "https://example.com/images/white_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-6662",
-        "size": "XL",
-        "color": "Red",
-        "stock": 2,
-        "price": 23.61,
-        "images": [
-          "https://example.com/images/red_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-8963",
-        "size": "XL",
-        "color": "Blue",
-        "stock": 14,
-        "price": 28.14,
-        "images": [
-          "https://example.com/images/blue_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-8670",
-        "size": "S",
-        "color": "White",
-        "stock": 15,
-        "price": 13.29,
-        "images": [
-          "https://example.com/images/white_s.jpg"
-        ]
-      },
-      {
-        "id": "var-1692",
-        "size": "S",
-        "color": "Red",
-        "stock": 11,
-        "price": 26.83,
-        "images": [
-          "https://example.com/images/red_s.jpg"
-        ]
-      },
-      {
-        "id": "var-3413",
-        "size": "S",
-        "color": "Blue",
-        "stock": 16,
-        "price": 32.82,
-        "images": [
-          "https://example.com/images/blue_s.jpg"
-        ]
-      },
-      {
-        "id": "var-9249",
-        "size": "M",
-        "color": "White",
-        "stock": 10,
-        "price": 30.02,
-        "images": [
-          "https://example.com/images/white_m.jpg"
-        ]
-      },
-      {
-        "id": "var-3616",
-        "size": "M",
-        "color": "Red",
-        "stock": 5,
-        "price": 12.58,
-        "images": [
-          "https://example.com/images/red_m.jpg"
-        ]
-      },
-      {
-        "id": "var-5731",
-        "size": "M",
-        "color": "Blue",
-        "stock": 20,
-        "price": 34.31,
-        "images": [
-          "https://example.com/images/blue_m.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/shirts_6.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": false,
-    "isTrending": true,
-    "ratings": 4.3,
-    "reviewsCount": 16,
-    "tags": [
-      "sale",
-      "new",
-      "trendy"
-    ],
-    "genderTarget": [
-      "Women"
-    ],
-    "createdAt": "2025-06-21T07:09:15.979532",
-    "updatedAt": "2025-07-06T07:09:15.979546"
-  },
-  {
-    "id": "prod-7",
-    "name": "Adidas Belts 7",
-    "brand": "Levi's",
-    "category": "Accessories",
-    "subCategory": "Belts",
-    "description": "A stylish Belts from our Accessories range.",
-    "price": 63.41,
-    "discount": 5,
-    "currency": "USD",
-    "sizes": [
-      "M",
-      "L"
-    ],
-    "colors": [
-      "Green",
-      "Blue",
-      "Black"
-    ],
-    "variants": [
-      {
-        "id": "var-3963",
-        "size": "M",
-        "color": "Green",
-        "stock": 18,
-        "price": 17.54,
-        "images": [
-          "https://example.com/images/green_m.jpg"
-        ]
-      },
-      {
-        "id": "var-4154",
-        "size": "M",
-        "color": "Blue",
-        "stock": 19,
-        "price": 38.2,
-        "images": [
-          "https://example.com/images/blue_m.jpg"
-        ]
-      },
-      {
-        "id": "var-1985",
-        "size": "M",
-        "color": "Black",
-        "stock": 13,
-        "price": 37.59,
-        "images": [
-          "https://example.com/images/black_m.jpg"
-        ]
-      },
-      {
-        "id": "var-5378",
-        "size": "L",
-        "color": "Green",
-        "stock": 0,
-        "price": 10.6,
-        "images": [
-          "https://example.com/images/green_l.jpg"
-        ]
-      },
-      {
-        "id": "var-5468",
-        "size": "L",
-        "color": "Blue",
-        "stock": 13,
-        "price": 16.5,
-        "images": [
-          "https://example.com/images/blue_l.jpg"
-        ]
-      },
-      {
-        "id": "var-9558",
-        "size": "L",
-        "color": "Black",
-        "stock": 9,
-        "price": 12.05,
-        "images": [
-          "https://example.com/images/black_l.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/belts_7.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": false,
-    "isTrending": true,
-    "ratings": 4.0,
-    "reviewsCount": 45,
-    "tags": [
-      "casual",
-      "sale",
-      "new"
-    ],
-    "genderTarget": [
-      "Kids"
-    ],
-    "createdAt": "2025-04-29T07:09:15.979583",
-    "updatedAt": "2025-07-06T07:09:15.979598"
-  },
-  {
-    "id": "prod-8",
-    "name": "Zara Sneakers 8",
-    "brand": "Adidas",
-    "category": "Footwear",
-    "subCategory": "Sneakers",
-    "description": "A stylish Sneakers from our Footwear range.",
-    "price": 50.02,
-    "discount": 5,
-    "currency": "USD",
-    "sizes": [
-      "M",
-      "S",
-      "XL",
-      "L"
-    ],
-    "colors": [
-      "Red",
-      "Blue",
-      "Green",
-      "White"
-    ],
-    "variants": [
-      {
-        "id": "var-8756",
-        "size": "M",
-        "color": "Red",
-        "stock": 17,
-        "price": 19.39,
-        "images": [
-          "https://example.com/images/red_m.jpg"
-        ]
-      },
-      {
-        "id": "var-8393",
-        "size": "M",
-        "color": "Blue",
-        "stock": 4,
-        "price": 30.88,
-        "images": [
-          "https://example.com/images/blue_m.jpg"
-        ]
-      },
-      {
-        "id": "var-7896",
-        "size": "M",
-        "color": "Green",
-        "stock": 12,
-        "price": 28.03,
-        "images": [
-          "https://example.com/images/green_m.jpg"
-        ]
-      },
-      {
-        "id": "var-3880",
-        "size": "M",
-        "color": "White",
-        "stock": 8,
-        "price": 13.05,
-        "images": [
-          "https://example.com/images/white_m.jpg"
-        ]
-      },
-      {
-        "id": "var-1736",
-        "size": "S",
-        "color": "Red",
-        "stock": 0,
-        "price": 20.12,
-        "images": [
-          "https://example.com/images/red_s.jpg"
-        ]
-      },
-      {
-        "id": "var-3425",
-        "size": "S",
-        "color": "Blue",
-        "stock": 7,
-        "price": 11.29,
-        "images": [
-          "https://example.com/images/blue_s.jpg"
-        ]
-      },
-      {
-        "id": "var-9573",
-        "size": "S",
-        "color": "Green",
-        "stock": 9,
-        "price": 35.19,
-        "images": [
-          "https://example.com/images/green_s.jpg"
-        ]
-      },
-      {
-        "id": "var-5440",
-        "size": "S",
-        "color": "White",
-        "stock": 2,
-        "price": 20.26,
-        "images": [
-          "https://example.com/images/white_s.jpg"
-        ]
-      },
-      {
-        "id": "var-2499",
-        "size": "XL",
-        "color": "Red",
-        "stock": 20,
-        "price": 32.79,
-        "images": [
-          "https://example.com/images/red_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-3012",
-        "size": "XL",
-        "color": "Blue",
-        "stock": 12,
-        "price": 24.38,
-        "images": [
-          "https://example.com/images/blue_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-2980",
-        "size": "XL",
-        "color": "Green",
-        "stock": 16,
-        "price": 36.72,
-        "images": [
-          "https://example.com/images/green_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-4990",
-        "size": "XL",
-        "color": "White",
-        "stock": 9,
-        "price": 38.37,
-        "images": [
-          "https://example.com/images/white_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-9846",
-        "size": "L",
-        "color": "Red",
-        "stock": 16,
-        "price": 39.46,
-        "images": [
-          "https://example.com/images/red_l.jpg"
-        ]
-      },
-      {
-        "id": "var-8697",
-        "size": "L",
-        "color": "Blue",
-        "stock": 10,
-        "price": 21.24,
-        "images": [
-          "https://example.com/images/blue_l.jpg"
-        ]
-      },
-      {
-        "id": "var-4657",
-        "size": "L",
-        "color": "Green",
-        "stock": 2,
-        "price": 40.2,
-        "images": [
-          "https://example.com/images/green_l.jpg"
-        ]
-      },
-      {
-        "id": "var-1757",
-        "size": "L",
-        "color": "White",
-        "stock": 2,
-        "price": 32.7,
-        "images": [
-          "https://example.com/images/white_l.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/sneakers_8.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": false,
-    "isTrending": false,
-    "ratings": 3.3,
-    "reviewsCount": 62,
-    "tags": [
-      "new",
-      "trendy",
-      "casual"
-    ],
-    "genderTarget": [
-      "Unisex"
-    ],
-    "createdAt": "2025-01-06T07:09:15.979667",
-    "updatedAt": "2025-07-06T07:09:15.979690"
-  },
-  {
-    "id": "prod-9",
-    "name": "Levi's Belts 9",
-    "brand": "Levi's",
-    "category": "Accessories",
-    "subCategory": "Belts",
-    "description": "A stylish Belts from our Accessories range.",
-    "price": 89.92,
-    "discount": 5,
-    "currency": "USD",
-    "sizes": [
-      "XL",
-      "L",
-      "S",
-      "M"
-    ],
-    "colors": [
-      "Green",
-      "White",
-      "Red",
-      "Black"
-    ],
-    "variants": [
-      {
-        "id": "var-5837",
-        "size": "XL",
-        "color": "Green",
-        "stock": 13,
-        "price": 34.57,
-        "images": [
-          "https://example.com/images/green_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-6915",
-        "size": "XL",
-        "color": "White",
-        "stock": 5,
-        "price": 48.9,
-        "images": [
-          "https://example.com/images/white_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-3577",
-        "size": "XL",
-        "color": "Red",
-        "stock": 3,
-        "price": 12.56,
-        "images": [
-          "https://example.com/images/red_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-4445",
-        "size": "XL",
-        "color": "Black",
-        "stock": 9,
-        "price": 18.26,
-        "images": [
-          "https://example.com/images/black_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-9930",
-        "size": "L",
-        "color": "Green",
-        "stock": 2,
-        "price": 32.47,
-        "images": [
-          "https://example.com/images/green_l.jpg"
-        ]
-      },
-      {
-        "id": "var-6994",
-        "size": "L",
-        "color": "White",
-        "stock": 20,
-        "price": 48.81,
-        "images": [
-          "https://example.com/images/white_l.jpg"
-        ]
-      },
-      {
-        "id": "var-1022",
-        "size": "L",
-        "color": "Red",
-        "stock": 7,
-        "price": 31.21,
-        "images": [
-          "https://example.com/images/red_l.jpg"
-        ]
-      },
-      {
-        "id": "var-1397",
-        "size": "L",
-        "color": "Black",
-        "stock": 12,
-        "price": 22.19,
-        "images": [
-          "https://example.com/images/black_l.jpg"
-        ]
-      },
-      {
-        "id": "var-1259",
-        "size": "S",
-        "color": "Green",
-        "stock": 1,
-        "price": 15.5,
-        "images": [
-          "https://example.com/images/green_s.jpg"
-        ]
-      },
-      {
-        "id": "var-7684",
-        "size": "S",
-        "color": "White",
-        "stock": 9,
-        "price": 45.86,
-        "images": [
-          "https://example.com/images/white_s.jpg"
-        ]
-      },
-      {
-        "id": "var-6919",
-        "size": "S",
-        "color": "Red",
-        "stock": 8,
-        "price": 36.67,
-        "images": [
-          "https://example.com/images/red_s.jpg"
-        ]
-      },
-      {
-        "id": "var-3159",
-        "size": "S",
-        "color": "Black",
-        "stock": 20,
-        "price": 37.22,
-        "images": [
-          "https://example.com/images/black_s.jpg"
-        ]
-      },
-      {
-        "id": "var-3625",
-        "size": "M",
-        "color": "Green",
-        "stock": 0,
-        "price": 35.83,
-        "images": [
-          "https://example.com/images/green_m.jpg"
-        ]
-      },
-      {
-        "id": "var-1669",
-        "size": "M",
-        "color": "White",
-        "stock": 0,
-        "price": 47.81,
-        "images": [
-          "https://example.com/images/white_m.jpg"
-        ]
-      },
-      {
-        "id": "var-4788",
-        "size": "M",
-        "color": "Red",
-        "stock": 11,
-        "price": 36.72,
-        "images": [
-          "https://example.com/images/red_m.jpg"
-        ]
-      },
-      {
-        "id": "var-2357",
-        "size": "M",
-        "color": "Black",
-        "stock": 3,
-        "price": 34.45,
-        "images": [
-          "https://example.com/images/black_m.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/belts_9.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": false,
-    "isTrending": true,
-    "ratings": 3.7,
-    "reviewsCount": 10,
-    "tags": [
-      "trendy",
-      "casual",
-      "summer"
-    ],
-    "genderTarget": [
-      "Unisex"
-    ],
-    "createdAt": "2025-02-03T07:09:15.979750",
-    "updatedAt": "2025-07-06T07:09:15.979764"
-  },
-  {
-    "id": "prod-10",
-    "name": "Nike Jackets 10",
-    "brand": "Levi's",
-    "category": "Clothing",
-    "subCategory": "Jackets",
-    "description": "A stylish Jackets from our Clothing range.",
-    "price": 98.13,
-    "discount": null,
-    "currency": "USD",
-    "sizes": [
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "Blue",
-      "Red",
-      "White",
-      "Black"
-    ],
-    "variants": [
-      {
-        "id": "var-6771",
-        "size": "L",
-        "color": "Blue",
-        "stock": 12,
-        "price": 28.73,
-        "images": [
-          "https://example.com/images/blue_l.jpg"
-        ]
-      },
-      {
-        "id": "var-8222",
-        "size": "L",
-        "color": "Red",
-        "stock": 11,
-        "price": 13.58,
-        "images": [
-          "https://example.com/images/red_l.jpg"
-        ]
-      },
-      {
-        "id": "var-2128",
-        "size": "L",
-        "color": "White",
-        "stock": 0,
-        "price": 10.67,
-        "images": [
-          "https://example.com/images/white_l.jpg"
-        ]
-      },
-      {
-        "id": "var-9778",
-        "size": "L",
-        "color": "Black",
-        "stock": 19,
-        "price": 25.97,
-        "images": [
-          "https://example.com/images/black_l.jpg"
-        ]
-      },
-      {
-        "id": "var-2996",
-        "size": "XL",
-        "color": "Blue",
-        "stock": 4,
-        "price": 25.0,
-        "images": [
-          "https://example.com/images/blue_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-4768",
-        "size": "XL",
-        "color": "Red",
-        "stock": 2,
-        "price": 11.96,
-        "images": [
-          "https://example.com/images/red_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-9292",
-        "size": "XL",
-        "color": "White",
-        "stock": 12,
-        "price": 34.36,
-        "images": [
-          "https://example.com/images/white_xl.jpg"
-        ]
-      },
-      {
-        "id": "var-6781",
-        "size": "XL",
-        "color": "Black",
-        "stock": 15,
-        "price": 44.26,
-        "images": [
-          "https://example.com/images/black_xl.jpg"
-        ]
-      }
-    ],
-    "images": [
-      "https://example.com/images/jackets_10.jpg"
-    ],
-    "isAvailable": true,
-    "isFeatured": false,
-    "isTrending": true,
-    "ratings": 4.8,
-    "reviewsCount": 29,
-    "tags": [
-      "sale",
-      "casual",
-      "trendy"
-    ],
-    "genderTarget": [
-      "Kids"
-    ],
-    "createdAt": "2024-07-10T07:09:15.979795",
-    "updatedAt": "2025-07-06T07:09:15.979810"
-  }
-]
+{
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Adidas Watches 1",
+      "brand": "H&M",
+      "category": "Accessories",
+      "subCategory": "Watches",
+      "description": "A stylish Watches from our Accessories range.",
+      "price": 21.52,
+      "discount": null,
+      "currency": "USD",
+      "sizes": [
+        "S",
+        "M",
+        "XL"
+      ],
+      "colors": [
+        "Blue",
+        "Black"
+      ],
+      "variants": [
+        {
+          "id": "var-4402",
+          "size": "S",
+          "color": "Blue",
+          "stock": 0,
+          "price": 26.55,
+          "images": [
+            "https://example.com/images/blue_s.jpg"
+          ]
+        },
+        {
+          "id": "var-8382",
+          "size": "S",
+          "color": "Black",
+          "stock": 6,
+          "price": 42.31,
+          "images": [
+            "https://example.com/images/black_s.jpg"
+          ]
+        },
+        {
+          "id": "var-1969",
+          "size": "M",
+          "color": "Blue",
+          "stock": 0,
+          "price": 32.68,
+          "images": [
+            "https://example.com/images/blue_m.jpg"
+          ]
+        },
+        {
+          "id": "var-2662",
+          "size": "M",
+          "color": "Black",
+          "stock": 0,
+          "price": 31.3,
+          "images": [
+            "https://example.com/images/black_m.jpg"
+          ]
+        },
+        {
+          "id": "var-1687",
+          "size": "XL",
+          "color": "Blue",
+          "stock": 2,
+          "price": 45.59,
+          "images": [
+            "https://example.com/images/blue_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-4873",
+          "size": "XL",
+          "color": "Black",
+          "stock": 9,
+          "price": 25.37,
+          "images": [
+            "https://example.com/images/black_xl.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/watches_1.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": false,
+      "isTrending": true,
+      "ratings": 4.5,
+      "reviewsCount": 72,
+      "tags": [
+        "summer",
+        "casual",
+        "new"
+      ],
+      "genderTarget": [
+        "Women"
+      ],
+      "createdAt": "2025-05-20T07:09:15.979093",
+      "updatedAt": "2025-07-06T07:09:15.979138"
+    },
+    {
+      "id": "prod-2",
+      "name": "Zara Belts 2",
+      "brand": "H&M",
+      "category": "Accessories",
+      "subCategory": "Belts",
+      "description": "A stylish Belts from our Accessories range.",
+      "price": 98.13,
+      "discount": null,
+      "currency": "USD",
+      "sizes": [
+        "XL",
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "variants": [
+        {
+          "id": "var-3558",
+          "size": "XL",
+          "color": "White",
+          "stock": 0,
+          "price": 30.58,
+          "images": [
+            "https://example.com/images/white_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-6279",
+          "size": "XL",
+          "color": "Blue",
+          "stock": 19,
+          "price": 43.04,
+          "images": [
+            "https://example.com/images/blue_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-8074",
+          "size": "XL",
+          "color": "Black",
+          "stock": 13,
+          "price": 30.3,
+          "images": [
+            "https://example.com/images/black_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-9698",
+          "size": "S",
+          "color": "White",
+          "stock": 13,
+          "price": 24.93,
+          "images": [
+            "https://example.com/images/white_s.jpg"
+          ]
+        },
+        {
+          "id": "var-9777",
+          "size": "S",
+          "color": "Blue",
+          "stock": 7,
+          "price": 28.51,
+          "images": [
+            "https://example.com/images/blue_s.jpg"
+          ]
+        },
+        {
+          "id": "var-9354",
+          "size": "S",
+          "color": "Black",
+          "stock": 3,
+          "price": 48.78,
+          "images": [
+            "https://example.com/images/black_s.jpg"
+          ]
+        },
+        {
+          "id": "var-7544",
+          "size": "M",
+          "color": "White",
+          "stock": 6,
+          "price": 39.53,
+          "images": [
+            "https://example.com/images/white_m.jpg"
+          ]
+        },
+        {
+          "id": "var-9550",
+          "size": "M",
+          "color": "Blue",
+          "stock": 5,
+          "price": 11.23,
+          "images": [
+            "https://example.com/images/blue_m.jpg"
+          ]
+        },
+        {
+          "id": "var-3985",
+          "size": "M",
+          "color": "Black",
+          "stock": 7,
+          "price": 49.29,
+          "images": [
+            "https://example.com/images/black_m.jpg"
+          ]
+        },
+        {
+          "id": "var-5672",
+          "size": "L",
+          "color": "White",
+          "stock": 8,
+          "price": 11.04,
+          "images": [
+            "https://example.com/images/white_l.jpg"
+          ]
+        },
+        {
+          "id": "var-1028",
+          "size": "L",
+          "color": "Blue",
+          "stock": 3,
+          "price": 16.73,
+          "images": [
+            "https://example.com/images/blue_l.jpg"
+          ]
+        },
+        {
+          "id": "var-2180",
+          "size": "L",
+          "color": "Black",
+          "stock": 12,
+          "price": 19.02,
+          "images": [
+            "https://example.com/images/black_l.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/belts_2.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": false,
+      "isTrending": true,
+      "ratings": 3.6,
+      "reviewsCount": 93,
+      "tags": [
+        "sale",
+        "casual",
+        "new"
+      ],
+      "genderTarget": [
+        "Women"
+      ],
+      "createdAt": "2024-11-25T07:09:15.979219",
+      "updatedAt": "2025-07-06T07:09:15.979245"
+    },
+    {
+      "id": "prod-3",
+      "name": "H&M Sneakers 3",
+      "brand": "Zara",
+      "category": "Footwear",
+      "subCategory": "Sneakers",
+      "description": "A stylish Sneakers from our Footwear range.",
+      "price": 56.66,
+      "discount": 15,
+      "currency": "USD",
+      "sizes": [
+        "L",
+        "M",
+        "S"
+      ],
+      "colors": [
+        "Black",
+        "Green"
+      ],
+      "variants": [
+        {
+          "id": "var-9651",
+          "size": "L",
+          "color": "Black",
+          "stock": 9,
+          "price": 35.8,
+          "images": [
+            "https://example.com/images/black_l.jpg"
+          ]
+        },
+        {
+          "id": "var-4976",
+          "size": "L",
+          "color": "Green",
+          "stock": 9,
+          "price": 32.77,
+          "images": [
+            "https://example.com/images/green_l.jpg"
+          ]
+        },
+        {
+          "id": "var-7379",
+          "size": "M",
+          "color": "Black",
+          "stock": 16,
+          "price": 24.59,
+          "images": [
+            "https://example.com/images/black_m.jpg"
+          ]
+        },
+        {
+          "id": "var-2337",
+          "size": "M",
+          "color": "Green",
+          "stock": 8,
+          "price": 45.5,
+          "images": [
+            "https://example.com/images/green_m.jpg"
+          ]
+        },
+        {
+          "id": "var-2121",
+          "size": "S",
+          "color": "Black",
+          "stock": 17,
+          "price": 14.06,
+          "images": [
+            "https://example.com/images/black_s.jpg"
+          ]
+        },
+        {
+          "id": "var-2653",
+          "size": "S",
+          "color": "Green",
+          "stock": 7,
+          "price": 31.03,
+          "images": [
+            "https://example.com/images/green_s.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/sneakers_3.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 3.8,
+      "reviewsCount": 79,
+      "tags": [
+        "sale",
+        "trendy",
+        "new"
+      ],
+      "genderTarget": [
+        "Women"
+      ],
+      "createdAt": "2024-12-18T07:09:15.979291",
+      "updatedAt": "2025-07-06T07:09:15.979313"
+    },
+    {
+      "id": "prod-4",
+      "name": "Zara Shirts 4",
+      "brand": "Nike",
+      "category": "Clothing",
+      "subCategory": "Shirts",
+      "description": "A stylish Shirts from our Clothing range.",
+      "price": 27.21,
+      "discount": 5,
+      "currency": "USD",
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL"
+      ],
+      "colors": [
+        "Red",
+        "Black",
+        "Green"
+      ],
+      "variants": [
+        {
+          "id": "var-3287",
+          "size": "L",
+          "color": "Red",
+          "stock": 5,
+          "price": 39.22,
+          "images": [
+            "https://example.com/images/red_l.jpg"
+          ]
+        },
+        {
+          "id": "var-6413",
+          "size": "L",
+          "color": "Black",
+          "stock": 9,
+          "price": 41.82,
+          "images": [
+            "https://example.com/images/black_l.jpg"
+          ]
+        },
+        {
+          "id": "var-7383",
+          "size": "L",
+          "color": "Green",
+          "stock": 18,
+          "price": 48.91,
+          "images": [
+            "https://example.com/images/green_l.jpg"
+          ]
+        },
+        {
+          "id": "var-7196",
+          "size": "M",
+          "color": "Red",
+          "stock": 1,
+          "price": 27.1,
+          "images": [
+            "https://example.com/images/red_m.jpg"
+          ]
+        },
+        {
+          "id": "var-5926",
+          "size": "M",
+          "color": "Black",
+          "stock": 4,
+          "price": 13.95,
+          "images": [
+            "https://example.com/images/black_m.jpg"
+          ]
+        },
+        {
+          "id": "var-4581",
+          "size": "M",
+          "color": "Green",
+          "stock": 16,
+          "price": 32.45,
+          "images": [
+            "https://example.com/images/green_m.jpg"
+          ]
+        },
+        {
+          "id": "var-3193",
+          "size": "S",
+          "color": "Red",
+          "stock": 16,
+          "price": 46.16,
+          "images": [
+            "https://example.com/images/red_s.jpg"
+          ]
+        },
+        {
+          "id": "var-3699",
+          "size": "S",
+          "color": "Black",
+          "stock": 6,
+          "price": 35.34,
+          "images": [
+            "https://example.com/images/black_s.jpg"
+          ]
+        },
+        {
+          "id": "var-4082",
+          "size": "S",
+          "color": "Green",
+          "stock": 5,
+          "price": 33.73,
+          "images": [
+            "https://example.com/images/green_s.jpg"
+          ]
+        },
+        {
+          "id": "var-3623",
+          "size": "XL",
+          "color": "Red",
+          "stock": 13,
+          "price": 34.83,
+          "images": [
+            "https://example.com/images/red_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-2400",
+          "size": "XL",
+          "color": "Black",
+          "stock": 8,
+          "price": 48.01,
+          "images": [
+            "https://example.com/images/black_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-1078",
+          "size": "XL",
+          "color": "Green",
+          "stock": 8,
+          "price": 29.01,
+          "images": [
+            "https://example.com/images/green_xl.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/shirts_4.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": false,
+      "isTrending": false,
+      "ratings": 4.8,
+      "reviewsCount": 96,
+      "tags": [
+        "summer",
+        "sale",
+        "trendy"
+      ],
+      "genderTarget": [
+        "Men"
+      ],
+      "createdAt": "2025-01-02T07:09:15.979385",
+      "updatedAt": "2025-07-06T07:09:15.979409"
+    },
+    {
+      "id": "prod-5",
+      "name": "Levi's Sandals 5",
+      "brand": "Nike",
+      "category": "Footwear",
+      "subCategory": "Sandals",
+      "description": "A stylish Sandals from our Footwear range.",
+      "price": 35.37,
+      "discount": 10,
+      "currency": "USD",
+      "sizes": [
+        "M",
+        "S",
+        "XL"
+      ],
+      "colors": [
+        "Red",
+        "Green",
+        "Blue"
+      ],
+      "variants": [
+        {
+          "id": "var-6436",
+          "size": "M",
+          "color": "Red",
+          "stock": 19,
+          "price": 11.07,
+          "images": [
+            "https://example.com/images/red_m.jpg"
+          ]
+        },
+        {
+          "id": "var-4882",
+          "size": "M",
+          "color": "Green",
+          "stock": 12,
+          "price": 28.14,
+          "images": [
+            "https://example.com/images/green_m.jpg"
+          ]
+        },
+        {
+          "id": "var-5109",
+          "size": "M",
+          "color": "Blue",
+          "stock": 0,
+          "price": 40.63,
+          "images": [
+            "https://example.com/images/blue_m.jpg"
+          ]
+        },
+        {
+          "id": "var-5593",
+          "size": "S",
+          "color": "Red",
+          "stock": 20,
+          "price": 15.92,
+          "images": [
+            "https://example.com/images/red_s.jpg"
+          ]
+        },
+        {
+          "id": "var-9548",
+          "size": "S",
+          "color": "Green",
+          "stock": 11,
+          "price": 23.52,
+          "images": [
+            "https://example.com/images/green_s.jpg"
+          ]
+        },
+        {
+          "id": "var-7810",
+          "size": "S",
+          "color": "Blue",
+          "stock": 17,
+          "price": 32.6,
+          "images": [
+            "https://example.com/images/blue_s.jpg"
+          ]
+        },
+        {
+          "id": "var-3601",
+          "size": "XL",
+          "color": "Red",
+          "stock": 1,
+          "price": 21.12,
+          "images": [
+            "https://example.com/images/red_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-4713",
+          "size": "XL",
+          "color": "Green",
+          "stock": 1,
+          "price": 40.51,
+          "images": [
+            "https://example.com/images/green_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-5623",
+          "size": "XL",
+          "color": "Blue",
+          "stock": 7,
+          "price": 17.1,
+          "images": [
+            "https://example.com/images/blue_xl.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/sandals_5.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 4.9,
+      "reviewsCount": 40,
+      "tags": [
+        "sale",
+        "new",
+        "casual"
+      ],
+      "genderTarget": [
+        "Men"
+      ],
+      "createdAt": "2024-09-29T07:09:15.979464",
+      "updatedAt": "2025-07-06T07:09:15.979486"
+    },
+    {
+      "id": "prod-6",
+      "name": "H&M Shirts 6",
+      "brand": "Levi's",
+      "category": "Clothing",
+      "subCategory": "Shirts",
+      "description": "A stylish Shirts from our Clothing range.",
+      "price": 47.29,
+      "discount": 5,
+      "currency": "USD",
+      "sizes": [
+        "XL",
+        "S",
+        "M"
+      ],
+      "colors": [
+        "White",
+        "Red",
+        "Blue"
+      ],
+      "variants": [
+        {
+          "id": "var-6730",
+          "size": "XL",
+          "color": "White",
+          "stock": 18,
+          "price": 46.92,
+          "images": [
+            "https://example.com/images/white_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-6662",
+          "size": "XL",
+          "color": "Red",
+          "stock": 2,
+          "price": 23.61,
+          "images": [
+            "https://example.com/images/red_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-8963",
+          "size": "XL",
+          "color": "Blue",
+          "stock": 14,
+          "price": 28.14,
+          "images": [
+            "https://example.com/images/blue_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-8670",
+          "size": "S",
+          "color": "White",
+          "stock": 15,
+          "price": 13.29,
+          "images": [
+            "https://example.com/images/white_s.jpg"
+          ]
+        },
+        {
+          "id": "var-1692",
+          "size": "S",
+          "color": "Red",
+          "stock": 11,
+          "price": 26.83,
+          "images": [
+            "https://example.com/images/red_s.jpg"
+          ]
+        },
+        {
+          "id": "var-3413",
+          "size": "S",
+          "color": "Blue",
+          "stock": 16,
+          "price": 32.82,
+          "images": [
+            "https://example.com/images/blue_s.jpg"
+          ]
+        },
+        {
+          "id": "var-9249",
+          "size": "M",
+          "color": "White",
+          "stock": 10,
+          "price": 30.02,
+          "images": [
+            "https://example.com/images/white_m.jpg"
+          ]
+        },
+        {
+          "id": "var-3616",
+          "size": "M",
+          "color": "Red",
+          "stock": 5,
+          "price": 12.58,
+          "images": [
+            "https://example.com/images/red_m.jpg"
+          ]
+        },
+        {
+          "id": "var-5731",
+          "size": "M",
+          "color": "Blue",
+          "stock": 20,
+          "price": 34.31,
+          "images": [
+            "https://example.com/images/blue_m.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/shirts_6.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": false,
+      "isTrending": true,
+      "ratings": 4.3,
+      "reviewsCount": 16,
+      "tags": [
+        "sale",
+        "new",
+        "trendy"
+      ],
+      "genderTarget": [
+        "Women"
+      ],
+      "createdAt": "2025-06-21T07:09:15.979532",
+      "updatedAt": "2025-07-06T07:09:15.979546"
+    },
+    {
+      "id": "prod-7",
+      "name": "Adidas Belts 7",
+      "brand": "Levi's",
+      "category": "Accessories",
+      "subCategory": "Belts",
+      "description": "A stylish Belts from our Accessories range.",
+      "price": 63.41,
+      "discount": 5,
+      "currency": "USD",
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Green",
+        "Blue",
+        "Black"
+      ],
+      "variants": [
+        {
+          "id": "var-3963",
+          "size": "M",
+          "color": "Green",
+          "stock": 18,
+          "price": 17.54,
+          "images": [
+            "https://example.com/images/green_m.jpg"
+          ]
+        },
+        {
+          "id": "var-4154",
+          "size": "M",
+          "color": "Blue",
+          "stock": 19,
+          "price": 38.2,
+          "images": [
+            "https://example.com/images/blue_m.jpg"
+          ]
+        },
+        {
+          "id": "var-1985",
+          "size": "M",
+          "color": "Black",
+          "stock": 13,
+          "price": 37.59,
+          "images": [
+            "https://example.com/images/black_m.jpg"
+          ]
+        },
+        {
+          "id": "var-5378",
+          "size": "L",
+          "color": "Green",
+          "stock": 0,
+          "price": 10.6,
+          "images": [
+            "https://example.com/images/green_l.jpg"
+          ]
+        },
+        {
+          "id": "var-5468",
+          "size": "L",
+          "color": "Blue",
+          "stock": 13,
+          "price": 16.5,
+          "images": [
+            "https://example.com/images/blue_l.jpg"
+          ]
+        },
+        {
+          "id": "var-9558",
+          "size": "L",
+          "color": "Black",
+          "stock": 9,
+          "price": 12.05,
+          "images": [
+            "https://example.com/images/black_l.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/belts_7.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": false,
+      "isTrending": true,
+      "ratings": 4.0,
+      "reviewsCount": 45,
+      "tags": [
+        "casual",
+        "sale",
+        "new"
+      ],
+      "genderTarget": [
+        "Kids"
+      ],
+      "createdAt": "2025-04-29T07:09:15.979583",
+      "updatedAt": "2025-07-06T07:09:15.979598"
+    },
+    {
+      "id": "prod-8",
+      "name": "Zara Sneakers 8",
+      "brand": "Adidas",
+      "category": "Footwear",
+      "subCategory": "Sneakers",
+      "description": "A stylish Sneakers from our Footwear range.",
+      "price": 50.02,
+      "discount": 5,
+      "currency": "USD",
+      "sizes": [
+        "M",
+        "S",
+        "XL",
+        "L"
+      ],
+      "colors": [
+        "Red",
+        "Blue",
+        "Green",
+        "White"
+      ],
+      "variants": [
+        {
+          "id": "var-8756",
+          "size": "M",
+          "color": "Red",
+          "stock": 17,
+          "price": 19.39,
+          "images": [
+            "https://example.com/images/red_m.jpg"
+          ]
+        },
+        {
+          "id": "var-8393",
+          "size": "M",
+          "color": "Blue",
+          "stock": 4,
+          "price": 30.88,
+          "images": [
+            "https://example.com/images/blue_m.jpg"
+          ]
+        },
+        {
+          "id": "var-7896",
+          "size": "M",
+          "color": "Green",
+          "stock": 12,
+          "price": 28.03,
+          "images": [
+            "https://example.com/images/green_m.jpg"
+          ]
+        },
+        {
+          "id": "var-3880",
+          "size": "M",
+          "color": "White",
+          "stock": 8,
+          "price": 13.05,
+          "images": [
+            "https://example.com/images/white_m.jpg"
+          ]
+        },
+        {
+          "id": "var-1736",
+          "size": "S",
+          "color": "Red",
+          "stock": 0,
+          "price": 20.12,
+          "images": [
+            "https://example.com/images/red_s.jpg"
+          ]
+        },
+        {
+          "id": "var-3425",
+          "size": "S",
+          "color": "Blue",
+          "stock": 7,
+          "price": 11.29,
+          "images": [
+            "https://example.com/images/blue_s.jpg"
+          ]
+        },
+        {
+          "id": "var-9573",
+          "size": "S",
+          "color": "Green",
+          "stock": 9,
+          "price": 35.19,
+          "images": [
+            "https://example.com/images/green_s.jpg"
+          ]
+        },
+        {
+          "id": "var-5440",
+          "size": "S",
+          "color": "White",
+          "stock": 2,
+          "price": 20.26,
+          "images": [
+            "https://example.com/images/white_s.jpg"
+          ]
+        },
+        {
+          "id": "var-2499",
+          "size": "XL",
+          "color": "Red",
+          "stock": 20,
+          "price": 32.79,
+          "images": [
+            "https://example.com/images/red_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-3012",
+          "size": "XL",
+          "color": "Blue",
+          "stock": 12,
+          "price": 24.38,
+          "images": [
+            "https://example.com/images/blue_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-2980",
+          "size": "XL",
+          "color": "Green",
+          "stock": 16,
+          "price": 36.72,
+          "images": [
+            "https://example.com/images/green_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-4990",
+          "size": "XL",
+          "color": "White",
+          "stock": 9,
+          "price": 38.37,
+          "images": [
+            "https://example.com/images/white_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-9846",
+          "size": "L",
+          "color": "Red",
+          "stock": 16,
+          "price": 39.46,
+          "images": [
+            "https://example.com/images/red_l.jpg"
+          ]
+        },
+        {
+          "id": "var-8697",
+          "size": "L",
+          "color": "Blue",
+          "stock": 10,
+          "price": 21.24,
+          "images": [
+            "https://example.com/images/blue_l.jpg"
+          ]
+        },
+        {
+          "id": "var-4657",
+          "size": "L",
+          "color": "Green",
+          "stock": 2,
+          "price": 40.2,
+          "images": [
+            "https://example.com/images/green_l.jpg"
+          ]
+        },
+        {
+          "id": "var-1757",
+          "size": "L",
+          "color": "White",
+          "stock": 2,
+          "price": 32.7,
+          "images": [
+            "https://example.com/images/white_l.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/sneakers_8.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": false,
+      "isTrending": false,
+      "ratings": 3.3,
+      "reviewsCount": 62,
+      "tags": [
+        "new",
+        "trendy",
+        "casual"
+      ],
+      "genderTarget": [
+        "Unisex"
+      ],
+      "createdAt": "2025-01-06T07:09:15.979667",
+      "updatedAt": "2025-07-06T07:09:15.979690"
+    },
+    {
+      "id": "prod-9",
+      "name": "Levi's Belts 9",
+      "brand": "Levi's",
+      "category": "Accessories",
+      "subCategory": "Belts",
+      "description": "A stylish Belts from our Accessories range.",
+      "price": 89.92,
+      "discount": 5,
+      "currency": "USD",
+      "sizes": [
+        "XL",
+        "L",
+        "S",
+        "M"
+      ],
+      "colors": [
+        "Green",
+        "White",
+        "Red",
+        "Black"
+      ],
+      "variants": [
+        {
+          "id": "var-5837",
+          "size": "XL",
+          "color": "Green",
+          "stock": 13,
+          "price": 34.57,
+          "images": [
+            "https://example.com/images/green_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-6915",
+          "size": "XL",
+          "color": "White",
+          "stock": 5,
+          "price": 48.9,
+          "images": [
+            "https://example.com/images/white_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-3577",
+          "size": "XL",
+          "color": "Red",
+          "stock": 3,
+          "price": 12.56,
+          "images": [
+            "https://example.com/images/red_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-4445",
+          "size": "XL",
+          "color": "Black",
+          "stock": 9,
+          "price": 18.26,
+          "images": [
+            "https://example.com/images/black_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-9930",
+          "size": "L",
+          "color": "Green",
+          "stock": 2,
+          "price": 32.47,
+          "images": [
+            "https://example.com/images/green_l.jpg"
+          ]
+        },
+        {
+          "id": "var-6994",
+          "size": "L",
+          "color": "White",
+          "stock": 20,
+          "price": 48.81,
+          "images": [
+            "https://example.com/images/white_l.jpg"
+          ]
+        },
+        {
+          "id": "var-1022",
+          "size": "L",
+          "color": "Red",
+          "stock": 7,
+          "price": 31.21,
+          "images": [
+            "https://example.com/images/red_l.jpg"
+          ]
+        },
+        {
+          "id": "var-1397",
+          "size": "L",
+          "color": "Black",
+          "stock": 12,
+          "price": 22.19,
+          "images": [
+            "https://example.com/images/black_l.jpg"
+          ]
+        },
+        {
+          "id": "var-1259",
+          "size": "S",
+          "color": "Green",
+          "stock": 1,
+          "price": 15.5,
+          "images": [
+            "https://example.com/images/green_s.jpg"
+          ]
+        },
+        {
+          "id": "var-7684",
+          "size": "S",
+          "color": "White",
+          "stock": 9,
+          "price": 45.86,
+          "images": [
+            "https://example.com/images/white_s.jpg"
+          ]
+        },
+        {
+          "id": "var-6919",
+          "size": "S",
+          "color": "Red",
+          "stock": 8,
+          "price": 36.67,
+          "images": [
+            "https://example.com/images/red_s.jpg"
+          ]
+        },
+        {
+          "id": "var-3159",
+          "size": "S",
+          "color": "Black",
+          "stock": 20,
+          "price": 37.22,
+          "images": [
+            "https://example.com/images/black_s.jpg"
+          ]
+        },
+        {
+          "id": "var-3625",
+          "size": "M",
+          "color": "Green",
+          "stock": 0,
+          "price": 35.83,
+          "images": [
+            "https://example.com/images/green_m.jpg"
+          ]
+        },
+        {
+          "id": "var-1669",
+          "size": "M",
+          "color": "White",
+          "stock": 0,
+          "price": 47.81,
+          "images": [
+            "https://example.com/images/white_m.jpg"
+          ]
+        },
+        {
+          "id": "var-4788",
+          "size": "M",
+          "color": "Red",
+          "stock": 11,
+          "price": 36.72,
+          "images": [
+            "https://example.com/images/red_m.jpg"
+          ]
+        },
+        {
+          "id": "var-2357",
+          "size": "M",
+          "color": "Black",
+          "stock": 3,
+          "price": 34.45,
+          "images": [
+            "https://example.com/images/black_m.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/belts_9.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": false,
+      "isTrending": true,
+      "ratings": 3.7,
+      "reviewsCount": 10,
+      "tags": [
+        "trendy",
+        "casual",
+        "summer"
+      ],
+      "genderTarget": [
+        "Unisex"
+      ],
+      "createdAt": "2025-02-03T07:09:15.979750",
+      "updatedAt": "2025-07-06T07:09:15.979764"
+    },
+    {
+      "id": "prod-10",
+      "name": "Nike Jackets 10",
+      "brand": "Levi's",
+      "category": "Clothing",
+      "subCategory": "Jackets",
+      "description": "A stylish Jackets from our Clothing range.",
+      "price": 98.13,
+      "discount": null,
+      "currency": "USD",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Blue",
+        "Red",
+        "White",
+        "Black"
+      ],
+      "variants": [
+        {
+          "id": "var-6771",
+          "size": "L",
+          "color": "Blue",
+          "stock": 12,
+          "price": 28.73,
+          "images": [
+            "https://example.com/images/blue_l.jpg"
+          ]
+        },
+        {
+          "id": "var-8222",
+          "size": "L",
+          "color": "Red",
+          "stock": 11,
+          "price": 13.58,
+          "images": [
+            "https://example.com/images/red_l.jpg"
+          ]
+        },
+        {
+          "id": "var-2128",
+          "size": "L",
+          "color": "White",
+          "stock": 0,
+          "price": 10.67,
+          "images": [
+            "https://example.com/images/white_l.jpg"
+          ]
+        },
+        {
+          "id": "var-9778",
+          "size": "L",
+          "color": "Black",
+          "stock": 19,
+          "price": 25.97,
+          "images": [
+            "https://example.com/images/black_l.jpg"
+          ]
+        },
+        {
+          "id": "var-2996",
+          "size": "XL",
+          "color": "Blue",
+          "stock": 4,
+          "price": 25.0,
+          "images": [
+            "https://example.com/images/blue_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-4768",
+          "size": "XL",
+          "color": "Red",
+          "stock": 2,
+          "price": 11.96,
+          "images": [
+            "https://example.com/images/red_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-9292",
+          "size": "XL",
+          "color": "White",
+          "stock": 12,
+          "price": 34.36,
+          "images": [
+            "https://example.com/images/white_xl.jpg"
+          ]
+        },
+        {
+          "id": "var-6781",
+          "size": "XL",
+          "color": "Black",
+          "stock": 15,
+          "price": 44.26,
+          "images": [
+            "https://example.com/images/black_xl.jpg"
+          ]
+        }
+      ],
+      "images": [
+        "https://example.com/images/jackets_10.jpg"
+      ],
+      "isAvailable": true,
+      "isFeatured": false,
+      "isTrending": true,
+      "ratings": 4.8,
+      "reviewsCount": 29,
+      "tags": [
+        "sale",
+        "casual",
+        "trendy"
+      ],
+      "genderTarget": [
+        "Kids"
+      ],
+      "createdAt": "2024-07-10T07:09:15.979795",
+      "updatedAt": "2025-07-06T07:09:15.979810"
+    }
+  ]
+}
