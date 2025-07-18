@@ -33,7 +33,6 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "public/assets/css/animate.min.css",   
               "src/styles.scss"
             ],
             "scripts": [
