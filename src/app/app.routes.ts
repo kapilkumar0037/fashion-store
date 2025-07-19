@@ -33,6 +33,18 @@ export const routes: Routes = [
                 path: 'cart',
                 loadComponent: () => import('./features/cart/components/cart/cart.component')
             },
+            {
+                path: 'orders',
+                loadComponent: () => import('./features/orders/orders.component')
+            },
+            {
+                path: 'wishlist',
+                loadComponent: () => import('./features/wishlist/wishlist.component')
+            },
+               {
+                path: 'tracking',
+                loadComponent: () => import('./features/order-tracking/order-tracking.component')
+            },
         ]
     },
 
