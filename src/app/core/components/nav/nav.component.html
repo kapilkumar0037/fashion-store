@@ -1,12 +1,16 @@
 <div class="header-mid header-sticky">
     <div class="container">
         <div class="menu-wrapper">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html"><img src="/assets/img/logo/logo.png.webp" alt=""></a>
+            <div class="mobile_menu d-block d-lg-none">
+                
             </div>
 
-            <div>
+            <!-- Logo -->
+            <div class="logo">
+                <a [routerLink]="'/'"><img src="/assets/img/logo/logo.png.webp" alt=""></a>
+            </div>
+
+            <div class="d-none d-lg-block">
                 <app-search></app-search>
             </div>
             <!-- Main-menu -->
@@ -31,8 +35,8 @@
                                 <li><a href="elements.html">Element</a></li>
                                 <li><a href="blog-details.html">Blog Details</a></li>
                             </ul>
-                        </li> -->
-                        <li><a href="contact.html">Contact</a></li>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -63,6 +67,10 @@
                 </ul>
             </div>
 
+
+        </div>
+        <div class="d-block d-sm-none pt-3">
+            <app-search></app-search>
         </div>
         <!-- Show Search Box -->
         <div style="display: none;" class="search_input" id="search_input_box">
