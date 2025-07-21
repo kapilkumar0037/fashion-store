@@ -1,16 +1,21 @@
 .form-control:focus {
   box-shadow: none;
 }
-.form-control, .input-group-text {
+.form-control,
+.input-group-text {
   border: 2px solid #ff2020;
-
 }
 .input-group-text {
-    background-color: #fff;
-    border-right: none;
+  background-color: #fff;
+  border-right: none !important;
 }
 
 @media screen and (min-width: 576px) {
+  .form-control,
+  .input-group-text {
+      border: 2px solid lightgray;
+
+  }
   .form-control:focus {
     box-shadow: none;
     border: 2px solid #ff2020;
