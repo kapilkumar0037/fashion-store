@@ -1,0 +1,12 @@
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #ff2020;
+}
+.form-control {
+  width: 300px;
+}
+.input-group-text:has(+ input:focus) {
+  box-shadow: none;
+  border: 2px solid #ff2020;
+  border-right: none;
+}
