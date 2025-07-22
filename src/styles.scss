@@ -1238,7 +1238,7 @@ hr {
   padding-top: 4px;
 }
 .slider-height {
-  min-height: 700px;
+  min-height: 340px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3055,7 +3055,6 @@ hr {
         }
       }
     }
-    display: none;
     &:checked {
       + {
         label {

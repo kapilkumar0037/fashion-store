@@ -7,7 +7,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   styleUrl: './carousel.component.scss'
 })
 export class CarouselComponent {
-  itemsPerSlide = 4;
+  itemsPerSlide = 1;
   private innerWidth!: number;
   private mobileBreakpoint = 480;
   slides = [
