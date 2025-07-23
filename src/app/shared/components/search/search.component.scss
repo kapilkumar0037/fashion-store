@@ -1,31 +1,35 @@
+.input-group {
+    background: #dee6f5;
+    height: 50px;;
+}
 .form-control:focus {
   box-shadow: none;
 }
 .form-control,
 .input-group-text {
-  border: 2px solid #ff2020;
+  border: none;
+  background: transparent ;
 }
 .input-group-text {
-  background-color: #fff;
   border-right: none !important;
 }
 
 @media screen and (min-width: 576px) {
   .form-control,
   .input-group-text {
-      border: 2px solid lightgray;
+      border:none
 
   }
   .form-control:focus {
     box-shadow: none;
-    border: 2px solid #ff2020;
+    border: none
   }
   .form-control {
     width: 300px;
   }
   .input-group-text:has(+ input:focus) {
     box-shadow: none;
-    border: 2px solid #ff2020;
+    border: none;
     border-right: none;
   }
 }
