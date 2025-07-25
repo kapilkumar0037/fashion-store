@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {
   BlogCardComponent, CarouselComponent,
+  FeaturedAudienceComponent,
   FeaturedCarouselComponent,
   TestimonialCarouselComponent
 } from '@shared/index';
@@ -11,7 +12,9 @@ import {
     FeaturedCarouselComponent,
     TestimonialCarouselComponent,
     CarouselComponent,
-    BlogCardComponent],
+    BlogCardComponent,
+    FeaturedAudienceComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
