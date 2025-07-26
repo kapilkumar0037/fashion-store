@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Men's Fashion",
-      "image": "https://example.com/images/clothing.jpg",
+      "image": "men/men-fashion1",
       "btnText": "Shop now",
       "createdAt": "2025-07-06T07:09:15.979138",
       "updatedAt": "2025-07-06T07:09:15.979138"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Women's fashion",
-      "image": "https://example.com/images/footwear.jpg",
+      "image": "women/women-fashion",
       "btnText": "Shop Now",
       "createdAt": "2025-07-06T07:09:15.979138",
       "updatedAt": "2025-07-06T07:09:15.979138"
@@ -19,12 +19,13 @@
     {
       "id": 3,
       "name": "Baby Fashion",
-      "image": "https://example.com/images/accessories.jpg",
+      "image": "kids/kids-fashion",
       "btnText": "Shop Now",
       "createdAt": "2025-07-06T07:09:15.979138",
       "updatedAt": "2025-07-06T07:09:15.979138"
     }
   ],
+  
   "products": [
     {
       "id": "prod-1",

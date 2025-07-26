@@ -39,3 +39,12 @@ export interface IFashionProduct {
   updatedAt?: string;
 }
 
+export interface IFeaturedAudience {
+  id: number;
+  name: string;
+  description?: string;
+  image?: string; 
+  btnText?: string; 
+  createdAt?: string;
+  updatedAt?: string;
+}

@@ -7,4 +7,6 @@ export class ApiConstants {
   static readonly ORDERS_ENDPOINT = '/orders';
   static readonly WISHLIST_ENDPOINT = '/wishlist';
   static readonly AUTH_ENDPOINT = '/auth';
+  static readonly FEATURED_AUDIENCE = '/featuredAudience';
+
 }

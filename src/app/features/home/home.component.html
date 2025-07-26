@@ -1,11 +1,11 @@
 <section class="slider-area ">
-  <div class="slider-active">
-    <app-featured-carousel></app-featured-carousel>
-  </div>
+  <app-featured-carousel></app-featured-carousel>
 </section>
 
 <section class="items-product1 pt-30">
-  <app-featured-audience></app-featured-audience>
+  @if(featuredAudience && featuredAudience.length > 0) {
+  <app-featured-audience [audience]="featuredAudience"></app-featured-audience>
+  }
 </section>
 
 <div class="latest-items section-padding fix">
@@ -75,17 +75,7 @@
 </div>
 
 <div class="testimonial-area testimonial-padding">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xl-10 col-lg-10 col-md-11">
-        <div class="h1-testimonial-active">
-          <app-testimonial-carousel></app-testimonial-carousel>
-          <!-- Single Testimonial -->
-
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-testimonial-carousel></app-testimonial-carousel>
 </div>
 
 <section class="latest-items section-padding fix">
