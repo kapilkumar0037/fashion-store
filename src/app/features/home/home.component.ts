@@ -6,7 +6,7 @@ import {
   TestimonialCarouselComponent
 } from '@shared/index';
 import { HomeService } from './services/home.service';
-import { IFeaturedAudience } from '@shared/models/general.models';
+import { IFeaturedAudience, IFeaturedTestimonials } from '@shared/models/general.models';
 
 @Component({
   selector: 'app-home',
@@ -24,9 +24,12 @@ export default class HomeComponent {
   selectedTab = 'men'
   homeService = inject(HomeService);
   featuredAudience: IFeaturedAudience[] = [];
+  featuredTestimonials: IFeaturedTestimonials[] = [];
+
 
   ngOnInit() {
     this.getAudience();
+    this.getTestimonials();
   }
 
   onTabChange(_selectedTab: string) {
@@ -37,6 +40,17 @@ export default class HomeComponent {
     this.homeService.getFeaturedAudience().subscribe({
       next: (audience: IFeaturedAudience[]) => {
         this.featuredAudience = audience;
+      },
+      error: (error) => {
+        console.error('Error fetching featured audience:', error);
+      }
+    })
+  }
+
+  getTestimonials() {
+    this.homeService.getFeaturedTestimonials().subscribe({
+      next: (testimonials: IFeaturedTestimonials[]) => {
+        this.featuredTestimonials = testimonials;
       },
       error: (error) => {
         console.error('Error fetching featured audience:', error);

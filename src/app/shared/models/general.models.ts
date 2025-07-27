@@ -48,3 +48,14 @@ export interface IFeaturedAudience {
   createdAt?: string;
   updatedAt?: string;
 }
+
+export interface IFeaturedTestimonials {
+  id: number;
+  name: string;
+  title?: string;
+  review?: string;
+  image?: string; 
+  designation?: string;
+  createdAt?: string;
+  updatedAt?: string;
+}

@@ -12,8 +12,11 @@ export class ApiService {
   httpClient = inject(HttpClient);
   constructor() { }
 
-  getFeaturedAudience(): Api<any> {
+  getFeaturedAudience<T = any>(): Api<T> {
     return this.getApi(ApiConstants.FEATURED_AUDIENCE);
+  }
+  getFeaturedTestimonials<T = any>(): Api<T> {
+    return this.getApi(ApiConstants.TESTIMONIALS);
   }
 
   private getApi<T>(endpoint: string): Api<T> {
