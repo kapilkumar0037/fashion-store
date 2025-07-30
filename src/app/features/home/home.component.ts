@@ -30,6 +30,7 @@ export default class HomeComponent {
   ngOnInit() {
     this.getAudience();
     this.getTestimonials();
+    this.getFeatureProducts(this.selectedTab);
   }
 
   onTabChange(_selectedTab: string) {
@@ -56,5 +57,16 @@ export default class HomeComponent {
         console.error('Error fetching featured audience:', error);
       }
     })
+  }
+
+  getFeatureProducts(audience: string) {
+    this.homeService.getFeatureProducts(audience).subscribe({
+      next: (products) => {
+        console.log('Featured products:', products);
+      },
+      error: (error) => {
+        console.error('Error fetching featured products:', error);
+      }
+    });
   }
 }

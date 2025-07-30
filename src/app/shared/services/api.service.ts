@@ -8,7 +8,7 @@ import { ApiConstants } from '@shared/constants/api.constants';
   providedIn: 'root'
 })
 export class ApiService {
-  apiBaseUrl: string =  environment.apiBaseUrl;
+  apiBaseUrl: string = environment.apiBaseUrl;
   httpClient = inject(HttpClient);
   constructor() { }
 
@@ -18,7 +18,9 @@ export class ApiService {
   getFeaturedTestimonials<T = any>(): Api<T> {
     return this.getApi(ApiConstants.TESTIMONIALS);
   }
-
+  getFeaturedProducts<T = any>(): Api<T> {
+    return this.getApi(ApiConstants.PRODUCTS_ENDPOINT);
+  }
   private getApi<T>(endpoint: string): Api<T> {
     return new Api<T>(this.httpClient, this.apiBaseUrl + endpoint);
   }

@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core';
-import { IFeaturedAudience, IFeaturedTestimonials } from '@shared/models/general.models';
+import { IFashionProduct, IFeaturedAudience, IFeaturedTestimonials } from '@shared/models/general.models';
 import { ApiService } from '@shared/services/api.service';
 import { Observable } from 'rxjs';
 
@@ -13,7 +13,11 @@ export class HomeService {
     return this.apiService.getFeaturedAudience<IFeaturedAudience[]>().getAll();
   }
 
-    getFeaturedTestimonials(): Observable<IFeaturedTestimonials[]> {
+  getFeaturedTestimonials(): Observable<IFeaturedTestimonials[]> {
     return this.apiService.getFeaturedTestimonials<IFeaturedTestimonials[]>().getAll();
+  }
+
+  getFeatureProducts(audience: string): Observable<IFashionProduct[]> {
+    return this.apiService.getFeaturedProducts<IFashionProduct[]>().getAll({audience});
   }
 }

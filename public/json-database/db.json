@@ -1,5 +1,5 @@
 {
-  "featuredAudience" : [
+  "featuredAudience": [
     {
       "id": 1,
       "name": "Men's Fashion",
@@ -47,7 +47,6 @@
       "updatedAt": "2025-07-06T07:09:15.979138"
     }
   ],
-  
   "products": [
     {
       "id": "prod-1",
@@ -143,9 +142,7 @@
         "casual",
         "new"
       ],
-      "genderTarget": [
-        "Women"
-      ],
+      "audience": "men",
       "createdAt": "2025-05-20T07:09:15.979093",
       "updatedAt": "2025-07-06T07:09:15.979138"
     },
@@ -305,9 +302,7 @@
         "casual",
         "new"
       ],
-      "genderTarget": [
-        "Women"
-      ],
+      "audience": "women",
       "createdAt": "2024-11-25T07:09:15.979219",
       "updatedAt": "2025-07-06T07:09:15.979245"
     },
@@ -405,9 +400,7 @@
         "trendy",
         "new"
       ],
-      "genderTarget": [
-        "Women"
-      ],
+      "audience": "women",
       "createdAt": "2024-12-18T07:09:15.979291",
       "updatedAt": "2025-07-06T07:09:15.979313"
     },
@@ -567,9 +560,7 @@
         "sale",
         "trendy"
       ],
-      "genderTarget": [
-        "Men"
-      ],
+      "audience": "men",
       "createdAt": "2025-01-02T07:09:15.979385",
       "updatedAt": "2025-07-06T07:09:15.979409"
     },
@@ -698,9 +689,7 @@
         "new",
         "casual"
       ],
-      "genderTarget": [
-        "Men"
-      ],
+      "audience": "men",
       "createdAt": "2024-09-29T07:09:15.979464",
       "updatedAt": "2025-07-06T07:09:15.979486"
     },
@@ -829,9 +818,7 @@
         "new",
         "trendy"
       ],
-      "genderTarget": [
-        "Women"
-      ],
+      "audience": "women",
       "createdAt": "2025-06-21T07:09:15.979532",
       "updatedAt": "2025-07-06T07:09:15.979546"
     },
@@ -929,9 +916,7 @@
         "sale",
         "new"
       ],
-      "genderTarget": [
-        "Kids"
-      ],
+      "audience": "kids",
       "createdAt": "2025-04-29T07:09:15.979583",
       "updatedAt": "2025-07-06T07:09:15.979598"
     },
@@ -1132,9 +1117,7 @@
         "trendy",
         "casual"
       ],
-      "genderTarget": [
-        "Unisex"
-      ],
+      "audience": "unisex",
       "createdAt": "2025-01-06T07:09:15.979667",
       "updatedAt": "2025-07-06T07:09:15.979690"
     },
@@ -1335,9 +1318,7 @@
         "casual",
         "summer"
       ],
-      "genderTarget": [
-        "Unisex"
-      ],
+      "audience": "unisex",
       "createdAt": "2025-02-03T07:09:15.979750",
       "updatedAt": "2025-07-06T07:09:15.979764"
     },
@@ -1456,9 +1437,7 @@
         "casual",
         "trendy"
       ],
-      "genderTarget": [
-        "Kids"
-      ],
+      "audience": "kids",
       "createdAt": "2024-07-10T07:09:15.979795",
       "updatedAt": "2025-07-06T07:09:15.979810"
     }
