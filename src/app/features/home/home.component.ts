@@ -6,7 +6,7 @@ import {
   TestimonialCarouselComponent
 } from '@shared/index';
 import { HomeService } from './services/home.service';
-import { IFeaturedAudience, IFeaturedTestimonials } from '@shared/models/general.models';
+import { IFashionProduct, IFeaturedAudience, IFeaturedTestimonials } from '@shared/models/general.models';
 
 @Component({
   selector: 'app-home',
@@ -25,6 +25,7 @@ export default class HomeComponent {
   homeService = inject(HomeService);
   featuredAudience: IFeaturedAudience[] = [];
   featuredTestimonials: IFeaturedTestimonials[] = [];
+  featuredProducts: IFashionProduct[] = [];
 
 
   ngOnInit() {
@@ -62,7 +63,7 @@ export default class HomeComponent {
   getFeatureProducts(audience: string) {
     this.homeService.getFeatureProducts(audience).subscribe({
       next: (products) => {
-        console.log('Featured products:', products);
+        this.featuredProducts = products;
       },
       error: (error) => {
         console.error('Error fetching featured products:', error);

@@ -69,13 +69,14 @@
 
 <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="5000" [indicatorsByChunk]="true">
     
-    @for(slide of slides; track slide){
+    @for(product of products(); track product){
     <slide>
         <div class="properties pb-30">
             <div class="properties-card">
                 <div class="properties-img">
-                    <a href="pro-details.html">
-                        <img src="{{slide.img}}" alt=""></a>
+                    <a href="#">
+                        <app-image [name]="product.images[0]" alt="Product Back View"></app-image>
+                    </a>
                     <div class="socal_icon">
                         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
@@ -83,10 +84,10 @@
                     </div>
                 </div>
                 <div class="properties-caption properties-caption2">
-                    <h3><a href="pro-details.html">Cashmere Tank + Bag</a></h3>
+                    <h3><a href="#">{{product.name}}</a></h3>
                     <div class="properties-footer">
                         <div class="price">
-                            <span>$98.00 <span>$120.00</span></span>
+                            <span>{{product.price}}<span>{{product.discount}}</span></span>
                         </div>
                     </div>
                 </div>

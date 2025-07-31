@@ -130,7 +130,8 @@
         }
       ],
       "images": [
-        "https://example.com/images/watches_1.jpg"
+        "men/tshirts/tshirt-1-front",
+        "men/tshirts/tshirt-1-back"
       ],
       "isAvailable": true,
       "isFeatured": false,
@@ -290,7 +291,8 @@
         }
       ],
       "images": [
-        "https://example.com/images/belts_2.jpg"
+        "men/tshirts/tshirt-1-front",
+        "men/tshirts/tshirt-1-back"
       ],
       "isAvailable": true,
       "isFeatured": false,
@@ -302,7 +304,7 @@
         "casual",
         "new"
       ],
-      "audience": "women",
+      "audience": "men",
       "createdAt": "2024-11-25T07:09:15.979219",
       "updatedAt": "2025-07-06T07:09:15.979245"
     },
@@ -547,8 +549,9 @@
           ]
         }
       ],
-      "images": [
-        "https://example.com/images/shirts_4.jpg"
+       "images": [
+        "men/tshirts/tshirt-1-front",
+        "men/tshirts/tshirt-1-back"
       ],
       "isAvailable": true,
       "isFeatured": false,
@@ -677,7 +680,8 @@
         }
       ],
       "images": [
-        "https://example.com/images/sandals_5.jpg"
+        "men/tshirts/tshirt-1-front",
+        "men/tshirts/tshirt-1-back"
       ],
       "isAvailable": true,
       "isFeatured": true,
