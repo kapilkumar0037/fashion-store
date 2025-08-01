@@ -130,8 +130,7 @@
         }
       ],
       "images": [
-        "men/tshirts/tshirt-1-front",
-        "men/tshirts/tshirt-1-back"
+        "men/tshirts/tshirt-3/featured/tshirt-3-front"
       ],
       "isAvailable": true,
       "isFeatured": false,
@@ -680,8 +679,8 @@
         }
       ],
       "images": [
-        "men/tshirts/tshirt-1-front",
-        "men/tshirts/tshirt-1-back"
+        "men/tshirts/tshirt-2/featured/tshirt-2-front",
+        "men/tshirts/tshirt-2/featured/tshirt-2-back"
       ],
       "isAvailable": true,
       "isFeatured": true,
