@@ -18,6 +18,6 @@ export class HomeService {
   }
 
   getFeatureProducts(audience: string): Observable<IFashionProduct[]> {
-    return this.apiService.getFeaturedProducts<IFashionProduct[]>().getAll({audience});
+    return this.apiService.getFeaturedProducts<IFashionProduct[]>().getAll({audience, isFeatured: true});
   }
 }

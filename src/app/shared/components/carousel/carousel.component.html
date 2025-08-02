@@ -67,7 +67,7 @@
     </slide>
 </carousel> -->
 
-<carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="5000" [indicatorsByChunk]="true">
+<carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="2000" [indicatorsByChunk]="true">
     
     @for(product of products(); track product){
     <slide>
@@ -87,7 +87,7 @@
                     <h3><a href="#">{{product.name}}</a></h3>
                     <div class="properties-footer">
                         <div class="price">
-                            <span>{{product.price}}<span>{{product.discount}}</span></span>
+                            <span>₹{{product.price}}<span>₹{{product.discount}}</span></span>
                         </div>
                     </div>
                 </div>

@@ -13,12 +13,6 @@ export class CarouselComponent {
   private innerWidth!: number;
   private mobileBreakpoint = 480;
   products = input<IFashionProduct[]>([]);
-  slides = [
-    { img: "/assets/img/gallery/latest1.jpg.webp" },
-    { img: "/assets/img/gallery/latest2.jpg.webp" },
-    { img: "/assets/img/gallery/latest3.jpg.webp" },
-    { img: "/assets/img/gallery/latest4.jpg.webp" },
-  ];
   slideConfig = { "slidesToShow": 3, "slidesToScroll": 6 };
 
   ngOnInit() {
