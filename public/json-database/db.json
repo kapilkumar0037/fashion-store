@@ -1448,13 +1448,13 @@
     },
     {
       "id": "prod-141",
-      "name": "Men Tshirts Item 1",
+      "name": "Men Printed Round Neck Cotton Blend White T-Shirt",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "A stylish T-shirt from our Clothing range.",
+      "price": 649,
+      "discount": 1599,
       "currency": "INR",
       "sizes": [
         "S",
