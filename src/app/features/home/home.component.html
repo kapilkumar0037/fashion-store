@@ -19,7 +19,12 @@
               <h2>Trending This Week</h2>
             </div>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" href="#nav-one" role="tab"
+              @for(tab of trendingTabs; track tab.value) {
+              <a class="nav-link active" data-bs-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one"
+                aria-selected="true" [class.active]="selectedTab=== tab.value"
+                (click)="onTabChange(tab.value)">{{tab.labelText}}</a>
+              }
+              <!-- <a class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" href="#nav-one" role="tab"
                 aria-controls="nav-one" aria-selected="true" [class.active]="selectedTab==='men'"
                 (click)="onTabChange('men')">Men</a>
               <a class="nav-link" id="nav-two-tab" data-bs-toggle="tab" href="#nav-two" role="tab"
@@ -27,10 +32,10 @@
                 (click)="onTabChange('women')">Women</a>
               <a class="nav-link" id="nav-three-tab" data-bs-toggle="tab" href="#nav-three" role="tab"
                 aria-controls="nav-three" aria-selected="false" [class.active]="selectedTab==='baby'"
-                (click)="onTabChange('baby')">Baby</a>
-              <a class="nav-link" id="nav-four-tab" data-bs-toggle="tab" href="#nav-four" role="tab"
+                (click)="onTabChange('kids')">Kids</a> -->
+              <!-- <a class="nav-link" id="nav-four-tab" data-bs-toggle="tab" href="#nav-four" role="tab"
                 aria-controls="nav-four" aria-selected="false" [class.active]="selectedTab==='fashion'"
-                (click)="onTabChange('fashion')">Fashion</a>
+                (click)="onTabChange('fashion')">Fashion</a> -->
             </div>
           </nav>
           <!--End Nav Button  -->
@@ -41,35 +46,11 @@
   <div class="container">
     <!-- Nav Card -->
     <div class="tab-content" id="nav-tabContent">
-      @if(selectedTab=== 'men'){
       <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
-        <!-- Tab 1 -->
         <div class="latest-items">
           <app-carousel [products]="featuredProducts"></app-carousel>
         </div>
       </div>
-      } @else if(selectedTab=== 'women'){
-      <div class="tab-pane fade show active" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
-        <!-- Tab 2 -->
-        <div class="latest-items">
-          <app-carousel></app-carousel>
-        </div>
-      </div>
-      } @else if(selectedTab=== 'baby'){
-      <div class="tab-pane fade show active" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab">
-        <!-- Tab 3 -->
-        <div class="latest-items">
-          <app-carousel></app-carousel>
-        </div>
-      </div>
-      } @else if(selectedTab=== 'fashion'){
-      <div class="tab-pane fade show active" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab">
-        <!-- Tab 4 -->
-        <div class="latest-items">
-          <app-carousel></app-carousel>
-        </div>
-      </div>
-      }
     </div>
   </div>
 </div>
@@ -88,7 +69,7 @@
   </div>
   <div class="container">
     <div class="latest-items">
-      <app-carousel></app-carousel>
+      <app-carousel [products]="trendingProducts"></app-carousel>
     </div>
   </div>
 </section>

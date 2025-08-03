@@ -59,10 +59,22 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 0
+        },
+        {
+          "size": "M",
+          "stock": 0
+        },
+        {
+          "size": "L",
+          "stock": 2
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -135,7 +147,7 @@
       ],
       "isAvailable": true,
       "isFeatured": true,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -158,10 +170,22 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "White",
@@ -296,7 +320,7 @@
       ],
       "isAvailable": true,
       "isFeatured": true,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.0,
       "reviewsCount": 93,
       "tags": [
@@ -319,9 +343,22 @@
       "discount": 15,
       "currency": "USD",
       "sizes": [
-        "L",
-        "M",
-        "S"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 5
+        },
+        {
+          "size": "L",
+          "stock": 8
+        },
+        {
+          "size": "XL",
+          "stock": 19
+        }
       ],
       "colors": [
         "Black",
@@ -417,10 +454,22 @@
       "discount": 1599,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 0
+        },
+        {
+          "size": "M",
+          "stock": 0
+        },
+        {
+          "size": "L",
+          "stock": 2
+        },
+        {
+          "size": "XL",
+          "stock": 19
+        }
       ],
       "colors": [
         "Red",
@@ -578,10 +627,22 @@
       "discount": 1099,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "stock": 19
+        }
       ],
       "colors": [
         "Red",
@@ -686,7 +747,7 @@
       ],
       "isAvailable": true,
       "isFeatured": true,
-      "isTrending": false,
+      "isTrending": true,
       "ratings": 4.9,
       "reviewsCount": 40,
       "tags": [
@@ -815,7 +876,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.3,
       "reviewsCount": 16,
       "tags": [
@@ -913,7 +974,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.0,
       "reviewsCount": 45,
       "tags": [
@@ -1315,7 +1376,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 3.7,
       "reviewsCount": 10,
       "tags": [
@@ -1434,7 +1495,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.8,
       "reviewsCount": 29,
       "tags": [
@@ -1447,7 +1508,7 @@
       "updatedAt": "2025-07-06T07:09:15.979810"
     },
     {
-      "id": "prod-141",
+      "id": "p-141",
       "name": "Men Printed Round Neck Cotton Blend White T-Shirt",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -1457,10 +1518,22 @@
       "discount": 1599,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 0
+        },
+        {
+          "size": "L",
+          "stock": 21
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -1553,7 +1626,7 @@
       ],
       "isAvailable": true,
       "isFeatured": true,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -1566,20 +1639,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-2",
-      "name": "Men Tshirts Item 2",
+      "id": "p-142",
+      "name": "Men Colorblock Round Neck Cotton Blend Green T-Shirt",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "A stylish T-shirt from our Clothing range.",
+      "price": 883,
+      "discount": 1299,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 0
+        },
+        {
+          "size": "L",
+          "stock": 11
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -1668,13 +1753,16 @@
         }
       ],
       "images": [
-        "men/tshirts/item-2/featured/item-2-front"
+        "men/tshirts/tshirt-6/featured/tshirt-6-front",
+        "men/tshirts/tshirt-6/tshirt-6-front-full",
+        "men/tshirts/tshirt-6/tshirt-6-back-full",
+        "men/tshirts/tshirt-6/tshirt-6-front-neck"
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
-      "reviewsCount": 72,
+      "reviewsCount": 572,
       "tags": [
         "summer",
         "casual",
@@ -1685,20 +1773,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-3",
-      "name": "Men Tshirts Item 3",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-143",
+      "name": "Short Sleeves, Tag Free Comfort & Smartskin Technology Style# 025 Cotton Men Solid Round Neck Pure Cotton Black T-Shirt",
+      "brand": "LEVI'S",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Short Sleeves, Tag Free Comfort & Smartskin Technology Style# 025 Cotton Men Solid Round Neck Pure Cotton Black T-Shirt",
+      "price": 357,
+      "discount": 649,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 4
+        },
+        {
+          "size": "M",
+          "stock": 6
+        },
+        {
+          "size": "L",
+          "stock": 15
+        },
+        {
+          "size": "XL",
+          "stock": 5
+        }
       ],
       "colors": [
         "Blue",
@@ -1787,11 +1887,14 @@
         }
       ],
       "images": [
-        "men/tshirts/item-3/featured/item-3-front"
+        "men/tshirts/tshirt-7/featured/tshirt-7-front",
+        "men/tshirts/tshirt-7/tshirt-7-front-full",
+        "men/tshirts/tshirt-7/tshirt-7-back-full",
+        "men/tshirts/tshirt-7/tshirt-7-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -1804,20 +1907,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-4",
-      "name": "Men Tshirts Item 4",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-144",
+      "name": "Men Colorblock Polo Neck Pure Cotton Black, Orange T-Shirt",
+      "brand": "LEVI'S",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Men Colorblock Polo Neck Pure Cotton Black, Orange T-Shirt",
+      "price": 1475,
+      "discount": 1799,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "stock": 6
+        },
+        {
+          "size": "XL",
+          "stock": 8
+        }
       ],
       "colors": [
         "Blue",
@@ -1906,13 +2021,16 @@
         }
       ],
       "images": [
-        "men/tshirts/item-4/featured/item-4-front"
+        "men/tshirts/tshirt-8/featured/tshirt-8-front",
+        "men/tshirts/tshirt-8/tshirt-8-front-full",
+        "men/tshirts/tshirt-8/tshirt-8-back-full",
+        "men/tshirts/tshirt-8/tshirt-8-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
       "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "ratings": 4.2,
+      "reviewsCount": 238,
       "tags": [
         "summer",
         "casual",
@@ -1923,20 +2041,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-5",
-      "name": "Men Tshirts Item 5",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-145",
+      "name": "Men Printed Crew Neck Pure Cotton Navy Blue T-Shirt",
+      "brand": "LEVI'S",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Men Printed Crew Neck Pure Cotton Navy Blue T-Shirt",
+      "price": 549,
+      "discount": 1099,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 6
+        },
+        {
+          "size": "L",
+          "stock": 11
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -2025,13 +2155,16 @@
         }
       ],
       "images": [
-        "men/tshirts/item-5/featured/item-5-front"
+        "men/tshirts/tshirt-9/featured/tshirt-9-front",
+        "men/tshirts/tshirt-9/tshirt-9-front-full",
+        "men/tshirts/tshirt-9/tshirt-9-back-full",
+        "men/tshirts/tshirt-9/tshirt-9-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 4.2,
+      "reviewsCount": 110,
       "tags": [
         "summer",
         "casual",
@@ -2042,20 +2175,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-6",
-      "name": "Men Tshirts Item 6",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-146",
+      "name": "Men Colorblock Polo Neck Cotton Blend White T-Shirt",
+      "brand": "Allen Solly ",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Men Colorblock Polo Neck Cotton Blend White T-Shirt",
+      "price": 650,
+      "discount": 1199,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 6
+        },
+        {
+          "size": "L",
+          "stock": 11
+        },
+        {
+          "size": "XL",
+          "stock": 4
+        }
       ],
       "colors": [
         "Blue",
@@ -2144,13 +2289,16 @@
         }
       ],
       "images": [
-        "men/tshirts/item-6/featured/item-6-front"
+        "men/tshirts/tshirt-10/featured/tshirt-10-front",
+        "men/tshirts/tshirt-10/tshirt-10-front-full",
+        "men/tshirts/tshirt-10/tshirt-10-back-full",
+        "men/tshirts/tshirt-10/tshirt-10-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 4.3,
+      "reviewsCount": 2223,
       "tags": [
         "summer",
         "casual",
@@ -2161,20 +2309,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-7",
-      "name": "Men Tshirts Item 7",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-147",
+      "name": "Men Solid Polo Neck Pure Cotton Beige T-Shirt",
+      "brand": "WROGN",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Men Solid Polo Neck Pure Cotton Beige T-Shirt",
+      "price": 499,
+      "discount": 1199,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 6
+        },
+        {
+          "size": "L",
+          "stock": 11
+        },
+        {
+          "size": "XL",
+          "stock": 4
+        }
       ],
       "colors": [
         "Blue",
@@ -2263,11 +2423,14 @@
         }
       ],
       "images": [
-        "men/tshirts/item-7/featured/item-7-front"
+        "men/tshirts/tshirt-11/featured/tshirt-11-front",
+        "men/tshirts/tshirt-11/tshirt-11-front-full",
+        "men/tshirts/tshirt-11/tshirt-11-back-full",
+        "men/tshirts/tshirt-11/tshirt-11-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -2386,7 +2549,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -2505,7 +2668,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -2624,7 +2787,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -2647,10 +2810,22 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+         {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 6
+        },
+        {
+          "size": "L",
+          "stock": 11
+        },
+        {
+          "size": "XL",
+          "stock": 4
+        }
       ],
       "colors": [
         "Blue",
@@ -2743,7 +2918,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -2862,7 +3037,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -2981,7 +3156,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -3100,7 +3275,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -3219,7 +3394,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -3338,7 +3513,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -3457,7 +3632,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -3576,7 +3751,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -3695,7 +3870,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -3814,7 +3989,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -3933,7 +4108,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -4052,7 +4227,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -4171,7 +4346,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -4290,7 +4465,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -4409,7 +4584,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -4528,7 +4703,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -4647,7 +4822,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -4766,7 +4941,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -4885,7 +5060,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5004,7 +5179,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5123,7 +5298,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5242,7 +5417,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5361,7 +5536,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5480,7 +5655,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5599,7 +5774,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5718,7 +5893,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5837,7 +6012,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -5956,7 +6131,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -6075,7 +6250,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -6194,7 +6369,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -6313,7 +6488,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -6432,7 +6607,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -6551,7 +6726,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -6670,7 +6845,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -6789,7 +6964,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -6908,7 +7083,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -7027,7 +7202,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -7146,7 +7321,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -7265,7 +7440,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -7384,7 +7559,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -7397,20 +7572,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-51",
-      "name": "Women Tshirts Item 1",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-51",
+      "name": "Women Solid Polo Neck Pure Cotton Orange T-Shirt",
+      "brand": "LEVI'S ",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Women Solid Polo Neck Pure Cotton Orange T-Shirt",
+      "price": 720,
+      "discount": 1399,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "S",
+          "stock": 0
+        },
+        {
+          "size": "M",
+          "stock": 0
+        },
+        {
+          "size": "L",
+          "stock": 2
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -7499,13 +7686,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-1/featured/item-1-front"
+        "women/tshirts/tshirt-1/featured/tshirt-1-front",
+        "women/tshirts/tshirt-1/tshirt-1-front-full",
+        "women/tshirts/tshirt-1/tshirt-1-back-full",
+        "women/tshirts/tshirt-1/tshirt-1-neck-full"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
+      "isFeatured": true,
+      "isTrending": false,
       "ratings": 4.5,
-      "reviewsCount": 72,
+      "reviewsCount": 99,
       "tags": [
         "summer",
         "casual",
@@ -7516,20 +7706,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-52",
-      "name": "Women Tshirts Item 2",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-52",
+      "name": "Women Printed Round Neck Pure Cotton Black T-Shirt",
+      "brand": "LEVI'S ",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Women Printed Round Neck Pure Cotton Black T-Shirt",
+      "price": 561,
+      "discount": 1299,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+      {
+          "size": "S",
+          "stock": 0
+        },
+        {
+          "size": "M",
+          "stock": 0
+        },
+        {
+          "size": "L",
+          "stock": 2
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -7618,13 +7820,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-2/featured/item-2-front"
+        "women/tshirts/tshirt-2/featured/tshirt-2-front",
+        "women/tshirts/tshirt-2/tshirt-2-front-full",
+        "women/tshirts/tshirt-2/tshirt-2-back-full",
+        "women/tshirts/tshirt-2/tshirt-2-neck-full"
       ],
       "isAvailable": true,
-      "isFeatured": false,
+      "isFeatured": true,
       "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "ratings": 4.2,
+      "reviewsCount": 120,
       "tags": [
         "summer",
         "casual",
@@ -7635,20 +7840,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-53",
-      "name": "Women Tshirts Item 3",
+      "id": "p-53",
+      "name": "Women Solid Polo Neck Cotton Blend White T-Shirt",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Women Solid Polo Neck Cotton Blend White T-Shirt",
+      "price": 1347,
+      "discount": 1749,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 1
+        },
+        {
+          "size": "L",
+          "stock": 2
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -7737,13 +7954,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-3/featured/item-3-front"
+        "women/tshirts/tshirt-3/featured/tshirt-3-front",
+        "women/tshirts/tshirt-3/tshirt-3-front-full",
+        "women/tshirts/tshirt-3/tshirt-3-back-full",
+        "women/tshirts/tshirt-3/tshirt-3-neck-full"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 4.7,
+      "reviewsCount": 9,
       "tags": [
         "summer",
         "casual",
@@ -7754,20 +7974,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-54",
-      "name": "Women Tshirts Item 4",
+      "id": "p-54",
+      "name": "Women Printed, Typography Round Neck Cotton Blend Green T-Shirt",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
+      "description": "Women Printed, Typography Round Neck Cotton Blend Green T-Shirt",
       "price": 749,
-      "discount": 1499,
+      "discount": 999,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "stock": 2
+        },
+        {
+          "size": "XL",
+          "stock": 19
+        }
       ],
       "colors": [
         "Blue",
@@ -7856,13 +8088,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-4/featured/item-4-front"
+        "women/tshirts/tshirt-4/featured/tshirt-4-front",
+        "women/tshirts/tshirt-4/tshirt-4-front-full",
+        "women/tshirts/tshirt-4/tshirt-4-back-full",
+        "women/tshirts/tshirt-4/tshirt-4-neck-full"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 3.5,
+      "reviewsCount": 8,
       "tags": [
         "summer",
         "casual",
@@ -7873,20 +8108,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-55",
-      "name": "Women Tshirts Item 5",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-55",
+      "name": "Women Solid Boat Neck Pure Cotton Yellow T-Shirt",
+      "brand": "Roadster ",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Women Solid Boat Neck Pure Cotton Yellow T-Shirt",
+      "price": 229,
+      "discount": 999,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "S",
+          "stock": 5
+        },
+        {
+          "size": "M",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -7975,13 +8222,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-5/featured/item-5-front"
+        "women/tshirts/tshirt-5/featured/tshirt-5-front",
+        "women/tshirts/tshirt-5/tshirt-5-front-full",
+        "women/tshirts/tshirt-5/tshirt-5-back-full",
+        "women/tshirts/tshirt-5/tshirt-5-neck-full"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 4.3,
+      "reviewsCount": 2330,
       "tags": [
         "summer",
         "casual",
@@ -7992,20 +8242,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-56",
-      "name": "Women Tshirts Item 6",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-56",
+      "name": "Women Printed Round Neck Pure Cotton Purple T-Shirt",
+      "brand": "Roadster",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Women Printed Round Neck Pure Cotton Purple T-Shirt",
+      "price": 309,
+      "discount": 999,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 5
+        },
+        {
+          "size": "M",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -8093,14 +8355,17 @@
           ]
         }
       ],
-      "images": [
-        "women/tshirts/item-6/featured/item-6-front"
+      "images": [ 
+        "women/tshirts/tshirt-6/featured/tshirt-6-front",
+        "women/tshirts/tshirt-6/tshirt-6-front-full",
+        "women/tshirts/tshirt-6/tshirt-6-back-full",
+        "women/tshirts/tshirt-6/tshirt-6-neck-full"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 4,
+      "reviewsCount": 83,
       "tags": [
         "summer",
         "casual",
@@ -8111,20 +8376,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-57",
-      "name": "Women Tshirts Item 7",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-57",
+      "name": "Women Self Design Round Neck Cotton Blend Yellow T-Shirt",
+      "brand": "HRX by Hrithik Roshan",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Women Self Design Round Neck Cotton Blend Yellow T-Shirt",
+      "price": 447,
+      "discount": 699,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "stock": 19
+        }
       ],
       "colors": [
         "Blue",
@@ -8213,13 +8490,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-7/featured/item-7-front"
+        "women/tshirts/tshirt-7/featured/tshirt-7-front",
+        "women/tshirts/tshirt-7/tshirt-7-front-full",
+        "women/tshirts/tshirt-7/tshirt-7-back-full",
+        "women/tshirts/tshirt-7/tshirt-7-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
       "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "ratings": 4,
+      "reviewsCount": 64,
       "tags": [
         "summer",
         "casual",
@@ -8230,20 +8510,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-58",
-      "name": "Women Tshirts Item 8",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-58",
+      "name": "Women Printed Round Neck Pure Cotton Black T-Shirt",
+      "brand": "HRX by Hrithik Roshan",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Women Printed Round Neck Pure Cotton Black T-Shirt",
+      "price": 230,
+      "discount": 699,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 0
+        },
+        {
+          "size": "L",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -8332,13 +8624,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-8/featured/item-8-front"
+        "women/tshirts/tshirt-8/featured/tshirt-8-front",
+        "women/tshirts/tshirt-8/tshirt-8-front-full",
+        "women/tshirts/tshirt-8/tshirt-8-back-full",
+        "women/tshirts/tshirt-8/tshirt-8-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 4.2,
+      "reviewsCount": 22,
       "tags": [
         "summer",
         "casual",
@@ -8349,20 +8644,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-59",
-      "name": "Women Tshirts Item 9",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-59",
+      "name": "Women Solid Round Neck Pure Cotton Orange T-Shirt",
+      "brand": "BEWAKOOF",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Women Solid Round Neck Pure Cotton Orange T-Shirt",
+      "price": 414,
+      "discount": 699,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 0
+        },
+        {
+          "size": "L",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -8451,13 +8758,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-9/featured/item-9-front"
+        "women/tshirts/tshirt-9/featured/tshirt-9-front",
+        "women/tshirts/tshirt-9/tshirt-9-front-full",
+        "women/tshirts/tshirt-9/tshirt-9-back-full",
+        "women/tshirts/tshirt-9/tshirt-9-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 4.2,
+      "reviewsCount": 680,
       "tags": [
         "summer",
         "casual",
@@ -8468,20 +8778,32 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-60",
-      "name": "Women Tshirts Item 10",
-      "brand": "U.S. POLO ASSN.",
+      "id": "p-60",
+      "name": "Oversized Women Solid Round Neck Pure Cotton Black T-Shirt",
+      "brand": "BEWAKOOF",
       "category": "Clothing",
       "subCategory": "tshirts",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Oversized Women Solid Round Neck Pure Cotton Black T-Shirt",
+      "price": 499,
+      "discount": 849,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "stock": 2
+        },
+        {
+          "size": "XL",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -8570,13 +8892,16 @@
         }
       ],
       "images": [
-        "women/tshirts/item-10/featured/item-10-front"
+        "women/tshirts/tshirt-10/featured/tshirt-10-front",
+        "women/tshirts/tshirt-10/tshirt-10-front-full",
+        "women/tshirts/tshirt-10/tshirt-10-back-full",
+        "women/tshirts/tshirt-10/tshirt-10-neck-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 4.2,
+      "reviewsCount": 89,
       "tags": [
         "summer",
         "casual",
@@ -8693,7 +9018,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -8812,7 +9137,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -8931,7 +9256,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -9050,7 +9375,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -9169,7 +9494,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -9288,7 +9613,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -9407,7 +9732,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -9526,7 +9851,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -9645,7 +9970,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -9764,7 +10089,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -9883,7 +10208,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10002,7 +10327,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10121,7 +10446,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10240,7 +10565,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10359,7 +10684,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10478,7 +10803,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10597,7 +10922,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10716,7 +11041,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10835,7 +11160,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -10954,7 +11279,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -11073,7 +11398,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -11192,7 +11517,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -11311,7 +11636,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -11430,7 +11755,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -11549,7 +11874,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -11668,7 +11993,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -11787,7 +12112,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -11906,7 +12231,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12025,7 +12350,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12144,7 +12469,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12263,7 +12588,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12382,7 +12707,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12501,7 +12826,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12620,7 +12945,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12739,7 +13064,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12858,7 +13183,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -12977,7 +13302,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -13096,7 +13421,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -13215,7 +13540,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -13334,7 +13659,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -13347,7 +13672,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-101",
+      "id": "p-101",
       "name": "Kids Dresses Item 1",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -13357,10 +13682,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -13452,8 +13793,8 @@
         "kids/dresses/item-1/featured/item-1-front"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
+      "isFeatured": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -13466,7 +13807,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-102",
+      "id": "p-102",
       "name": "Kids Dresses Item 2",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -13476,10 +13817,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -13571,10 +13928,10 @@
         "kids/dresses/item-2/featured/item-2-front"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 4,
+      "reviewsCount": 62,
       "tags": [
         "summer",
         "casual",
@@ -13585,7 +13942,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-103",
+      "id": "p-103",
       "name": "Kids Dresses Item 3",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -13595,10 +13952,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -13690,10 +14063,10 @@
         "kids/dresses/item-3/featured/item-3-front"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
+      "isFeatured": true,
+      "isTrending": false,
       "ratings": 4.5,
-      "reviewsCount": 72,
+      "reviewsCount": 52,
       "tags": [
         "summer",
         "casual",
@@ -13704,7 +14077,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-104",
+      "id": "p-104",
       "name": "Kids Dresses Item 4",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -13714,10 +14087,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -13809,10 +14198,10 @@
         "kids/dresses/item-4/featured/item-4-front"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 5,
+      "reviewsCount": 456,
       "tags": [
         "summer",
         "casual",
@@ -13823,7 +14212,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-105",
+      "id": "p-105",
       "name": "Kids Dresses Item 5",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -13833,10 +14222,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -13928,10 +14333,10 @@
         "kids/dresses/item-5/featured/item-5-front"
       ],
       "isAvailable": true,
-      "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isFeatured": true,
+      "isTrending": false,
+      "ratings": 5,
+      "reviewsCount": 534,
       "tags": [
         "summer",
         "casual",
@@ -13942,7 +14347,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-106",
+      "id": "p-106",
       "name": "Kids Dresses Item 6",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -13952,10 +14357,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -14048,9 +14469,9 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 4,
+      "reviewsCount": 7,
       "tags": [
         "summer",
         "casual",
@@ -14061,7 +14482,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-107",
+      "id": "p-107",
       "name": "Kids Dresses Item 7",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -14071,10 +14492,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -14167,9 +14604,9 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 3.9,
+      "reviewsCount": 45,
       "tags": [
         "summer",
         "casual",
@@ -14180,7 +14617,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-108",
+      "id": "p-108",
       "name": "Kids Dresses Item 8",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -14190,10 +14627,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -14286,9 +14739,9 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 3,
+      "reviewsCount": 12,
       "tags": [
         "summer",
         "casual",
@@ -14299,7 +14752,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-109",
+      "id": "p-109",
       "name": "Kids Dresses Item 9",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -14309,10 +14762,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+      {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -14405,9 +14874,9 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 5,
+      "reviewsCount": 89,
       "tags": [
         "summer",
         "casual",
@@ -14418,7 +14887,7 @@
       "updatedAt": "2025-08-02T08:52:17.326361"
     },
     {
-      "id": "prod-110",
+      "id": "p-110",
       "name": "Kids Dresses Item 10",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
@@ -14428,10 +14897,26 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
+       {
+          "size": "0-1",
+          "stock": 0
+        },
+        {
+          "size": "1-2",
+          "stock": 0
+        },
+        {
+          "size": "2-3",
+          "stock": 2
+        },
+        {
+          "size": "3-4",
+          "stock": 9
+        },
+        {
+          "size": "4-5",
+          "stock": 9
+        }
       ],
       "colors": [
         "Blue",
@@ -14524,9 +15009,9 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "isTrending": false,
+      "ratings": 4,
+      "reviewsCount": 23,
       "tags": [
         "summer",
         "casual",
@@ -14643,7 +15128,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -14762,7 +15247,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -14881,7 +15366,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15000,7 +15485,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15119,7 +15604,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15238,7 +15723,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15357,7 +15842,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15476,7 +15961,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15595,7 +16080,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15714,7 +16199,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15833,7 +16318,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -15952,7 +16437,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -16071,7 +16556,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -16190,7 +16675,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -16309,7 +16794,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -16428,7 +16913,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -16547,7 +17032,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -16666,7 +17151,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -16785,7 +17270,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [
@@ -16904,7 +17389,7 @@
       ],
       "isAvailable": true,
       "isFeatured": false,
-      "isTrending": true,
+      "isTrending": false,
       "ratings": 4.5,
       "reviewsCount": 72,
       "tags": [

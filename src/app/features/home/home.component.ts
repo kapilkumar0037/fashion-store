@@ -26,16 +26,25 @@ export default class HomeComponent {
   featuredAudience: IFeaturedAudience[] = [];
   featuredTestimonials: IFeaturedTestimonials[] = [];
   featuredProducts: IFashionProduct[] = [];
+  trendingProducts: IFashionProduct[] = [];
+  trendingTabs = [
+    { labelText: 'Men', value: 'men' },
+    { labelText: 'Women', value: 'women' },
+    { labelText: 'Kids', value: 'kids' },
+    { labelText: 'Accessories', value: 'accessories' }
 
+  ]
 
   ngOnInit() {
     this.getAudience();
     this.getTestimonials();
     this.getFeatureProducts(this.selectedTab);
+    this.getTrendingProducts();
   }
 
   onTabChange(_selectedTab: string) {
     this.selectedTab = _selectedTab;
+    this.getFeatureProducts(this.selectedTab);
   }
 
   getAudience() {
@@ -64,6 +73,17 @@ export default class HomeComponent {
     this.homeService.getFeatureProducts(audience).subscribe({
       next: (products) => {
         this.featuredProducts = products;
+      },
+      error: (error) => {
+        console.error('Error fetching featured products:', error);
+      }
+    });
+  }
+
+    getTrendingProducts() {
+    this.homeService.getTrendingProducts().subscribe({
+      next: (products) => {
+        this.trendingProducts = products;
       },
       error: (error) => {
         console.error('Error fetching featured products:', error);
