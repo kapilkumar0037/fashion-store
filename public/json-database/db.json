@@ -13673,22 +13673,22 @@
     },
     {
       "id": "p-101",
-      "name": "Kids Dresses Item 1",
-      "brand": "U.S. POLO ASSN.",
+      "name": "Girls Maxi/Full Length Party Dress  (Purple, 3/4 Sleeve)",
+      "brand": "Aarya Designer ",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Girls Maxi/Full Length Party Dress  (Purple, 3/4 Sleeve)",
+      "price": 345,
+      "discount": 1299,
       "currency": "INR",
       "sizes": [
         {
           "size": "0-1",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
@@ -13700,7 +13700,7 @@
         },
         {
           "size": "4-5",
-          "stock": 9
+          "stock": 19
         }
       ],
       "colors": [
@@ -13790,13 +13790,16 @@
         }
       ],
       "images": [
-        "kids/dresses/item-1/featured/item-1-front"
+        "kids/dresses/dress-1/featured/dress-1-front",
+        "kids/dresses/dress-1/dress-1-front-full",
+        "kids/dresses/dress-1/dress-1-back-full"
+
       ],
       "isAvailable": true,
       "isFeatured": true,
       "isTrending": false,
-      "ratings": 4.5,
-      "reviewsCount": 72,
+      "ratings": 3.7,
+      "reviewsCount": 320,
       "tags": [
         "summer",
         "casual",
@@ -13808,22 +13811,22 @@
     },
     {
       "id": "p-102",
-      "name": "Kids Dresses Item 2",
+      "name": "Girls Midi/Knee Length Casual Dress  (Multicolor, Sleeveless)",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Girls Midi/Knee Length Casual Dress  (Multicolor, Sleeveless)",
+      "price": 1049,
+      "discount": 1999,
       "currency": "INR",
       "sizes": [
         {
           "size": "0-1",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
@@ -13835,7 +13838,7 @@
         },
         {
           "size": "4-5",
-          "stock": 9
+          "stock": 19
         }
       ],
       "colors": [
@@ -13925,13 +13928,15 @@
         }
       ],
       "images": [
-        "kids/dresses/item-2/featured/item-2-front"
+        "kids/dresses/dress-2/featured/dress-2-front",
+        "kids/dresses/dress-2/dress-2-front-full",
+        "kids/dresses/dress-2/dress-2-back-full"
       ],
       "isAvailable": true,
       "isFeatured": true,
       "isTrending": false,
-      "ratings": 4,
-      "reviewsCount": 62,
+      "ratings": 4.3,
+      "reviewsCount": 27,
       "tags": [
         "summer",
         "casual",
@@ -13943,13 +13948,13 @@
     },
     {
       "id": "p-103",
-      "name": "Kids Dresses Item 3",
+      "name": "Girls Mini/Short Casual Dress  (Pink, Sleeveless)",
       "brand": "U.S. POLO ASSN.",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Girls Mini/Short Casual Dress  (Pink, Sleeveless)",
+      "price": 1234,
+      "discount": 1899,
       "currency": "INR",
       "sizes": [
         {
@@ -13958,7 +13963,7 @@
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
@@ -13970,7 +13975,7 @@
         },
         {
           "size": "4-5",
-          "stock": 9
+          "stock": 19
         }
       ],
       "colors": [
@@ -14060,7 +14065,9 @@
         }
       ],
       "images": [
-        "kids/dresses/item-3/featured/item-3-front"
+        "kids/dresses/dress-3/featured/dress-3-front",
+        "kids/dresses/dress-3/dress-3-front-full",
+        "kids/dresses/dress-3/dress-3-back-full"
       ],
       "isAvailable": true,
       "isFeatured": true,
@@ -14078,22 +14085,22 @@
     },
     {
       "id": "p-104",
-      "name": "Kids Dresses Item 4",
-      "brand": "U.S. POLO ASSN.",
+      "name": "Girls Midi/Knee Length Casual Dress  (Pink, Half Sleeve)",
+      "brand": "MAX",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Girls Midi/Knee Length Casual Dress  (Pink, Half Sleeve)",
+      "price": 479,
+      "discount": 599,
       "currency": "INR",
       "sizes": [
        {
           "size": "0-1",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
@@ -14105,7 +14112,7 @@
         },
         {
           "size": "4-5",
-          "stock": 9
+          "stock": 19
         }
       ],
       "colors": [
@@ -14195,13 +14202,15 @@
         }
       ],
       "images": [
-        "kids/dresses/item-4/featured/item-4-front"
+        "kids/dresses/dress-4/featured/dress-4-front",
+        "kids/dresses/dress-4/dress-4-front-full",
+        "kids/dresses/dress-4/dress-4-back-full"
       ],
       "isAvailable": true,
       "isFeatured": true,
       "isTrending": false,
-      "ratings": 5,
-      "reviewsCount": 456,
+      "ratings": 4.5,
+      "reviewsCount": 224,
       "tags": [
         "summer",
         "casual",
@@ -14213,13 +14222,13 @@
     },
     {
       "id": "p-105",
-      "name": "Kids Dresses Item 5",
-      "brand": "U.S. POLO ASSN.",
+      "name": "Girls Below Knee Casual Dress  (Pink, Half Sleeve)",
+      "brand": "MAX",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
+      "description": "Girls Below Knee Casual Dress  (Pink, Half Sleeve)",
       "price": 749,
-      "discount": 1499,
+      "discount": 899,
       "currency": "INR",
       "sizes": [
        {
@@ -14228,7 +14237,7 @@
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
@@ -14236,7 +14245,7 @@
         },
         {
           "size": "3-4",
-          "stock": 9
+          "stock": 19
         },
         {
           "size": "4-5",
@@ -14330,7 +14339,9 @@
         }
       ],
       "images": [
-        "kids/dresses/item-5/featured/item-5-front"
+        "kids/dresses/dress-5/featured/dress-5-front",
+        "kids/dresses/dress-5/dress-5-front-full",
+        "kids/dresses/dress-5/dress-5-back-full"
       ],
       "isAvailable": true,
       "isFeatured": true,

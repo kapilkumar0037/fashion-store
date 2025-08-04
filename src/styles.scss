@@ -1752,6 +1752,11 @@ hr {
             font-size: 16px;
             font-weight: 400;
             margin-bottom: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* width: 100px; */
+            display: block;
           }
         }
         .properties-footer {

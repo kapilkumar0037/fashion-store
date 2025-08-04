@@ -30,9 +30,7 @@ export default class HomeComponent {
   trendingTabs = [
     { labelText: 'Men', value: 'men' },
     { labelText: 'Women', value: 'women' },
-    { labelText: 'Kids', value: 'kids' },
-    { labelText: 'Accessories', value: 'accessories' }
-
+    { labelText: 'Kids', value: 'kids' }
   ]
 
   ngOnInit() {

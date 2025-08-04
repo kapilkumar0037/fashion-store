@@ -2,9 +2,10 @@ import { Component, HostListener, inject, input } from '@angular/core';
 import { IFashionProduct } from '@shared/models/general.models';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ImageComponent } from "../image/image.component";
+import { DecimalPipe } from '@angular/common';
 @Component({
   selector: 'app-carousel',
-  imports: [CarouselModule, ImageComponent],
+  imports: [CarouselModule, ImageComponent, DecimalPipe],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'
 })
