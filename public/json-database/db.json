@@ -2319,7 +2319,7 @@
       "discount": 1199,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "S",
           "stock": 10
         },
@@ -2810,7 +2810,7 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-         {
+        {
           "size": "S",
           "stock": 10
         },
@@ -7582,7 +7582,7 @@
       "discount": 1399,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "S",
           "stock": 0
         },
@@ -7716,7 +7716,7 @@
       "discount": 1299,
       "currency": "INR",
       "sizes": [
-      {
+        {
           "size": "S",
           "stock": 0
         },
@@ -7850,7 +7850,7 @@
       "discount": 1749,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "S",
           "stock": 10
         },
@@ -7984,7 +7984,7 @@
       "discount": 999,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "S",
           "stock": 10
         },
@@ -8118,7 +8118,7 @@
       "discount": 999,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "S",
           "stock": 5
         },
@@ -8355,7 +8355,7 @@
           ]
         }
       ],
-      "images": [ 
+      "images": [
         "women/tshirts/tshirt-6/featured/tshirt-6-front",
         "women/tshirts/tshirt-6/tshirt-6-front-full",
         "women/tshirts/tshirt-6/tshirt-6-back-full",
@@ -8386,7 +8386,7 @@
       "discount": 699,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "S",
           "stock": 10
         },
@@ -8520,7 +8520,7 @@
       "discount": 699,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "S",
           "stock": 10
         },
@@ -8788,7 +8788,7 @@
       "discount": 849,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "S",
           "stock": 10
         },
@@ -13793,7 +13793,6 @@
         "kids/dresses/dress-1/featured/dress-1-front",
         "kids/dresses/dress-1/dress-1-front-full",
         "kids/dresses/dress-1/dress-1-back-full"
-
       ],
       "isAvailable": true,
       "isFeatured": true,
@@ -14094,7 +14093,7 @@
       "discount": 599,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "0-1",
           "stock": 10
         },
@@ -14231,7 +14230,7 @@
       "discount": 899,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "0-1",
           "stock": 0
         },
@@ -14359,16 +14358,16 @@
     },
     {
       "id": "p-106",
-      "name": "Kids Dresses Item 6",
-      "brand": "U.S. POLO ASSN.",
+      "name": "Girls Midi/Knee Length Casual Dress  (Dark Blue, Sleeveless)",
+      "brand": "Klowvila Fashion ",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Girls Midi/Knee Length Casual Dress  (Dark Blue, Sleeveless)",
+      "price": 286,
+      "discount": 999,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "0-1",
           "stock": 0
         },
@@ -14476,13 +14475,15 @@
         }
       ],
       "images": [
-        "kids/dresses/item-6/featured/item-6-front"
+        "kids/dresses/dress-6/featured/dress-6-front",
+        "kids/dresses/dress-6/dress-6-front-full",
+        "kids/dresses/dress-6/dress-6-back-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
       "isTrending": false,
-      "ratings": 4,
-      "reviewsCount": 7,
+      "ratings": 3.9,
+      "reviewsCount": 1136,
       "tags": [
         "summer",
         "casual",
@@ -14494,26 +14495,26 @@
     },
     {
       "id": "p-107",
-      "name": "Kids Dresses Item 7",
-      "brand": "U.S. POLO ASSN.",
+      "name": "Girls Midi/Knee Length Casual Dress  (Dark Blue, Sleeveless)",
+      "brand": "SHANAYA MODA ",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Girls Midi/Knee Length Casual Dress  (Dark Blue, Sleeveless)",
+      "price": 336,
+      "discount": 999,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "0-1",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
-          "stock": 2
+          "stock": 12
         },
         {
           "size": "3-4",
@@ -14611,13 +14612,15 @@
         }
       ],
       "images": [
-        "kids/dresses/item-7/featured/item-7-front"
+        "kids/dresses/dress-7/featured/dress-7-front",
+        "kids/dresses/dress-7/dress-7-front-full",
+        "kids/dresses/dress-7/dress-7-back-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
       "isTrending": false,
-      "ratings": 3.9,
-      "reviewsCount": 45,
+      "ratings": 4,
+      "reviewsCount": 336,
       "tags": [
         "summer",
         "casual",
@@ -14638,7 +14641,7 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "0-1",
           "stock": 0
         },
@@ -14773,7 +14776,7 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-      {
+        {
           "size": "0-1",
           "stock": 0
         },
@@ -14908,7 +14911,7 @@
       "discount": 1499,
       "currency": "INR",
       "sizes": [
-       {
+        {
           "size": "0-1",
           "stock": 0
         },
