@@ -14632,30 +14632,30 @@
     },
     {
       "id": "p-108",
-      "name": "Kids Dresses Item 8",
-      "brand": "U.S. POLO ASSN.",
+      "name": "Below Knee Casual Dress  (Multicolor, Sleeveless)",
+      "brand": "Alisha Moda ",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Below Knee Casual Dress  (Multicolor, Sleeveless)",
+      "price": 285,
+      "discount": 999,
       "currency": "INR",
       "sizes": [
         {
           "size": "0-1",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
-          "stock": 2
+          "stock": 12
         },
         {
           "size": "3-4",
-          "stock": 9
+          "stock": 19
         },
         {
           "size": "4-5",
@@ -14749,7 +14749,9 @@
         }
       ],
       "images": [
-        "kids/dresses/item-8/featured/item-8-front"
+        "kids/dresses/dress-8/featured/dress-8-front",
+        "kids/dresses/dress-8/dress-8-front-full",
+        "kids/dresses/dress-8/dress-8-back-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
@@ -14767,30 +14769,30 @@
     },
     {
       "id": "p-109",
-      "name": "Kids Dresses Item 9",
-      "brand": "U.S. POLO ASSN.",
+      "name": "Girls Midi/Knee Length Casual Dress  (Black, Half Sleeve)",
+      "brand": "HouseOfCommon",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
-      "price": 749,
-      "discount": 1499,
+      "description": "Girls Midi/Knee Length Casual Dress  (Black, Half Sleeve)",
+      "price": 317,
+      "discount": 1599,
       "currency": "INR",
       "sizes": [
         {
           "size": "0-1",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
-          "stock": 2
+          "stock": 12
         },
         {
           "size": "3-4",
-          "stock": 9
+          "stock": 19
         },
         {
           "size": "4-5",
@@ -14884,12 +14886,14 @@
         }
       ],
       "images": [
-        "kids/dresses/item-9/featured/item-9-front"
+        "kids/dresses/dress-9/featured/dress-9-front",
+        "kids/dresses/dress-9/dress-9-front-full",
+        "kids/dresses/dress-9/dress-9-back-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
       "isTrending": false,
-      "ratings": 5,
+      "ratings": 3.8,
       "reviewsCount": 89,
       "tags": [
         "summer",
@@ -14902,26 +14906,26 @@
     },
     {
       "id": "p-110",
-      "name": "Kids Dresses Item 10",
-      "brand": "U.S. POLO ASSN.",
+      "name": "Daisy Girls Calf Length Casual Dress  (Multicolor, Short Sleeve)",
+      "brand": "ETTUKITTU",
       "category": "Clothing",
       "subCategory": "dresses",
-      "description": "A stylish item from our collection.",
+      "description": "Daisy Girls Calf Length Casual Dress  (Multicolor, Short Sleeve)",
       "price": 749,
       "discount": 1499,
       "currency": "INR",
       "sizes": [
         {
           "size": "0-1",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "1-2",
-          "stock": 0
+          "stock": 10
         },
         {
           "size": "2-3",
-          "stock": 2
+          "stock": 21
         },
         {
           "size": "3-4",
@@ -15019,13 +15023,15 @@
         }
       ],
       "images": [
-        "kids/dresses/item-10/featured/item-10-front"
+        "kids/dresses/dress-10/featured/dress-10-front",
+        "kids/dresses/dress-10/dress-10-front-full",
+        "kids/dresses/dress-10/dress-10-back-full"
       ],
       "isAvailable": true,
       "isFeatured": false,
       "isTrending": false,
       "ratings": 4,
-      "reviewsCount": 23,
+      "reviewsCount": 123,
       "tags": [
         "summer",
         "casual",
