@@ -13,7 +13,7 @@
     <div class="row justify-content-between">
       <div class="col-xl-12">
         <div class="nav-button">
-          <!--Nav Button  -->
+      
           <nav>
             <div class="nav-tittle">
               <h2>Trending This Week</h2>
@@ -24,27 +24,13 @@
                 aria-selected="true" [class.active]="selectedTab=== tab.value"
                 (click)="onTabChange(tab.value)">{{tab.labelText}}</a>
               }
-              <!-- <a class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" href="#nav-one" role="tab"
-                aria-controls="nav-one" aria-selected="true" [class.active]="selectedTab==='men'"
-                (click)="onTabChange('men')">Men</a>
-              <a class="nav-link" id="nav-two-tab" data-bs-toggle="tab" href="#nav-two" role="tab"
-                aria-controls="nav-two" aria-selected="false" [class.active]="selectedTab==='women'"
-                (click)="onTabChange('women')">Women</a>
-              <a class="nav-link" id="nav-three-tab" data-bs-toggle="tab" href="#nav-three" role="tab"
-                aria-controls="nav-three" aria-selected="false" [class.active]="selectedTab==='baby'"
-                (click)="onTabChange('kids')">Kids</a> -->
-              <!-- <a class="nav-link" id="nav-four-tab" data-bs-toggle="tab" href="#nav-four" role="tab"
-                aria-controls="nav-four" aria-selected="false" [class.active]="selectedTab==='fashion'"
-                (click)="onTabChange('fashion')">Fashion</a> -->
             </div>
           </nav>
-          <!--End Nav Button  -->
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <!-- Nav Card -->
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
         <div class="latest-items">
@@ -78,7 +64,6 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="cl-xl-7 col-lg-8 col-md-10">
-        <!-- Section Tittle -->
         <div class="section-tittle text-center mb-40">
           <h2>Latest News</h2>
         </div>
