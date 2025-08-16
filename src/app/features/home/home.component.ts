@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
 import {
   BlogCardComponent, CarouselComponent,
   FeaturedAudienceComponent,
@@ -7,10 +8,14 @@ import {
 } from '@shared/index';
 import { HomeService } from './services/home.service';
 import { IFashionProduct, IFeaturedAudience, IFeaturedTestimonials } from '@shared/models/general.models';
+import { Store } from '@ngrx/store';
+import { selectFeaturedProducts, selectTrendingProducts } from '@shared/store/product/product.selector';
+import { loadProducts, getFeaturedProducts, getTrendingProducts } from '@shared/store/product/product.actions';
 
 @Component({
   selector: 'app-home',
   imports: [
+    AsyncPipe,
     FeaturedCarouselComponent,
     TestimonialCarouselComponent,
     CarouselComponent,
@@ -22,11 +27,12 @@ import { IFashionProduct, IFeaturedAudience, IFeaturedTestimonials } from '@shar
 })
 export default class HomeComponent {
   selectedTab = 'men'
+  private store = inject(Store);
   homeService = inject(HomeService);
   featuredAudience: IFeaturedAudience[] = [];
   featuredTestimonials: IFeaturedTestimonials[] = [];
-  featuredProducts: IFashionProduct[] = [];
-  trendingProducts: IFashionProduct[] = [];
+  featuredProducts$ = this.store.select(selectFeaturedProducts);
+  trendingProducts$ = this.store.select(selectTrendingProducts);
   trendingTabs = [
     { labelText: 'Men', value: 'men' },
     { labelText: 'Women', value: 'women' },
@@ -36,13 +42,17 @@ export default class HomeComponent {
   ngOnInit() {
     this.getAudience();
     this.getTestimonials();
-    this.getFeatureProducts(this.selectedTab);
-    this.getTrendingProducts();
+    this.loadProducts();
   }
 
   onTabChange(_selectedTab: string) {
     this.selectedTab = _selectedTab;
-    this.getFeatureProducts(this.selectedTab);
+    this.loadProducts();
+  }
+
+  private loadProducts() {
+    this.store.dispatch(getFeaturedProducts({ audience: this.selectedTab }));
+    this.store.dispatch(getTrendingProducts());
   }
 
   getAudience() {
@@ -65,27 +75,5 @@ export default class HomeComponent {
         console.error('Error fetching featured audience:', error);
       }
     })
-  }
-
-  getFeatureProducts(audience: string) {
-    this.homeService.getFeatureProducts(audience).subscribe({
-      next: (products) => {
-        this.featuredProducts = products;
-      },
-      error: (error) => {
-        console.error('Error fetching featured products:', error);
-      }
-    });
-  }
-
-    getTrendingProducts() {
-    this.homeService.getTrendingProducts().subscribe({
-      next: (products) => {
-        this.trendingProducts = products;
-      },
-      error: (error) => {
-        console.error('Error fetching featured products:', error);
-      }
-    });
   }
 }
