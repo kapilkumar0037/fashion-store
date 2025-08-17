@@ -13,146 +13,72 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <ng-container *ngIf="status$ | async as status">
+                            <tr *ngIf="status === 'loading'">
+                                <td colspan="4" class="text-center">
+                                    <div class="spinner-border" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr *ngIf="status === 'error' && (error$ | async) as error">
+                                <td colspan="4" class="text-center text-danger">
+                                    {{ error }}
+                                </td>
+                            </tr>
+                        </ng-container>
+                        
+                        <tr *ngFor="let item of cartItems$ | async">
                             <td>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img alt="" data-cfsrc="assets/img/gallery/best-books1.jpg"
-                                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/best-books1.jpg">
+                                        <app-image [name]="item?.product?.images?.[0]" [height]="'60'" [alt]="item?.product?.name ?? ''" />
                                     </div>
                                     <div class="media-body">
-                                        <p>Minimalistic shop for multipurpose use</p>
+                                        <p>{{ item?.product?.name }}</p>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <h5>$360.00</h5>
+                                <h5>${{ item?.product?.price?.toFixed(2) || '0.00' }}</h5>
                             </td>
                             <td>
                                 <div class="product_count">
-                                    <span class="input-number-decrement"> <i class="ti-minus"></i></span>
-                                    <input class="input-number" type="text" value="1" min="0" max="10">
-                                    <span class="input-number-increment"> <i class="ti-plus"></i></span>
+                                    <span class="input-number-decrement" (click)="updateQuantity(item.productId, (item.quantity || 1) - 1)">
+                                        <i class="ti-minus"></i>
+                                    </span>
+                                    <input class="input-number" type="number" [ngModel]="item.quantity" min="0" max="10"
+                                           (ngModelChange)="updateQuantity(item.productId, $event)">
+                                    <span class="input-number-increment" (click)="updateQuantity(item.productId, (item.quantity || 1) + 1)">
+                                        <i class="ti-plus"></i>
+                                    </span>
                                 </div>
                             </td>
                             <td>
-                                <h5>$720.00</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="d-flex">
-                                        <img alt="" data-cfsrc="assets/img/gallery/best_selling1.jpg"
-                                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/best_selling1.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                        <p>Minimalistic shop for multipurpose use</p>
-                                    </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5>${{ ((item?.product?.price || 0) * (item?.quantity || 0)).toFixed(2) }}</h5>
+                                    <button class="btn btn-sm btn-danger ms-2" (click)="removeItem(item.productId)">
+                                        <i class="fa-solid fa-trash"></i> Delete
+                                    </button>
                                 </div>
-                            </td>
-                            <td>
-                                <h5>$360.00</h5>
-                            </td>
-                            <td>
-                                <div class="product_count">
-                                    <span class="input-number-decrement"> <i class="ti-minus"></i></span>
-                                    <input class="input-number2" type="text" value="1" min="0" max="10">
-                                    <span class="input-number-increment"> <i class="ti-plus"></i></span>
-                                </div>
-                            </td>
-                            <td>
-                                <h5>$720.00</h5>
                             </td>
                         </tr>
                         <tr class="bottom_button">
-                            <td>
-                                <a class="btn" href="#">Update Cart</a>
+                            <td colspan="2">
+                                <button class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <div class="cupon_text float-right">
-                                    <a class="btn" href="#">Close Coupon</a>
-                                </div>
-                            </td>
+                            <td colspan="2"></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <h5>Subtotal</h5>
-                            </td>
-                            <td>
-                                <h5>$2160.00</h5>
-                            </td>
-                        </tr>
-                        <tr class="shipping_area">
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <h5>Shipping</h5>
-                            </td>
-                            <td>
-                                <div class="shipping_box">
-                                    <ul class="list">
-                                        <li>
-                                            Flat Rate: $5.00
-                                            <input type="radio" aria-label="Radio button for following text input">
-                                        </li>
-                                        <li>
-                                            Free Shipping
-                                            <input type="radio" aria-label="Radio button for following text input">
-                                        </li>
-                                        <li>
-                                            Flat Rate: $10.00
-                                            <input type="radio" aria-label="Radio button for following text input">
-                                        </li>
-                                        <li class="active">
-                                            Local Delivery: $2.00
-                                            <input type="radio" aria-label="Radio button for following text input">
-                                        </li>
-                                    </ul>
-                                    <h6>
-                                        Calculate Shipping
-                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                    </h6>
-                                    <select class="shipping_select" style="display: none;">
-                                        <option value="1">Bangladesh</option>
-                                        <option value="2">India</option>
-                                        <option value="4">Pakistan</option>
-                                    </select>
-                                    <div class="nice-select shipping_select" tabindex="0"><span
-                                            class="current">Bangladesh</span>
-                                        <ul class="list">
-                                            <li data-value="1" class="option selected">Bangladesh</li>
-                                            <li data-value="2" class="option">India</li>
-                                            <li data-value="4" class="option">Pakistan</li>
-                                        </ul>
-                                    </div>
-                                    <select class="shipping_select section_bg" style="display: none;">
-                                        <option value="1">Select a State</option>
-                                        <option value="2">Select a State</option>
-                                        <option value="4">Select a State</option>
-                                    </select>
-                                    <div class="nice-select shipping_select section_bg" tabindex="0"><span
-                                            class="current">Select a State</span>
-                                        <ul class="list">
-                                            <li data-value="1" class="option selected">Select a State</li>
-                                            <li data-value="2" class="option">Select a State</li>
-                                            <li data-value="4" class="option">Select a State</li>
-                                        </ul>
-                                    </div>
-                                    <input class="post_code" type="text" placeholder="Postcode/Zipcode">
-                                    <a class="btn" href="#">Update Details</a>
-                                </div>
-                            </td>
+                            <td colspan="2"></td>
+                            <td><h5>Subtotal</h5></td>
+                            <td><h5>${{ cartTotal$ | async | number:'1.2-2' }}</h5></td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="checkout_btn_inner float-right">
-                    <a class="btn" href="#">Continue Shopping</a>
-                    <a class="btn checkout_btn" href="#">Proceed to checkout</a>
+                <div class="checkout_btn_inner text-end mt-4">
+                    <a class="btn btn-secondary me-2" routerLink="/products">Continue Shopping</a>
+                    <a class="btn btn-primary" routerLink="/checkout">Proceed to checkout</a>
                 </div>
             </div>
         </div>

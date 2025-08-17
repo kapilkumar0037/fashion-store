@@ -10,7 +10,7 @@ export class ApiConstants {
   static readonly AUTH_ENDPOINT = '/auth';
   static readonly FEATURED_AUDIENCE = '/featuredAudience';
   static readonly CART_ENDPOINT = '/cart';
-  static readonly CART_ITEMS_ENDPOINT = '/cart/items';
+  static readonly CART_ITEMS_ENDPOINT = '/cartItems';
   static readonly CART_CHECKOUT_ENDPOINT = '/cart/checkout';
   static readonly CART_DISCOUNT_ENDPOINT = '/cart/discount';
 

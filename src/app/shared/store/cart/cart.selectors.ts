@@ -32,3 +32,24 @@ export const selectCartTotal = createSelector(
     selectCartState,
     (state) => state.totalPrice
 );
+export const selectCartSubTotal = createSelector(
+    selectCartState,
+    (state) => state.subTotal
+);
+export const selectCartTotalDiscount = createSelector(
+    selectCartState,
+    (state) => state.discount
+);
+export const selectCartTotalTax = createSelector(
+    selectCartState,
+    (state) => state.totalTax
+);
+export const selectCartTotalShipping = createSelector(
+    selectCartState,
+    (state) => state.totalShipping
+);
+export const selectCartDiscountCode = createSelector(
+    selectCartState,
+    (state) => state.discountCode
+);
+

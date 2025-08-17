@@ -19,4 +19,8 @@ export interface ICart {
     totalPrice: number;
     discount?: number;
     discountCode?: string;
+    subTotal?: number;
+    totalTax?: number;
+    totalShipping?: number;
+
 }

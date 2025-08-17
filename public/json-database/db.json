@@ -25,6 +25,37 @@
       "updatedAt": "2025-07-06T07:09:15.979138"
     }
   ],
+  "cartItems": {
+    "items": [
+      {
+        "productId": "prod-1",
+        "quantity": 2,
+        "product": {
+          "id": "prod-1",
+          "name": "Men Striped Polo Neck Pure Cotton Purple T-Shirt",
+          "brand": "U.S. POLO ASSN.",
+          "price": 749,
+          "images": ["men/tshirts/tshirt-3/featured/tshirt-3-front"]
+        }
+      },
+      {
+        "productId": "prod-2",
+        "quantity": 1,
+        "product": {
+          "id": "prod-2",
+          "name": "Men Solid Polo Neck Pure Cotton Blue T-Shirt",
+          "brand": "U.S. POLO ASSN.",
+          "price": 644,
+          "images": ["men/tshirts/tshirt-3/featured/tshirt-3-front"]
+        }
+      }
+    ],
+    "totalItems": 3,
+    "totalPrice": 2142,
+    "totalDiscount": 856,
+    "subTotal": 2998,
+    "totalTax": 107.1
+  },
   "testimonials": [
     {
       "id": 1,
