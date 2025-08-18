@@ -11,6 +11,7 @@ import { IFashionProduct, IFeaturedAudience, IFeaturedTestimonials } from '@shar
 import { Store } from '@ngrx/store';
 import { selectFeaturedProducts, selectTrendingProducts } from '@shared/store/product/product.selector';
 import { loadProducts, getFeaturedProducts, getTrendingProducts } from '@shared/store/product/product.actions';
+import { addToCart } from '@shared/store/cart/cart.actions';
 
 @Component({
   selector: 'app-home',
@@ -75,5 +76,9 @@ export default class HomeComponent {
         console.error('Error fetching featured audience:', error);
       }
     })
+  }
+
+  addProductToCart(product: IFashionProduct) {
+    this.store.dispatch(addToCart({ productId: product.id, product, quantity: 1 }));
   }
 }

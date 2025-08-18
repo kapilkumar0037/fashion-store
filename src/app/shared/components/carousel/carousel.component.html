@@ -9,9 +9,9 @@
                         <app-image [name]="product.images[0]" alt="Product Back View"></app-image>
                     </a>
                     <div class="socal_icon">
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a (click)="addToCartClick(product)"><i class="fa-solid fa-cart-shopping"></i></a>
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                        <a ><i class="fa-solid fa-magnifying-glass-plus"></i></a>
                     </div>
                 </div>
                 <div class="properties-caption properties-caption2">

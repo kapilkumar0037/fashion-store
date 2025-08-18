@@ -4,7 +4,7 @@ export interface ICartItem {
     productId: string;
     quantity: number;
     variantId?: string;
-    product?: IFashionProduct; // Will be populated when cart is retrieved
+    product: IFashionProduct; // Will be populated when cart is retrieved
 }
 
 export interface CartUpdate {

@@ -29,8 +29,8 @@ export class CartService {
         return this.apiService.getCartItems<ICart>();
     }
 
-    addToCart(productId: string, quantity: number = 1): Observable<ICart> {
-        return this.apiService.addToCart<ICart>(productId, quantity);
+    addToCart(productId: string, product: IFashionProduct, quantity: number = 1): Observable<ICart> {
+        return this.apiService.addToCart<ICart>(productId, product, quantity);
     }
 
     removeFromCart(productId: string): Observable<ICart> {

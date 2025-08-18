@@ -1,4 +1,4 @@
-import { Component, HostListener, inject, input } from '@angular/core';
+import { Component, HostListener, inject, input, output } from '@angular/core';
 import { IFashionProduct } from '@shared/models/general.models';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ImageComponent } from "../image/image.component";
@@ -15,6 +15,7 @@ export class CarouselComponent {
   private mobileBreakpoint = 480;
   products = input<IFashionProduct[]>([]);
   slideConfig = { "slidesToShow": 3, "slidesToScroll": 6 };
+  addToCart = output<IFashionProduct>();
 
   ngOnInit() {
     this.adjustsItemsPerSlide();
@@ -27,6 +28,10 @@ export class CarouselComponent {
     } else {
       this.itemsPerSlide = 4;
     }
+  }
+
+  addToCartClick(product: IFashionProduct) {
+    this.addToCart.emit(product);
   }
 
 }

@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { ApiConstants } from '@shared/constants/api.constants';
 import { Observable } from 'rxjs';
+import { IFashionProduct } from '@shared/models/general.models';
 
 @Injectable({
   providedIn: 'root'
@@ -29,9 +30,9 @@ export class ApiService {
     return api.getAll();
   }
 
-  addToCart<T = any>(productId: string, quantity: number = 1): Observable<T> {
+  addToCart<T = any>(productId: string, product:IFashionProduct, quantity: number = 1): Observable<T> {
     const api = this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
-    return api.create({ productId, quantity } as any);
+    return api.create({ productId, product, quantity } as any);
   }
 
   removeFromCart<T = any>(productId: string): Observable<T> {
