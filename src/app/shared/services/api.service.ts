@@ -25,38 +25,34 @@ export class ApiService {
   }
 
   // Cart APIs
-  getCartItems<T = any>(): Observable<T> {
-    const api = this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
-    return api.getAll();
+  getCartItems<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
+
   }
 
-  addToCart<T = any>(productId: string, product:IFashionProduct, quantity: number = 1): Observable<T> {
-    const api = this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
-    return api.create({ productId, product, quantity } as any);
+  addToCart<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
+    
   }
 
-  removeFromCart<T = any>(productId: string): Observable<T> {
-    const api = this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
-    return api.delete(productId);
+  removeFromCart<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
   }
 
-  updateCartQuantity<T = any>(productId: string, quantity: number): Observable<T> {
-    const api = this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
-    return api.update(productId, { quantity } as any);
+  updateCartQuantity<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
   }
 
-  clearCart<T = any>(): Observable<T> {
-    return this.httpClient.delete<T>(this.apiBaseUrl + ApiConstants.CART_ENDPOINT);
+  clearCart<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.CART_ITEMS_ENDPOINT);
   }
 
-  applyDiscount<T = any>(discountCode: string): Observable<T> {
-    const api = this.getApi<T>(ApiConstants.CART_DISCOUNT_ENDPOINT);
-    return api.create({ code: discountCode } as any);
+  applyDiscount<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.CART_DISCOUNT_ENDPOINT);
   }
+  checkout<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.CART_CHECKOUT_ENDPOINT);
 
-  checkout<T = any>(paymentDetails: any): Observable<T> {
-    const api = this.getApi<T>(ApiConstants.CART_CHECKOUT_ENDPOINT);
-    return api.create(paymentDetails);
   }
 
   private getApi<T>(endpoint: string): Api<T> {
