@@ -26,23 +26,23 @@ export class CartService {
     private apiService = inject(ApiService);
 
     getCartProducts(): Observable<ICart> {
-        return this.apiService.getCartItems<ICart>().getAll();
+        return this.apiService.getCartItems<ICart>();
     }
 
     addToCart(productId: string, product: IFashionProduct, quantity: number = 1): Observable<ICart> {
-        return this.apiService.addToCart().create({productId, product, quantity});
+        return this.apiService.addToCart(productId, product, quantity);
     }
 
     removeFromCart(productId: string): Observable<ICart> {
-        return this.apiService.removeFromCart().delete(productId);
+        return this.apiService.removeFromCart(productId);
     }
 
     updateQuantity(productId: string, quantity: number): Observable<ICart> {
-        return this.apiService.updateCartQuantity().create({ productId, quantity });
+        return this.apiService.updateCartQuantity(productId, quantity);
     }
 
     clearCart(): Observable<ICart> {
-        return this.apiService.clearCart().getAll();
+        return this.apiService.clearCart();
     }
 
     applyDiscount(discountCode: string): Observable<CartDiscountResponse> {
