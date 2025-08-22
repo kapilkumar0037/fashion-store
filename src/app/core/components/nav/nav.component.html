@@ -63,6 +63,9 @@
                         <a [routerLink]="'/cart'">
                             <span class="flaticon-shopping-cart"><i class="fa-solid fa-cart-shopping"></i>
                             </span>
+                            <span class="cart-count">
+                                {{ (cartTotalItems$ | async) || 0 }}
+                            </span>
                         </a>
                     </li>
                 </ul>

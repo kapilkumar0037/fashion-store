@@ -175,16 +175,16 @@
         "quantity": 1
       },
       {
-        "productId": "p-141",
+        "productId": "prod-2",
         "product": {
-          "id": "p-141",
-          "name": "Men Printed Round Neck Cotton Blend White T-Shirt",
+          "id": "prod-2",
+          "name": "Men Solid Polo Neck Pure Cotton Blue T-Shirt",
           "brand": "U.S. POLO ASSN.",
           "category": "Clothing",
-          "subCategory": "tshirts",
-          "description": "A stylish T-shirt from our Clothing range.",
-          "price": 649,
-          "discount": 1599,
+          "subCategory": "Tshirts",
+          "description": "A stylish polo T-shirt from our Clothing range.",
+          "price": 644,
+          "discount": 1499,
           "currency": "INR",
           "sizes": [
             {
@@ -193,11 +193,11 @@
             },
             {
               "size": "M",
-              "stock": 0
+              "stock": 10
             },
             {
               "size": "L",
-              "stock": 21
+              "stock": 12
             },
             {
               "size": "XL",
@@ -205,113 +205,155 @@
             }
           ],
           "colors": [
+            "White",
             "Blue",
             "Black"
           ],
           "variants": [
             {
-              "id": "var-8133",
-              "size": "S",
-              "color": "Blue",
-              "stock": 1,
-              "price": 49.78,
+              "id": "var-3558",
+              "size": "XL",
+              "color": "White",
+              "stock": 0,
+              "price": 30.58,
               "images": [
-                "https://example.com/images/blue_s.jpg"
+                "https://example.com/images/white_xl.jpg"
               ]
             },
             {
-              "id": "var-6692",
-              "size": "S",
-              "color": "Black",
-              "stock": 1,
-              "price": 40.64,
-              "images": [
-                "https://example.com/images/black_s.jpg"
-              ]
-            },
-            {
-              "id": "var-5127",
-              "size": "M",
-              "color": "Blue",
-              "stock": 9,
-              "price": 40.1,
-              "images": [
-                "https://example.com/images/blue_m.jpg"
-              ]
-            },
-            {
-              "id": "var-2303",
-              "size": "M",
-              "color": "Black",
-              "stock": 4,
-              "price": 40.66,
-              "images": [
-                "https://example.com/images/black_m.jpg"
-              ]
-            },
-            {
-              "id": "var-2095",
-              "size": "L",
-              "color": "Blue",
-              "stock": 4,
-              "price": 38.63,
-              "images": [
-                "https://example.com/images/blue_l.jpg"
-              ]
-            },
-            {
-              "id": "var-9923",
-              "size": "L",
-              "color": "Black",
-              "stock": 2,
-              "price": 31.77,
-              "images": [
-                "https://example.com/images/black_l.jpg"
-              ]
-            },
-            {
-              "id": "var-9831",
+              "id": "var-6279",
               "size": "XL",
               "color": "Blue",
-              "stock": 7,
-              "price": 35.44,
+              "stock": 19,
+              "price": 43.04,
               "images": [
                 "https://example.com/images/blue_xl.jpg"
               ]
             },
             {
-              "id": "var-4992",
+              "id": "var-8074",
               "size": "XL",
               "color": "Black",
-              "stock": 5,
-              "price": 28.13,
+              "stock": 13,
+              "price": 30.3,
               "images": [
                 "https://example.com/images/black_xl.jpg"
+              ]
+            },
+            {
+              "id": "var-9698",
+              "size": "S",
+              "color": "White",
+              "stock": 13,
+              "price": 24.93,
+              "images": [
+                "https://example.com/images/white_s.jpg"
+              ]
+            },
+            {
+              "id": "var-9777",
+              "size": "S",
+              "color": "Blue",
+              "stock": 7,
+              "price": 28.51,
+              "images": [
+                "https://example.com/images/blue_s.jpg"
+              ]
+            },
+            {
+              "id": "var-9354",
+              "size": "S",
+              "color": "Black",
+              "stock": 3,
+              "price": 48.78,
+              "images": [
+                "https://example.com/images/black_s.jpg"
+              ]
+            },
+            {
+              "id": "var-7544",
+              "size": "M",
+              "color": "White",
+              "stock": 6,
+              "price": 39.53,
+              "images": [
+                "https://example.com/images/white_m.jpg"
+              ]
+            },
+            {
+              "id": "var-9550",
+              "size": "M",
+              "color": "Blue",
+              "stock": 5,
+              "price": 11.23,
+              "images": [
+                "https://example.com/images/blue_m.jpg"
+              ]
+            },
+            {
+              "id": "var-3985",
+              "size": "M",
+              "color": "Black",
+              "stock": 7,
+              "price": 49.29,
+              "images": [
+                "https://example.com/images/black_m.jpg"
+              ]
+            },
+            {
+              "id": "var-5672",
+              "size": "L",
+              "color": "White",
+              "stock": 8,
+              "price": 11.04,
+              "images": [
+                "https://example.com/images/white_l.jpg"
+              ]
+            },
+            {
+              "id": "var-1028",
+              "size": "L",
+              "color": "Blue",
+              "stock": 3,
+              "price": 16.73,
+              "images": [
+                "https://example.com/images/blue_l.jpg"
+              ]
+            },
+            {
+              "id": "var-2180",
+              "size": "L",
+              "color": "Black",
+              "stock": 12,
+              "price": 19.02,
+              "images": [
+                "https://example.com/images/black_l.jpg"
               ]
             }
           ],
           "images": [
-            "men/tshirts/tshirt-5/featured/tshirt-5-front"
+            "men/tshirts/tshirt-4/featured/tshirt-4-front",
+            "men/tshirts/tshirt-4/featured/tshirt-4-front"
           ],
           "isAvailable": true,
           "isFeatured": true,
           "isTrending": false,
-          "ratings": 4.5,
-          "reviewsCount": 72,
+          "ratings": 4,
+          "reviewsCount": 93,
           "tags": [
-            "summer",
+            "sale",
             "casual",
             "new"
           ],
           "audience": "men",
-          "createdAt": "2025-05-10T08:52:17.326361",
-          "updatedAt": "2025-08-02T08:52:17.326361"
+          "createdAt": "2024-11-25T07:09:15.979219",
+          "updatedAt": "2025-07-06T07:09:15.979245"
         },
         "quantity": 1
       }
     ],
     "totalItems": 2,
-    "totalPrice": 1223,
+    "totalPrice": 1218,
     "discount": 0,
     "subTotal": 0,
     "totalTax": 0,
