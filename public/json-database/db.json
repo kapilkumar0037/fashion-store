@@ -1,7 +1,7 @@
 {
   "featuredAudience": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Men's Fashion",
       "image": "men/men-fashion1",
       "btnText": "Shop now",
@@ -9,7 +9,7 @@
       "updatedAt": "2025-07-06T07:09:15.979138"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Women's fashion",
       "image": "women/women-fashion",
       "btnText": "Shop Now",
@@ -17,7 +17,7 @@
       "updatedAt": "2025-07-06T07:09:15.979138"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Baby Fashion",
       "image": "kids/kids-fashion",
       "btnText": "Shop Now",
@@ -27,153 +27,6 @@
   ],
   "cartItems": {
     "items": [
-      {
-        "productId": "prod-5",
-        "product": {
-          "id": "prod-5",
-          "name": "Men Solid Polo Neck Cotton Blend Black T-Shirt",
-          "brand": "Allen Solly ",
-          "category": "Clothing",
-          "subCategory": "Tshirts",
-          "description": "A stylish T-shirt from our Clothing range.",
-          "price": 574,
-          "discount": 1099,
-          "currency": "INR",
-          "sizes": [
-            {
-              "size": "S",
-              "stock": 10
-            },
-            {
-              "size": "M",
-              "stock": 10
-            },
-            {
-              "size": "L",
-              "stock": 12
-            },
-            {
-              "size": "XL",
-              "stock": 19
-            }
-          ],
-          "colors": [
-            "Red",
-            "Green",
-            "Blue"
-          ],
-          "variants": [
-            {
-              "id": "var-6436",
-              "size": "M",
-              "color": "Red",
-              "stock": 19,
-              "price": 11.07,
-              "images": [
-                "https://example.com/images/red_m.jpg"
-              ]
-            },
-            {
-              "id": "var-4882",
-              "size": "M",
-              "color": "Green",
-              "stock": 12,
-              "price": 28.14,
-              "images": [
-                "https://example.com/images/green_m.jpg"
-              ]
-            },
-            {
-              "id": "var-5109",
-              "size": "M",
-              "color": "Blue",
-              "stock": 0,
-              "price": 40.63,
-              "images": [
-                "https://example.com/images/blue_m.jpg"
-              ]
-            },
-            {
-              "id": "var-5593",
-              "size": "S",
-              "color": "Red",
-              "stock": 20,
-              "price": 15.92,
-              "images": [
-                "https://example.com/images/red_s.jpg"
-              ]
-            },
-            {
-              "id": "var-9548",
-              "size": "S",
-              "color": "Green",
-              "stock": 11,
-              "price": 23.52,
-              "images": [
-                "https://example.com/images/green_s.jpg"
-              ]
-            },
-            {
-              "id": "var-7810",
-              "size": "S",
-              "color": "Blue",
-              "stock": 17,
-              "price": 32.6,
-              "images": [
-                "https://example.com/images/blue_s.jpg"
-              ]
-            },
-            {
-              "id": "var-3601",
-              "size": "XL",
-              "color": "Red",
-              "stock": 1,
-              "price": 21.12,
-              "images": [
-                "https://example.com/images/red_xl.jpg"
-              ]
-            },
-            {
-              "id": "var-4713",
-              "size": "XL",
-              "color": "Green",
-              "stock": 1,
-              "price": 40.51,
-              "images": [
-                "https://example.com/images/green_xl.jpg"
-              ]
-            },
-            {
-              "id": "var-5623",
-              "size": "XL",
-              "color": "Blue",
-              "stock": 7,
-              "price": 17.1,
-              "images": [
-                "https://example.com/images/blue_xl.jpg"
-              ]
-            }
-          ],
-          "images": [
-            "men/tshirts/tshirt-2/featured/tshirt-2-front",
-            "men/tshirts/tshirt-2/featured/tshirt-2-back"
-          ],
-          "isAvailable": true,
-          "isFeatured": true,
-          "isTrending": true,
-          "ratings": 4.9,
-          "reviewsCount": 40,
-          "tags": [
-            "sale",
-            "new",
-            "casual"
-          ],
-          "audience": "men",
-          "createdAt": "2024-09-29T07:09:15.979464",
-          "updatedAt": "2025-07-06T07:09:15.979486"
-        },
-        "quantity": 1
-      },
       {
         "productId": "prod-2",
         "product": {
@@ -350,10 +203,145 @@
           "updatedAt": "2025-07-06T07:09:15.979245"
         },
         "quantity": 1
+      },
+      {
+        "productId": "p-141",
+        "product": {
+          "id": "p-141",
+          "name": "Men Printed Round Neck Cotton Blend White T-Shirt",
+          "brand": "U.S. POLO ASSN.",
+          "category": "Clothing",
+          "subCategory": "tshirts",
+          "description": "A stylish T-shirt from our Clothing range.",
+          "price": 649,
+          "discount": 1599,
+          "currency": "INR",
+          "sizes": [
+            {
+              "size": "S",
+              "stock": 10
+            },
+            {
+              "size": "M",
+              "stock": 0
+            },
+            {
+              "size": "L",
+              "stock": 21
+            },
+            {
+              "size": "XL",
+              "stock": 9
+            }
+          ],
+          "colors": [
+            "Blue",
+            "Black"
+          ],
+          "variants": [
+            {
+              "id": "var-8133",
+              "size": "S",
+              "color": "Blue",
+              "stock": 1,
+              "price": 49.78,
+              "images": [
+                "https://example.com/images/blue_s.jpg"
+              ]
+            },
+            {
+              "id": "var-6692",
+              "size": "S",
+              "color": "Black",
+              "stock": 1,
+              "price": 40.64,
+              "images": [
+                "https://example.com/images/black_s.jpg"
+              ]
+            },
+            {
+              "id": "var-5127",
+              "size": "M",
+              "color": "Blue",
+              "stock": 9,
+              "price": 40.1,
+              "images": [
+                "https://example.com/images/blue_m.jpg"
+              ]
+            },
+            {
+              "id": "var-2303",
+              "size": "M",
+              "color": "Black",
+              "stock": 4,
+              "price": 40.66,
+              "images": [
+                "https://example.com/images/black_m.jpg"
+              ]
+            },
+            {
+              "id": "var-2095",
+              "size": "L",
+              "color": "Blue",
+              "stock": 4,
+              "price": 38.63,
+              "images": [
+                "https://example.com/images/blue_l.jpg"
+              ]
+            },
+            {
+              "id": "var-9923",
+              "size": "L",
+              "color": "Black",
+              "stock": 2,
+              "price": 31.77,
+              "images": [
+                "https://example.com/images/black_l.jpg"
+              ]
+            },
+            {
+              "id": "var-9831",
+              "size": "XL",
+              "color": "Blue",
+              "stock": 7,
+              "price": 35.44,
+              "images": [
+                "https://example.com/images/blue_xl.jpg"
+              ]
+            },
+            {
+              "id": "var-4992",
+              "size": "XL",
+              "color": "Black",
+              "stock": 5,
+              "price": 28.13,
+              "images": [
+                "https://example.com/images/black_xl.jpg"
+              ]
+            }
+          ],
+          "images": [
+            "men/tshirts/tshirt-5/featured/tshirt-5-front"
+          ],
+          "isAvailable": true,
+          "isFeatured": true,
+          "isTrending": false,
+          "ratings": 4.5,
+          "reviewsCount": 72,
+          "tags": [
+            "summer",
+            "casual",
+            "new"
+          ],
+          "audience": "men",
+          "createdAt": "2025-05-10T08:52:17.326361",
+          "updatedAt": "2025-08-02T08:52:17.326361"
+        },
+        "quantity": 1
       }
     ],
     "totalItems": 2,
-    "totalPrice": 1218,
+    "totalPrice": 1293,
     "discount": 0,
     "subTotal": 0,
     "totalTax": 0,
@@ -361,7 +349,7 @@
   },
   "testimonials": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Customer Testimonial",
       "name": "Priya Sharma",
       "image": "testimonial/women",
@@ -371,7 +359,7 @@
       "updatedAt": "2025-07-06T07:09:15.979138"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Customer Testimonial",
       "name": "Rohan Mehta",
       "image": "testimonial/defaul",

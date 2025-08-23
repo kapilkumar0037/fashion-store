@@ -41,7 +41,7 @@ export const routes: Routes = [
                 path: 'wishlist',
                 loadComponent: () => import('./features/wishlist/wishlist.component')
             },
-               {
+            {
                 path: 'tracking',
                 loadComponent: () => import('./features/order-tracking/order-tracking.component')
             },

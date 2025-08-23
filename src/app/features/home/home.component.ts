@@ -79,6 +79,7 @@ export default class HomeComponent {
   }
 
   addProductToCart(product: IFashionProduct) {
+    //console.log('Adding product to cart:', product);
     this.store.dispatch(addToCart({ productId: product.id, product, quantity: 1 }));
   }
 }
