@@ -21,6 +21,10 @@ export const routes: Routes = [
                 path: 'about',
                 loadComponent: () => import('./features/static-pages/about-us/about-us.component')
             },
+             {
+                path: 'contact',
+                loadComponent: () => import('./features/static-pages/contact-us/contact-us.component')
+            },
             {
                 path: 'privacy-policy',
                 loadComponent: () => import('./features/static-pages/privacy/privacy.component')
