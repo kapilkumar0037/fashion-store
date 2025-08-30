@@ -26,7 +26,7 @@ export const routes: Routes = [
                 loadComponent: () => import('./features/static-pages/contact-us/contact-us.component')
             },
             {
-                path: 'privacy-policy',
+                path: 'privacy',
                 loadComponent: () => import('./features/static-pages/privacy/privacy.component')
             },
             {
