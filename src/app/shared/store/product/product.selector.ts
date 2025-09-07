@@ -35,7 +35,7 @@ export const selectProductError = createSelector(
 );
 
 // Select a product by ID
-export const selectProductById = (productId: string) =>
+export const selectProductById = (productId: number) =>
   createSelector(
     selectAllProducts,
     (products) => products.find(product => product.id === productId)
@@ -61,7 +61,7 @@ import { FashionAudience } from '@shared/models/general.models';
 export const selectProductsByGender = (gender: FashionAudience) =>
   createSelector(
     selectAllProducts,
-    (products) => products.filter(product => product.genderTarget.includes(gender))
+    (products) => products.filter(product => product.category.includes(gender))
   );
 
 // Select products by tag
@@ -74,11 +74,11 @@ export const selectProductsByTag = (tag: string) =>
 // Select available products (in stock)
 export const selectAvailableProducts = createSelector(
   selectAllProducts,
-  (products) => products.filter(product => product.isAvailable)
+  (products) => products.filter(product => product.stock>0)
 );
 
 // Select products with discount
 export const selectDiscountedProducts = createSelector(
   selectAllProducts,
-  (products) => products.filter(product => product.discount && product.discount > 0)
+  (products) => products.filter(product => product.discountPercentage && product.discountPercentage > 0)
 );

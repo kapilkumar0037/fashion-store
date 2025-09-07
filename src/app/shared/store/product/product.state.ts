@@ -1,9 +1,9 @@
-import { IFashionProduct } from "@shared/models/general.models";
+import { IFashionProduct, IProduct } from "@shared/models/general.models";
 
 export interface ProductState {
-  products: IFashionProduct[];
-  featuredProducts?: IFashionProduct[];
-  trendingProducts?: IFashionProduct[];
+  products: IProduct[];
+  featuredProducts?: IProduct[];
+  trendingProducts?: IProduct[];
   loading: boolean;
   error: string | null;
 }

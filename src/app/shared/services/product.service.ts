@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
-import { IFashionProduct } from '@shared/models/general.models';
+import { IFashionProduct, IProduct } from '@shared/models/general.models';
 import { ApiService } from '@shared/services/api.service';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,20 +9,26 @@ import { Observable } from 'rxjs';
 export class ProductService {
   private apiService = inject(ApiService);
 
-  getAllProducts(): Observable<IFashionProduct[]> {
-    return this.apiService.getFeaturedProducts<IFashionProduct[]>().getAll();
+  getAllProducts(): Observable<IProduct[]> {
+    return this.apiService.getFeaturedProducts<any>().getAll().pipe(
+      map(response => response.products) // Limit to top 10 trending products
+    );;
   }
 
-  getFeaturedProducts(audience: string): Observable<IFashionProduct[]> {
-    return this.apiService.getFeaturedProducts<IFashionProduct[]>().getAll({ 
+  getFeaturedProducts(audience: string): Observable<IProduct[]> {
+    return this.apiService.getFeaturedProducts<any>().getAll({ 
       audience, 
       isFeatured: true 
-    });
+    }).pipe(
+      map(response => response.products) // Limit to top 10 trending products
+    );;
   }
 
-  getTrendingProducts(): Observable<IFashionProduct[]> {
-    return this.apiService.getFeaturedProducts<IFashionProduct[]>().getAll({ 
+  getTrendingProducts(): Observable<IProduct[]> {
+    return this.apiService.getFeaturedProducts<any>().getAll({ 
       isTrending: true 
-    });
+    }).pipe(
+      map(response => response.products) // Limit to top 10 trending products
+    );
   }
 }

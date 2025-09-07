@@ -8,7 +8,8 @@
             <div class="properties-card">
                 <div class="properties-img">
                     <a href="javascript:void(0);" (click)="addToCartClick(product);$event.preventDefault(); $event.stopPropagation()">
-                        <app-image [name]="product.images[0]" alt="Product Back View"></app-image>
+                        <!-- <app-image [name]="product.images[0]" alt="Product Back View"></app-image> -->
+                        <img class="img-fluid" [src]="product.images[1]" alt="Product Front View">
                     </a>
                     <div class="socal_icon">
                         <a href="javascript:void(0);" (click)="addToCartClick(product);$event.preventDefault(); $event.stopPropagation()"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -18,12 +19,11 @@
                 </div>
                 <div class="properties-caption properties-caption2">
                     <h3><a href="javascript:void(0);">{{product.brand}}</a></h3>
-                    <h3><a href="javascript:void(0);">{{product.name}}</a></h3>
+                    <h3><a href="javascript:void(0);">{{product.title}}</a></h3>
                     <div class="properties-footer">
                         <div class="price">
-                            <span>₹{{product.price}}<span>₹{{product.discount}}</span></span> <span>
-                                ₹{{(product.discount&&product.price)?
-                                (((product.discount-product.price)/product.discount)*100 | number: '1.0-0'): 0}}%</span>
+                            <span>₹{{product.price}}<span></span></span> <span>
+                                {{product.discountPercentage}}</span>
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,12 @@
 import { createAction, props } from "@ngrx/store";
-import { IFashionProduct } from "@shared/models/general.models";
+import { IFashionProduct, IProduct } from "@shared/models/general.models";
 
 export const loadProducts = createAction(
   '[Product] Load Products' 
 );
 export const loadProductsSuccess = createAction(
   '[Product] Load Products Success',
-  props<{ products: IFashionProduct[] }>()
+  props<{ products: IProduct[] }>()
 );
 export const loadProductsFailure = createAction(
   '[Product] Load Products Failure',
@@ -18,7 +18,7 @@ export const getFeaturedProducts = createAction(
 );
 export const getFeaturedProductsSuccess = createAction(
   '[Product] Get Featured Product Success',
-  props<{ products: IFashionProduct[] }>()
+  props<{ products: IProduct[] }>()
 );
 export const getFeaturedProductsFailure = createAction(
   '[Product] Get Featured Product Failure',
@@ -29,7 +29,7 @@ export const getTrendingProducts = createAction(
 );
 export const getTrendingProductsSuccess = createAction(
   '[Product] Get Trending Products Success',
-  props<{ products: IFashionProduct[] }>()
+  props<{ products: IProduct[] }>()
 );
 export const getTrendingProductsFailure = createAction(
   '[Product] Get Trending Products Failure',
