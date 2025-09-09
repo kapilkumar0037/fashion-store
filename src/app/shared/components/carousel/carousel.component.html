@@ -2,17 +2,17 @@
 
     @for(product of products(); track product){
     <slide>
-        <div (click)="addToCartClick(product)">Click here</div>
-
         <div class="properties pb-30">
             <div class="properties-card">
                 <div class="properties-img">
-                    <a href="javascript:void(0);" (click)="addToCartClick(product);$event.preventDefault(); $event.stopPropagation()">
-                        <!-- <app-image [name]="product.images[0]" alt="Product Back View"></app-image> -->
-                        <img class="img-fluid" [src]="product.images[1]" alt="Product Front View">
+                    <a href="javascript:void(0);"
+                        (click)="addToCartClick(product);$event.preventDefault(); $event.stopPropagation()">
+                        <img class="img-fluid" [src]="product.thumbnail" alt="Product Front View">
                     </a>
                     <div class="socal_icon">
-                        <a href="javascript:void(0);" (click)="addToCartClick(product);$event.preventDefault(); $event.stopPropagation()"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="javascript:void(0);"
+                            (click)="addToCartClick(product);$event.preventDefault(); $event.stopPropagation()"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
                         <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
                         <a href="javascript:void(0);"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
                     </div>
