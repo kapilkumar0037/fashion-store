@@ -7,7 +7,7 @@ import {
   TestimonialCarouselComponent
 } from '@shared/index';
 import { HomeService } from './services/home.service';
-import { IFashionProduct, IFeaturedAudience, IFeaturedTestimonials } from '@shared/models/general.models';
+import { IFashionProduct, IFeaturedAudience, IFeaturedTestimonials, IProduct } from '@shared/models/general.models';
 import { Store } from '@ngrx/store';
 import { selectFeaturedProducts, selectTrendingProducts } from '@shared/store/product/product.selector';
 import { loadProducts, getFeaturedProducts, getTrendingProducts } from '@shared/store/product/product.actions';
@@ -27,7 +27,7 @@ import { addToCart } from '@shared/store/cart/cart.actions';
   styleUrl: './home.component.scss'
 })
 export default class HomeComponent {
-  selectedTab = 'men'
+  selectedTab = 'mens-shirts';
   private store = inject(Store);
   homeService = inject(HomeService);
   featuredAudience: IFeaturedAudience[] = [];
@@ -35,9 +35,9 @@ export default class HomeComponent {
   featuredProducts$ = this.store.select(selectFeaturedProducts);
   trendingProducts$ = this.store.select(selectTrendingProducts);
   trendingTabs = [
-    { labelText: 'Men', value: 'men' },
-    { labelText: 'Women', value: 'women' },
-    { labelText: 'Kids', value: 'kids' }
+    { labelText: 'Men', value: 'mens-shirts' },
+    { labelText: 'Women', value: 'womens-dresses' },
+    { labelText: 'Kids', value: 'tops' }
   ]
 
   ngOnInit() {
@@ -78,8 +78,8 @@ export default class HomeComponent {
     })
   }
 
-  addProductToCart(product: IFashionProduct) {
+  addProductToCart(product: IProduct) {
     //console.log('Adding product to cart:', product);
-    this.store.dispatch(addToCart({ productId: product.id, product, quantity: 1 }));
+    //this.store.dispatch(addToCart({ id: product.id, , quantity: 1 }));
   }
 }

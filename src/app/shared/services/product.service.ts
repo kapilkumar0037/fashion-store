@@ -16,17 +16,15 @@ export class ProductService {
   }
 
   getFeaturedProducts(audience: string): Observable<IProduct[]> {
-    return this.apiService.getFeaturedProducts<any>().getAll({ 
-      audience, 
-      isFeatured: true 
-    }).pipe(
+    return this.apiService.getProductsByCategory<any>().getAll({
+    }, undefined, { category: audience }).pipe(
       map(response => response.products) // Limit to top 10 trending products
     );;
   }
 
   getTrendingProducts(): Observable<IProduct[]> {
-    return this.apiService.getFeaturedProducts<any>().getAll({ 
-      isTrending: true 
+    return this.apiService.getFeaturedProducts<any>().getAll({
+      isTrending: true
     }).pipe(
       map(response => response.products) // Limit to top 10 trending products
     );

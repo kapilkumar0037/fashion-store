@@ -2,19 +2,22 @@ import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Observable } from "rxjs";
 
 export class Api<T> {
-    constructor(private http: HttpClient, protected actionUrl: string) {}
+    constructor(private http: HttpClient, protected actionUrl: string) { }
 
-    getAll(queryParams = {}, headers?: HttpHeaders): Observable<T> {
+    getAll(queryParams = {}, headers?: HttpHeaders, routeParams?: any): Observable<T> {
         const params = this.createQueryParams(queryParams);
-        return this.http.get<T>(this.actionUrl, {
+        const routeUrl = this.createRouteParams(routeParams);
+        return this.http.get<T>(routeUrl, {
             params: params,
             headers: headers
         });
     }
 
-    getById(id: string, queryParams = {}, headers?: HttpHeaders): Observable<T> {
+    getById(id: string, queryParams = {}, headers?: HttpHeaders,  routeParams?: any): Observable<T> {
         const params = this.createQueryParams(queryParams);
-        return this.http.get<T>(`${this.actionUrl}/${id}`, {
+        const routeUrl = this.createRouteParams(routeParams);
+
+        return this.http.get<T>(`${routeUrl}/${id}`, {
             params: params,
             headers: headers
         });
@@ -41,5 +44,17 @@ export class Api<T> {
         return httpParams;
     }
 
+    private createRouteParams(routeParams: any): string {
+        let url = this.actionUrl;
+        if (routeParams) {
+            for (const param in routeParams) {
+                if (param) {
+                    const regex = new RegExp(':'.concat(param));
+                    url = url.replace(regex, routeParams[param]);
+                }
+            }
+        }
+        return url;
+    }
 
 }

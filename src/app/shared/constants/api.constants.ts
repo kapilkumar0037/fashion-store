@@ -2,7 +2,8 @@ import { environment } from "src/environments/environment.development";
 
 export class ApiConstants {
   static readonly BASE_URL = environment.apiBaseUrl;
-  static readonly PRODUCTS_ENDPOINT = '/products/category/mens-shirts';
+  static readonly PRODUCTS_ENDPOINT = '/products';
+  static readonly PRODUCTS_ENDPOINT_CATEGORY = '/products/category/:category';
   static readonly TESTIMONIALS = '/testimonials';
   static readonly CATEGORIES_ENDPOINT = '/categories';
   static readonly ORDERS_ENDPOINT = '/orders';

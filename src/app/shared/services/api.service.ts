@@ -25,6 +25,9 @@ export class ApiService {
   getFeaturedProducts<T = any>(): Api<T> {
     return this.getApi(ApiConstants.PRODUCTS_ENDPOINT);
   }
+  getProductsByCategory<T = any>(): Api<T> {
+    return this.getApi(ApiConstants.PRODUCTS_ENDPOINT_CATEGORY);
+  }
 
   // Cart APIs
   getCartItems<T = ICart>(): Observable<T> {

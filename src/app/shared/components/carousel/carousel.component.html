@@ -22,8 +22,10 @@
                     <h3><a href="javascript:void(0);">{{product.title}}</a></h3>
                     <div class="properties-footer">
                         <div class="price">
-                            <span>₹{{product.price}}<span></span></span> <span>
-                                {{product.discountPercentage}}</span>
+                            <span>${{product.price}}<span>${{(product.price / (1 - product.discountPercentage / 100)) |
+                                    number:'1.2-2'}}</span></span>
+                            <span>
+                                {{product.discountPercentage | number:'1.0-0'}}%</span>
                         </div>
                     </div>
                 </div>
