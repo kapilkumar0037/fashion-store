@@ -1,4 +1,4 @@
-<app-breadcrumb title="Cart" linkText="cart" ></app-breadcrumb>
+<app-breadcrumb title="Cart" linkText="cart"></app-breadcrumb>
 <section class="cart_area">
     <div class="container">
         <div class="cart_inner">
@@ -27,15 +27,18 @@
                                 </td>
                             </tr>
                         </ng-container>
-                        
+
                         <tr *ngFor="let item of cartItems$ | async">
                             <td>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <app-image [name]="item?.product?.images?.[0]" [height]="'60'" [alt]="item?.product?.name ?? ''" />
+                                        <img class="img-fluid" [src]="item?.product?.thumbnail"
+                                            alt="Product Front View">
+
+                                        <!-- <app-image [name]="item?.product?.images?.[0]" [height]="'60'" [alt]="item?.product?.title ?? ''" /> -->
                                     </div>
                                     <div class="media-body">
-                                        <p>{{ item?.product?.name }}</p>
+                                        <p>{{ item?.product?.title }}</p>
                                     </div>
                                 </div>
                             </td>
@@ -44,12 +47,14 @@
                             </td>
                             <td>
                                 <div class="product_count">
-                                    <span class="input-number-decrement" (click)="updateQuantity(item.productId, (item.quantity || 1) - 1)">
+                                    <span class="input-number-decrement"
+                                        (click)="updateQuantity(item.productId, (item.quantity || 1) - 1)">
                                         <i class="ti-minus"></i>
                                     </span>
                                     <input class="input-number" type="number" [ngModel]="item.quantity" min="0" max="10"
-                                           (ngModelChange)="updateQuantity(item.productId, $event)">
-                                    <span class="input-number-increment" (click)="updateQuantity(item.productId, (item.quantity || 1) + 1)">
+                                        (ngModelChange)="updateQuantity(item.productId, $event)">
+                                    <span class="input-number-increment"
+                                        (click)="updateQuantity(item.productId, (item.quantity || 1) + 1)">
                                         <i class="ti-plus"></i>
                                     </span>
                                 </div>
@@ -57,7 +62,8 @@
                             <td>
                                 <div class="d-flex align-items-center justify-content-between">
                                     <h5>${{ ((item?.product?.price || 0) * (item?.quantity || 0)).toFixed(2) }}</h5>
-                                    <button class="btn btn-sm btn-danger ms-2" type="button" (click)="removeItem(item.productId)">
+                                    <button class="btn btn-sm btn-danger ms-2" type="button"
+                                        (click)="removeItem(item.productId)">
                                         <i class="fa-solid fa-trash"></i> Delete
                                     </button>
                                 </div>
@@ -71,8 +77,12 @@
                         </tr>
                         <tr>
                             <td colspan="2"></td>
-                            <td><h5>Subtotal</h5></td>
-                            <td><h5>${{ cartTotal$ | async | number:'1.2-2' }}</h5></td>
+                            <td>
+                                <h5>Subtotal</h5>
+                            </td>
+                            <td>
+                                <h5>${{ cartTotal$ | async | number:'1.2-2' }}</h5>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

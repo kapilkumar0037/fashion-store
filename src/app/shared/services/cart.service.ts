@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { ICart, ICartItem } from '../models/cart.models';
-import { IFashionProduct } from '../models/general.models';
+import { IFashionProduct, IProduct } from '../models/general.models';
 import { ApiService } from './api.service';
 
 export interface CartDiscountResponse {
@@ -24,25 +24,73 @@ export interface PaymentDetails {
 })
 export class CartService {
     private apiService = inject(ApiService);
+    private defaultMockCart: ICart = {
+        items: [
+        ],
+        totalPrice: 0,
+        discount: 0,
+        totalItems: 0,
+        totalShipping: 0,
+        totalTax: 0,
+        subTotal: 0
+    }
+    private mockItems: ICart = { ...this.defaultMockCart };
+
 
     getCartProducts(): Observable<ICart> {
-        return this.apiService.getCartItems<ICart>();
+        return of(this.mockItems);
     }
 
-    addToCart(productId: string, product: IFashionProduct, quantity: number = 1): Observable<ICart> {
-        return this.apiService.addToCart(productId, product, quantity);
+    addToCart(productId: number, product: IProduct, quantity: number = 1): Observable<ICart> {
+        const existingItemIndex = this.mockItems.items.findIndex(item => item.productId === productId);
+        if (existingItemIndex > -1) {
+            // Update quantity if product exists
+            this.mockItems.items[existingItemIndex].quantity += quantity;
+        } else {
+            // Add new item if product doesn't exist
+            this.mockItems = {
+                ...this.mockItems, items: [...this.mockItems.items, {
+                    productId,
+                    product,
+                    quantity
+                }]
+            }; // Trigger change detection
+        }
+
+        // Update cart totals
+        this.mockItems.totalItems = this.mockItems.items.reduce((total, item) => total + item.quantity, 0);
+        this.mockItems.totalPrice = this.mockItems.items.reduce((total, item) => total + (item.product.price * item.quantity), 0);
+        return of(this.mockItems);
+        //return this.apiService.addToCart(productId, product, quantity);
     }
 
-    removeFromCart(productId: string): Observable<ICart> {
-        return this.apiService.removeFromCart(productId);
+    removeFromCart(productId: number): Observable<ICart> {
+        this.mockItems = {
+            ...this.mockItems, items: [... this.mockItems.items.filter(item => item.productId !== productId)]
+        };
+        // Update cart totals
+        this.mockItems.totalItems = this.mockItems.items.reduce((total, item) => total + item.quantity, 0);
+        this.mockItems.totalPrice = this.mockItems.items.reduce((total, item) => total + (item.product.price * item.quantity), 0);
+        return of(this.mockItems);
+        //return this.apiService.removeFromCart(productId);
     }
 
-    updateQuantity(productId: string, quantity: number): Observable<ICart> {
-        return this.apiService.updateCartQuantity(productId, quantity);
+    updateQuantity(productId: number, quantity: number): Observable<ICart> {
+        const itemIndex = this.mockItems.items.findIndex(item => item.productId === productId);
+
+        if (itemIndex > -1) {
+            this.mockItems.items[itemIndex].quantity = quantity;
+            this.mockItems.totalItems = this.mockItems.items.reduce((total, item) => total + item.quantity, 0);
+            this.mockItems.totalPrice = this.mockItems.items.reduce((total, item) => total + (item.product.price * item.quantity), 0);
+        }
+        return of(this.mockItems);
+        //return this.apiService.updateCartQuantity(productId, quantity);
     }
 
     clearCart(): Observable<ICart> {
-        return this.apiService.clearCart();
+        this.mockItems = { ...this.defaultMockCart };
+        return of(this.mockItems);
+        //return this.apiService.clearCart();
     }
 
     applyDiscount(discountCode: string): Observable<CartDiscountResponse> {
@@ -50,6 +98,6 @@ export class CartService {
     }
 
     checkout(paymentDetails: PaymentDetails): Observable<CartCheckoutResponse> {
-        return this.apiService.checkout().create({paymentDetails});
+        return this.apiService.checkout().create({ paymentDetails });
     }
 }

@@ -31,7 +31,7 @@ export default class CartComponent implements OnInit {
     this.store.dispatch(loadCart());
   }
 
-  updateQuantity(productId: string, quantity: number) {
+  updateQuantity(productId: number, quantity: number) {
     if (quantity > 0) {
       this.store.dispatch(updateCartItem({ productId, quantity }));
     } else {
@@ -39,7 +39,7 @@ export default class CartComponent implements OnInit {
     }
   }
 
-  removeItem(productId: string) {
+  removeItem(productId: number) {
     this.store.dispatch(removeFromCart({ productId }));
   }
 

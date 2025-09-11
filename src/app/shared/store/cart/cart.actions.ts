@@ -26,7 +26,7 @@ export const addToCartFailure = createAction(
 );
 export const removeFromCart = createAction(
     '[Cart] Remove From Cart',
-    props<{ productId: string }>()
+    props<{ productId: number }>()
 );
 export const removeFromCartSuccess = createAction(
     '[Cart] Remove From Cart Success',

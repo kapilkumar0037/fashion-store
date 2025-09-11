@@ -80,6 +80,6 @@ export default class HomeComponent {
 
   addProductToCart(product: IProduct) {
     //console.log('Adding product to cart:', product);
-    //this.store.dispatch(addToCart({ id: product.id, , quantity: 1 }));
+    this.store.dispatch(addToCart({productId: product.id, product, quantity: 1}));
   }
 }

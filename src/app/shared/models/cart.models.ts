@@ -1,14 +1,14 @@
-import { IFashionProduct } from './general.models';
+import { IFashionProduct, IProduct } from './general.models';
 
 export interface ICartItem {
-    productId: string;
+    productId: number;
     quantity: number;
     variantId?: string;
-    product: IFashionProduct; // Will be populated when cart is retrieved
+    product: IProduct; // Will be populated when cart is retrieved
 }
 
 export interface CartUpdate {
-    productId: string;
+    productId: number;
     quantity: number;
     variantId?: string;
 }

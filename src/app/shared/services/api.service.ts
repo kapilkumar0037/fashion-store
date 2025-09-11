@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { ApiConstants } from '@shared/constants/api.constants';
 import { Observable } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
-import { IFashionProduct } from '@shared/models/general.models';
+import { IFashionProduct, IProduct } from '@shared/models/general.models';
 import { ICart, ICartItem } from '@shared/models/cart.models';
 
 @Injectable({
@@ -34,7 +34,7 @@ export class ApiService {
     return this.httpClient.get<T>(`${this.apiBaseUrl}${ApiConstants.CART_ITEMS_ENDPOINT}`);
   }
 
-  addToCart<T = ICart>(productId: string, product: IFashionProduct, quantity: number): Observable<T> {
+  addToCart<T = ICart>(productId: number, product: IProduct, quantity: number): Observable<T> {
     return this.getCartItems<ICart>().pipe(
       mergeMap((cartData: ICart) => {
         const existingItemIndex = cartData.items.findIndex(item => item.productId === productId);
@@ -60,7 +60,7 @@ export class ApiService {
     );
   }
 
-  removeFromCart<T = ICart>(productId: string): Observable<T> {
+  removeFromCart<T = ICart>(productId: number): Observable<T> {
     return this.getCartItems<ICart>().pipe(
       mergeMap((cartData: ICart) => {
         cartData.items = cartData.items.filter(item => item.productId !== productId);
@@ -74,7 +74,7 @@ export class ApiService {
     );
   }
 
-  updateCartQuantity<T = ICart>(productId: string, quantity: number): Observable<T> {
+  updateCartQuantity<T = ICart>(productId: number, quantity: number): Observable<T> {
     return this.getCartItems<ICart>().pipe(
       mergeMap((cartData: ICart) => {
         const itemIndex = cartData.items.findIndex(item => item.productId === productId);
