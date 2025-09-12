@@ -1,0 +1,41 @@
+<app-breadcrumb title="Products" linkText="Products"></app-breadcrumb>
+<section class="cart_area">
+    <div class="container">
+        <div class="latest-items row">
+            @for(product of (featuredProducts$ | async); track product){
+            <div class="col-lg-3 col-md-6">
+                <div class="properties pb-30">
+                    <div class="properties-card">
+                        <div class="properties-img">
+                            <a href="javascript:void(0);"
+                                (click)="addProductToCart(product);$event.preventDefault(); $event.stopPropagation()">
+                                <img class="img-fluid" [src]="product.thumbnail" alt="Product Front View">
+                            </a>
+                            <div class="socal_icon">
+                                <a href="javascript:void(0);"
+                                    (click)="addProductToCart(product);$event.preventDefault(); $event.stopPropagation()"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
+                                <a href="javascript:void(0);"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="properties-caption properties-caption2">
+                            <h3><a href="javascript:void(0);">{{product.brand}}</a></h3>
+                            <h3><a href="javascript:void(0);">{{product.title}}</a></h3>
+                            <div class="properties-footer">
+                                <div class="price">
+                                    <span>${{product.price}}<span>${{(product.price / (1 - product.discountPercentage /
+                                            100)) |
+                                            number:'1.2-2'}}</span></span>
+                                    <span>
+                                        {{product.discountPercentage | number:'1.0-0'}}%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

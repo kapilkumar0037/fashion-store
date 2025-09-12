@@ -49,6 +49,10 @@ export const routes: Routes = [
                 path: 'tracking',
                 loadComponent: () => import('./features/order-tracking/order-tracking.component')
             },
+             {
+                path: 'products/:searchTerm',
+                loadComponent: () => import('./features/products/components/products/products.component')
+            },
         ]
     },
 
