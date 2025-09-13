@@ -29,6 +29,9 @@ export class ApiService {
     return this.getApi(ApiConstants.PRODUCTS_ENDPOINT_CATEGORY);
   }
 
+  getProductCategories<T = any>(): Api<T> {
+    return this.getApi(ApiConstants.PRODUCTS_ENDPOINT_CATEGORY_LIST);
+  }
   getProductsBySearchTerm<T = any>(): Api<T> {
     return this.getApi<T>(ApiConstants.PRODUCTS_ENDPOINT);
   }

@@ -6,12 +6,14 @@ export interface ProductState {
   trendingProducts?: IProduct[];
   loading: boolean;
   error: string | null;
+  categories?: string[];
 }
 
 export const initialProductState: ProductState = {
   products: [],
   featuredProducts: [],
   trendingProducts: [],
+  categories: [],
   loading: false,
   error: null
 };

@@ -37,3 +37,27 @@ export const getTrendingProductsFailure = createAction(
   '[Product] Get Trending Products Failure',
   props<{ error: string }>()
 );
+
+export const getProductCategories = createAction(
+  '[Product] Get Product categories'
+);
+export const getProductCategoriesSuccess = createAction(
+  '[Product] Get Product categories Success',
+  props<{ categories: string[] }>()
+);
+export const getProductCategoriesFailure = createAction(
+  '[Product] Get Product categories Failure',
+  props<{ error: string }>()
+);
+export const getProductByCategories = createAction(
+  '[Product] Get Product by categories',
+  props<{ category: string }>()
+);
+export const getProductByCategoriesSuccess = createAction(
+  '[Product] Get Product by categories Success',
+  props<{ products: IProduct[] }>()
+);
+export const getProductByCategoriesFailure = createAction(
+  '[Product] Get Product by categories Failure',
+  props<{ error: string }>()
+);

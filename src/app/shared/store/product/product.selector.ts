@@ -10,6 +10,11 @@ export const selectAllProducts = createSelector(
   (state: ProductState) => state.products
 );
 
+// Select all product categories
+export const selectAllProductcategories = createSelector(
+  selectProductState,
+  (state: ProductState) => state.categories
+);
 // Select featured products
 export const selectFeaturedProducts = createSelector(
   selectProductState,
@@ -70,6 +75,7 @@ export const selectProductsByTag = (tag: string) =>
     selectAllProducts,
     (products) => products.filter(product => product.tags?.includes(tag))
   );
+
 
 // Select available products (in stock)
 export const selectAvailableProducts = createSelector(

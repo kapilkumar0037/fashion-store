@@ -25,7 +25,7 @@ export class ProductEffects {
   getFeaturedProducts$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(ProductActions.getFeaturedProducts),
-      mergeMap(({ audience }) => this.productService.getFeaturedProducts(audience)
+      mergeMap(({ audience: audience }) => this.productService.getFeaturedProducts(audience)
         .pipe(
           map(products => ProductActions.getFeaturedProductsSuccess({ products })),
           catchError(error => of(ProductActions.getFeaturedProductsFailure({ error: error.message })))
@@ -41,6 +41,29 @@ export class ProductEffects {
         .pipe(
           map(products => ProductActions.getTrendingProductsSuccess({ products })),
           catchError(error => of(ProductActions.getTrendingProductsFailure({ error: error.message })))
+        ))
+    );
+  });
+
+    getProductCategories$ = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(ProductActions.getProductCategories),
+      mergeMap(() => this.productService.getProductCategories()
+        .pipe(
+          map(categories => ProductActions.getProductCategoriesSuccess({ categories })),
+          catchError(error => of(ProductActions.getProductCategoriesFailure({ error: error.message })))
+        ))
+    );
+  });
+
+    // Get Products by category Effect
+  getProductsByCategories$ = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(ProductActions.getProductByCategories),
+      mergeMap(({category}) => this.productService.getProductsByCategory(category)
+        .pipe(
+          map(products => ProductActions.getProductByCategoriesSuccess({ products })),
+          catchError(error => of(ProductActions.getProductByCategoriesFailure({ error: error.message })))
         ))
     );
   });

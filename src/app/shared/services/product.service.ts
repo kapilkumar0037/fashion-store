@@ -31,4 +31,17 @@ export class ProductService {
       map(response => response.products) // Limit to top 10 trending products
     );
   }
+  getProductCategories(): Observable<string[]> {
+    return this.apiService.getProductCategories<any>().getAll().pipe(
+      map(response => response) // Limit to top 10 trending products
+    );
+  }
+
+   getProductsByCategory(category: string): Observable<IProduct[]> {
+    return this.apiService.getProductsByCategory<any>().getAll({
+    }, undefined, { category: category }).pipe(
+      map(response => response.products) // Limit to top 10 trending products
+    );
+  }
+  
 }

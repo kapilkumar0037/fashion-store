@@ -49,4 +49,35 @@ export const productReducer = createReducer(
     loading: false,
     error: error
   }))
+  ,
+  on(ProductActions.getProductCategories, (state) => ({
+    ...state,
+    loading: true,
+    error: null
+  })),
+  on(ProductActions.getProductCategoriesSuccess, (state, { categories }) => ({
+    ...state,
+    loading: false,
+    categories: categories
+  })),
+  on(ProductActions.getProductCategoriesFailure, (state, { error }) => ({
+    ...state,
+    loading: false,
+    error: error
+  })),
+  on(ProductActions.getProductByCategories, (state) => ({
+    ...state,
+    loading: true,
+    error: null
+  })),
+  on(ProductActions.getProductByCategoriesSuccess, (state, { products }) => ({
+    ...state,
+    loading: false,
+    products: products
+  })),
+  on(ProductActions.getProductByCategoriesFailure, (state, { error }) => ({
+    ...state,
+    loading: false,
+    error: error
+  })),
 );

@@ -4,6 +4,14 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </span>
     </span>
-    <input type="text" class="form-control border-start-0" placeholder="Search for products" aria-label="Search for products"
-        aria-describedby="addon-wrapping">
+    <!-- <input type="text" class="form-control border-start-0" placeholder="Search for products" aria-label="Search for products"
+        aria-describedby="addon-wrapping"> -->
+    <ng-template #customItemTemplate let-model="item" let-index="index">
+        <!-- <div>{{searchTerm}}</div> -->
+        <div (click)="searchProducts(model)">{{model}}</div>
+    </ng-template>
+
+    <input [(ngModel)]="searchTerm" type="text" class="form-control border-start-0" placeholder="Search for products"
+        aria-label="Search for products" aria-describedby="addon-wrapping" [typeahead]="(categories$ | async) || []"
+        [typeaheadItemTemplate]="customItemTemplate" [adaptivePosition]="true" [typeaheadWaitMs]="1000"/>
 </div>

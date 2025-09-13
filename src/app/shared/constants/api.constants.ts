@@ -4,6 +4,7 @@ export class ApiConstants {
   static readonly BASE_URL = environment.apiBaseUrl;
   static readonly PRODUCTS_ENDPOINT = '/products/search';
   static readonly PRODUCTS_ENDPOINT_CATEGORY = '/products/category/:category';
+  static readonly PRODUCTS_ENDPOINT_CATEGORY_LIST = '/products/category-list';
   static readonly TESTIMONIALS = '/testimonials';
   static readonly CATEGORIES_ENDPOINT = '/categories';
   static readonly ORDERS_ENDPOINT = '/orders';
