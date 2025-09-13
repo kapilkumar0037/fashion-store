@@ -2,7 +2,7 @@
 <section class="cart_area">
     <div class="container">
         <div class="latest-items row">
-            @for(product of (featuredProducts$ | async); track product){
+            @for(product of (products$ | async); track product){
             <div class="col-lg-3 col-md-6">
                 <div class="properties pb-30">
                     <div class="properties-card">

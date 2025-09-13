@@ -29,6 +29,10 @@ export class ApiService {
     return this.getApi(ApiConstants.PRODUCTS_ENDPOINT_CATEGORY);
   }
 
+  getProductsBySearchTerm<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.PRODUCTS_ENDPOINT);
+  }
+
   // Cart APIs
   getCartItems<T = ICart>(): Observable<T> {
     return this.httpClient.get<T>(`${this.apiBaseUrl}${ApiConstants.CART_ITEMS_ENDPOINT}`);

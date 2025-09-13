@@ -9,8 +9,9 @@ import { map, Observable } from 'rxjs';
 export class ProductService {
   private apiService = inject(ApiService);
 
-  getAllProducts(): Observable<IProduct[]> {
-    return this.apiService.getFeaturedProducts<any>().getAll().pipe(
+  getAllProducts(searchTerm: string): Observable<IProduct[]> {
+    return this.apiService.getProductsBySearchTerm<any>().getAll({ q: searchTerm
+    }).pipe(
       map(response => response.products) // Limit to top 10 trending products
     );;
   }
@@ -21,6 +22,7 @@ export class ProductService {
       map(response => response.products) // Limit to top 10 trending products
     );;
   }
+
 
   getTrendingProducts(): Observable<IProduct[]> {
     return this.apiService.getFeaturedProducts<any>().getAll({

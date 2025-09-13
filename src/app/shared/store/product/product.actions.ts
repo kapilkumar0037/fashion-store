@@ -2,7 +2,9 @@ import { createAction, props } from "@ngrx/store";
 import { IFashionProduct, IProduct } from "@shared/models/general.models";
 
 export const loadProducts = createAction(
-  '[Product] Load Products' 
+  '[Product] Load Products',
+  props<{ searchTerm: string }>()
+
 );
 export const loadProductsSuccess = createAction(
   '[Product] Load Products Success',
