@@ -12,6 +12,7 @@ import { Store } from '@ngrx/store';
 import { selectFeaturedProducts, selectTrendingProducts } from '@shared/store/product/product.selector';
 import { loadProducts, getFeaturedProducts, getTrendingProducts } from '@shared/store/product/product.actions';
 import { addToCart } from '@shared/store/cart/cart.actions';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -30,20 +31,27 @@ export default class HomeComponent {
   selectedTab = 'mens-shirts';
   private store = inject(Store);
   homeService = inject(HomeService);
+  router = inject(Router);
   featuredAudience: IFeaturedAudience[] = [];
   featuredTestimonials: IFeaturedTestimonials[] = [];
   featuredProducts$ = this.store.select(selectFeaturedProducts);
   trendingProducts$ = this.store.select(selectTrendingProducts);
   trendingTabs = [
-    { labelText: 'Men', value: 'mens-shirts' },
-    { labelText: 'Women', value: 'womens-dresses' },
-    { labelText: 'Kids', value: 'tops' }
+    { labelText: 'Men', value: 'mens' },
+    { labelText: 'Women', value: 'womens' },
+    { labelText: 'Kids', value: 'kids' }
   ]
 
   ngOnInit() {
     this.getAudience();
     this.getTestimonials();
     this.loadProducts();
+  }
+
+  searchProducts(searchTerm: string) {
+    this.store.dispatch(loadProducts({ searchTerm: searchTerm }));
+    this.router.navigate(['/products']);
+
   }
 
   onTabChange(_selectedTab: string) {

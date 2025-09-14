@@ -23,8 +23,8 @@ export default class ProductsComponent {
 
 
   ngOnInit() {
-    console.log('Search Term:', this.searchTerm());
-    this.loadProducts()
+    //console.log('Search Term:', this.searchTerm());
+    //this.loadProducts()
   }
   private loadProducts() {
     this.store.dispatch(getProductByCategories({ category: this.searchTerm() }));

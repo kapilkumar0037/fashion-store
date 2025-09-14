@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @Component({
@@ -8,5 +8,10 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   styleUrl: './featured-carousel.component.scss'
 })
 export class FeaturedCarouselComponent {
+featuredCarouselEmit = output<string>();
+
+onShopnowClick(searchTerm: string) {
+  this.featuredCarouselEmit.emit(searchTerm); 
+}
 
 }

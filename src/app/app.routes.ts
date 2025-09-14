@@ -21,7 +21,7 @@ export const routes: Routes = [
                 path: 'about',
                 loadComponent: () => import('./features/static-pages/about-us/about-us.component')
             },
-             {
+            {
                 path: 'contact',
                 loadComponent: () => import('./features/static-pages/contact-us/contact-us.component')
             },
@@ -49,8 +49,12 @@ export const routes: Routes = [
                 path: 'tracking',
                 loadComponent: () => import('./features/order-tracking/order-tracking.component')
             },
-             {
+            {
                 path: 'products/:searchTerm',
+                loadComponent: () => import('./features/products/components/products/products.component')
+            },
+            {
+                path: 'products',
                 loadComponent: () => import('./features/products/components/products/products.component')
             },
         ]
