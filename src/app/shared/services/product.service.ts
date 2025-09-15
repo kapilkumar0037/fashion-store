@@ -10,7 +10,7 @@ export class ProductService {
   private apiService = inject(ApiService);
   menCategories = 'mens-shirts,mens-shoes,mens-watches,mens-jackets';
   womenCategories = 'women-bags,womens-dresses,womens-shoes,womens-watches,womens-jewellery';
-  kidsCategories = 'tops,skirts,kids-shoes,kids-watches';
+  kidsCategories = 'tops,kids-shoes,kids-watches';
   accessoriesCategories = 'mens-watches,womens-watches';
   beautyCategories = 'beauty,fragrances,skin-cares';
 
