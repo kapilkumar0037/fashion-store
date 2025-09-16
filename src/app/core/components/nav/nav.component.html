@@ -18,10 +18,10 @@
             <div class="main-menu d-none d-lg-block">
                 <nav>
                     <ul id="navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="categories.html">Men</a></li>
-                        <li><a href="categories.html">Women</a></li>
-                        <li class="new"><a href="categories.html">Kids</a></li>
+                        <li><a [routerLink]="'/'">Home</a></li>
+                        <li><a (click)="onNavItemClick('men')">Men</a></li>
+                        <li><a (click)="onNavItemClick('women')">Women</a></li>
+                        <li class="new"><a (click)="onNavItemClick('kids')">Kids</a></li>
                         <!-- <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="login.html">Login</a></li>

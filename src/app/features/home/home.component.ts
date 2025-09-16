@@ -37,9 +37,9 @@ export default class HomeComponent {
   featuredProducts$ = this.store.select(selectFeaturedProducts);
   trendingProducts$ = this.store.select(selectTrendingProducts);
   trendingTabs = [
-    { labelText: 'Men', value: 'mens' },
-    { labelText: 'Women', value: 'womens' },
-    { labelText: 'Kids', value: 'kids' }
+    { labelText: 'Men', value: 'mens-shirts' },
+    { labelText: 'Women', value: 'womens-dresses' },
+    { labelText: 'Kids', value: 'tops' }
   ]
 
   ngOnInit() {
