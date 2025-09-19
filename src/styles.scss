@@ -301,7 +301,6 @@ a {
   transition: all 0.3s ease-out 0s;
   color: $color_3;
   text-decoration: none;
-  color: $color_4;
   outline: medium none;
   &:focus {
     text-decoration: none;
@@ -309,7 +308,7 @@ a {
     text-decoration: none;
   }
   &:hover {
-    color: $color_4;
+    color: $color_11;
     text-decoration: none;
   }
 }
@@ -2242,20 +2241,23 @@ hr {
       border: 1px solid #eeeeee;
       border-radius: 3px;
       padding-left: 10px;
+      margin: 0px 10px 0px 10px;
     }
     .input-number-increment {
-      padding: 10px;
-      margin-right: 5px;
+      padding: 5px;
+      width: 35px;
       border: 1px solid #eee;
       border-radius: 50%;
       display: inline-block;
+      padding-left: 10px;
     }
     .input-number-decrement {
-      padding: 10px;
-      margin-left: 5px;
+      padding: 5px;
+      width: 35px;
       border-radius: 50%;
       border: 1px solid #eee;
       display: inline-block;
+      padding-left: 10px;
     }
   }
   .btn_1 {
@@ -5957,4 +5959,9 @@ del {
       margin-left: 12px;
     }
   }
+}
+
+hr {
+  height: 1px;
+  background-color: grey;
 }
