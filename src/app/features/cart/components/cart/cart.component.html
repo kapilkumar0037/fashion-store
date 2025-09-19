@@ -1,94 +1,194 @@
-<app-breadcrumb title="Cart" linkText="cart"></app-breadcrumb>
+<!-- <app-breadcrumb title="Cart" linkText="cart"></app-breadcrumb> -->
 <section class="cart_area">
-    <div class="container">
-        <div class="cart_inner">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Product</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <ng-container *ngIf="status$ | async as status">
-                            <tr *ngIf="status === 'loading'">
-                                <td colspan="4" class="text-center">
-                                    <div class="spinner-border" role="status">
-                                        <span class="visually-hidden">Loading...</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr *ngIf="status === 'error' && (error$ | async) as error">
-                                <td colspan="4" class="text-center text-danger">
-                                    {{ error }}
-                                </td>
-                            </tr>
-                        </ng-container>
+    <div class="row mx-2">
+        <div class="col-md-8 col-12">
+            <div class="card">
+                <div class="card-body">
 
-                        <tr *ngFor="let item of cartItems$ | async">
-                            <td>
-                                <div class="media">
-                                    <div class="d-flex">
-                                        <img class="img-fluid" [src]="item?.product?.thumbnail"
-                                            alt="Product Front View">
+                    @for(item of cartItems$ | async; track item.productId){
+                    <div class="row">
+                        <div class="col-md-2"><img class="img-fluid" [src]="item?.product?.thumbnail"
+                                alt="Product Front View"></div>
+                        <div class="col-md-6">
+                            <p>{{ item?.product?.title }}</p>
+                            <p class="text-gray">Brand: {{ item?.product?.brand }}</p>
 
-                                        <!-- <app-image [name]="item?.product?.images?.[0]" [height]="'60'" [alt]="item?.product?.title ?? ''" /> -->
-                                    </div>
-                                    <div class="media-body">
-                                        <p>{{ item?.product?.title }}</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <h5>${{ item?.product?.price?.toFixed(2) || '0.00' }}</h5>
-                            </td>
-                            <td>
-                                <div class="product_count">
-                                    <span class="input-number-decrement"
-                                        (click)="updateQuantity(item.productId, (item.quantity || 1) - 1)">
-                                        <i class="ti-minus"></i>
-                                    </span>
-                                    <input class="input-number" type="number" [ngModel]="item.quantity" min="0" max="10"
-                                        (ngModelChange)="updateQuantity(item.productId, $event)">
-                                    <span class="input-number-increment"
-                                        (click)="updateQuantity(item.productId, (item.quantity || 1) + 1)">
-                                        <i class="ti-plus"></i>
-                                    </span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h5>${{ ((item?.product?.price || 0) * (item?.quantity || 0)).toFixed(2) }}</h5>
-                                    <button class="btn btn-sm btn-danger ms-2" type="button"
-                                        (click)="removeItem(item.productId)">
-                                        <i class="fa-solid fa-trash"></i> Delete
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="bottom_button">
-                            <td colspan="2">
-                                <button type="button" class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
-                            </td>
-                            <td colspan="2"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>
-                                <h5>Subtotal</h5>
-                            </td>
-                            <td>
-                                <h5>${{ cartTotal$ | async | number:'1.2-2' }}</h5>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="checkout_btn_inner text-end mt-4">
-                    <a class="btn btn-secondary me-2" routerLink="/products">Continue Shopping</a>
-                    <a class="btn btn-primary" routerLink="/checkout">Proceed to checkout</a>
+                            <h5 class="price"><span>${{item?.product?.price}}<span>${{(item.product.price / (1 -
+                                        item.product.discountPercentage / 100)) |
+                                        number:'1.2-2'}}</span></span>
+                                <span>
+                                    {{item?.product?.discountPercentage | number:'1.0-0'}}%</span>
+                            </h5>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product_count">
+                                <span class="input-number-decrement"
+                                    (click)="updateQuantity(item.productId, (item.quantity || 1) - 1)">
+                                    <i class="ti-minus"></i>
+                                </span>
+                                <input class="input-number" type="number" [ngModel]="item.quantity" min="0" max="10"
+                                    (ngModelChange)="updateQuantity(item.productId, $event)">
+                                <span class="input-number-increment"
+                                    (click)="updateQuantity(item.productId, (item.quantity || 1) + 1)">
+                                    <i class="ti-plus"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    }
+
+                    <div class="cart_inner">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <ng-container *ngIf="status$ | async as status">
+                                        <tr *ngIf="status === 'loading'">
+                                            <td colspan="4" class="text-center">
+                                                <div class="spinner-border" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr *ngIf="status === 'error' && (error$ | async) as error">
+                                            <td colspan="4" class="text-center text-danger">
+                                                {{ error }}
+                                            </td>
+                                        </tr>
+                                    </ng-container>
+
+                                    <tr *ngFor="let item of cartItems$ | async">
+                                        <td>
+                                            <div class="media">
+                                                <div class="d-flex">
+                                                    <img class="img-fluid" [src]="item?.product?.thumbnail"
+                                                        alt="Product Front View">
+
+                                                    <!-- <app-image [name]="item?.product?.images?.[0]" [height]="'60'" [alt]="item?.product?.title ?? ''" /> -->
+                                                </div>
+                                                <div class="media-body">
+                                                    <p>{{ item?.product?.title }}</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <h5>${{ item?.product?.price?.toFixed(2) || '0.00' }}</h5>
+                                        </td>
+                                        <td>
+                                            <div class="product_count">
+                                                <span class="input-number-decrement"
+                                                    (click)="updateQuantity(item.productId, (item.quantity || 1) - 1)">
+                                                    <i class="ti-minus"></i>
+                                                </span>
+                                                <input class="input-number" type="number" [ngModel]="item.quantity"
+                                                    min="0" max="10"
+                                                    (ngModelChange)="updateQuantity(item.productId, $event)">
+                                                <span class="input-number-increment"
+                                                    (click)="updateQuantity(item.productId, (item.quantity || 1) + 1)">
+                                                    <i class="ti-plus"></i>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h5>${{ ((item?.product?.price || 0) * (item?.quantity ||
+                                                    0)).toFixed(2) }}</h5>
+                                                <button class="btn btn-sm btn-danger ms-2" type="button"
+                                                    (click)="removeItem(item.productId)">
+                                                    <i class="fa-solid fa-trash"></i> Delete
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="bottom_button">
+                                        <td colspan="2">
+                                            <button type="button" class="btn btn-danger" (click)="clearCart()">Clear
+                                                Cart</button>
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td>
+                                            <h5>Subtotal</h5>
+                                        </td>
+                                        <td>
+                                            <h5>${{ cartTotal$ | async | number:'1.2-2' }}</h5>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="checkout_btn_inner text-end mt-4">
+                                <a class="btn btn-secondary me-2" routerLink="/products">Continue Shopping</a>
+                                <a class="btn btn-primary" routerLink="/checkout">Proceed to checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="card border-none">
+                <div class="card-body p-0 ">
+                    <div class="order_box">
+                        <h2>Your Order</h2>
+                        <ul class="list">
+                            <li>
+                                <a href="#">Product<span>Total</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Blackberry <span class="middle">x 02</span><span
+                                        class="last">$720.00</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Tomatoes <span class="middle">x 02</span><span
+                                        class="last">$720.00</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Brocoli <span class="middle">x 02</span><span
+                                        class="last">$720.00</span></a>
+                            </li>
+                        </ul>
+                        <ul class="list list_2">
+                            <li><a href="#">Subtotal <span>$2160.00</span></a></li>
+                            <li><a href="#">Shipping <span>Flat rate: $50.00</span></a></li>
+                            <li><a href="#">Total<span>$2210.00</span></a></li>
+                        </ul>
+                        <div class="payment_item">
+                            <div class="radion_btn">
+                                <input type="radio" id="f-option5" name="selector">
+                                <label for="f-option5">Check payments</label>
+                                <div class="check"></div>
+                            </div>
+                            <p> Please send a check to Store Name, Store Street, Store Town, Store State / County, Store
+                                Postcode. </p>
+                        </div>
+                        <div class="payment_item active">
+                            <div class="radion_btn">
+                                <input type="radio" id="f-option6" name="selector"><label for="f-option6">Paypal
+                                </label>
+                                <img src="assets/img/gallery/card.jpg" alt="">
+                                <div class="check"></div>
+                            </div>
+                            <p> Please send a check to Store Name, Store Street, Store Town, Store State / County, Store
+                                Postcode. </p>
+                        </div>
+                        <div class="creat_account checkout-cap">
+                            <input type="checkbox" id="f-option8" name="selector">
+                            <label for="f-option8">I’ve read and accept the <a href="#">terms &amp;
+                                    conditions*</a></label>
+                        </div>
+                        <a href="#" class="btn w-100">Proceed to Paypal</a>
+                    </div>
                 </div>
             </div>
         </div>
