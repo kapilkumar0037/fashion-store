@@ -14,21 +14,17 @@
                 boxes below. If you are a new customer, please proceed to the
                 Billing &amp; Shipping section.
             </p>
-            <form class="row contact_form" action="#" method="post" novalidate="novalidate">
-                <div class="col-md-6 form-group p_star">
-                    <input type="text" class="form-control" id="name" name="name" value=" ">
-                    <span class="placeholder" data-placeholder="Username or Email"></span>
+            <form class="row ps-4">
+                <div class="col-auto">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email">
                 </div>
-                <div class="col-md-6 form-group p_star">
-                    <input type="password" class="form-control" id="password" name="password" value="">
-                    <span class="placeholder" data-placeholder="Password"></span>
+                <div class="col-auto">
+                    <label for="inputPassword2" class="visually-hidden">Password</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
                 </div>
-                <div class="col-md-12 form-group d-flex flex-wrap">
-                    <a href="login.html" value="submit" class="btn"> log in</a>
-                    <div class="checkout-cap ml-5">
-                        <input type="checkbox" id="fruit01" name="keep-log">
-                        <label for="fruit01">Create an account?</label>
-                    </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">Login</button>
                 </div>
             </form>
         </div>
@@ -38,8 +34,15 @@
                     <a href="#">Click here to enter your code</a>
                 </h2>
             </div>
-            <input type="text" placeholder="Enter coupon code">
-            <a class="btn" href="#">Apply Coupon</a>
+            <form class="row">
+                <div class="col-auto">
+                    <label for="coupon" class="visually-hidden">Coupon</label>
+                    <input type="text" class="form-control" id="coupon" placeholder="Coupon code">
+                </div>
+                <div class="col-auto ps-5 pt-3">
+                    <button type="submit" class="btn btn-primary">Apply coupon</button>
+                </div>
+            </form>
         </div>
         <div class="billing_details">
             <div class="row">
