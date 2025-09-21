@@ -10,6 +10,7 @@ import { ProductEffects } from '@shared/store/product/product.effects';
 import { CartEffects } from '@shared/store/cart/cart.effects';
 import { cartReducer } from '@shared/store/cart/cart.reducer';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { AppEffects } from '@shared/store/app.effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -22,6 +23,6 @@ export const appConfig: ApplicationConfig = {
       product: productReducer,
       cart: cartReducer
     }),
-    provideEffects([ProductEffects, CartEffects]),
+    provideEffects([ProductEffects, CartEffects, AppEffects]),
   ]
 };

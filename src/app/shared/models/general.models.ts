@@ -43,8 +43,8 @@ export interface IFeaturedAudience {
   id: number;
   name: string;
   description?: string;
-  image?: string; 
-  btnText?: string; 
+  image?: string;
+  btnText?: string;
   createdAt?: string;
   updatedAt?: string;
 }
@@ -54,7 +54,7 @@ export interface IFeaturedTestimonials {
   name: string;
   title?: string;
   review?: string;
-  image?: string; 
+  image?: string;
   designation?: string;
   createdAt?: string;
   updatedAt?: string;
@@ -100,4 +100,14 @@ export interface IReview {
   date: string; // ISO date string
   reviewerName: string;
   reviewerEmail: string;
+}
+
+export interface IUser {
+  id: 1,
+  username: string,
+  email: string,
+  firstName: string,
+  lastName: string,
+  gender: string,
+  image: string
 }

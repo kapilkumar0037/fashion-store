@@ -2,11 +2,12 @@ import { createAction, props } from '@ngrx/store';
 
 export const login = createAction(
   '[Auth] Login',
-  props<{ email: string; password: string }>()
+  props<{ username: string; password: string }>()
 );
 
 export const loginSuccess = createAction(
-  '[Auth] Login Success'
+  '[Auth] Login Success',
+  props<{ response: any }>()
 );
 
 export const loginFailure = createAction(

@@ -35,6 +35,9 @@ export class ApiService {
   getProductsBySearchTerm<T = any>(): Api<T> {
     return this.getApi<T>(ApiConstants.PRODUCTS_ENDPOINT);
   }
+  login<T = any>(): Api<T> {
+    return this.getApi<T>(ApiConstants.LOGIN);
+  }
 
   // Cart APIs
   getCartItems<T = ICart>(): Observable<T> {
@@ -45,7 +48,7 @@ export class ApiService {
     return this.getCartItems<ICart>().pipe(
       mergeMap((cartData: ICart) => {
         const existingItemIndex = cartData.items.findIndex(item => item.productId === productId);
-        
+
         if (existingItemIndex > -1) {
           // Update quantity if product exists
           cartData.items[existingItemIndex].quantity += quantity;
@@ -61,7 +64,7 @@ export class ApiService {
         // Update cart totals
         cartData.totalItems = cartData.items.reduce((total, item) => total + item.quantity, 0);
         cartData.totalPrice = cartData.items.reduce((total, item) => total + (item.product.price * item.quantity), 0);
-        
+
         return this.httpClient.put<T>(`${this.apiBaseUrl}${ApiConstants.CART_ITEMS_ENDPOINT}`, cartData);
       })
     );
@@ -71,7 +74,7 @@ export class ApiService {
     return this.getCartItems<ICart>().pipe(
       mergeMap((cartData: ICart) => {
         cartData.items = cartData.items.filter(item => item.productId !== productId);
-        
+
         // Update cart totals
         cartData.totalItems = cartData.items.reduce((total, item) => total + item.quantity, 0);
         cartData.totalPrice = cartData.items.reduce((total, item) => total + (item.product.price * item.quantity), 0);
@@ -85,13 +88,13 @@ export class ApiService {
     return this.getCartItems<ICart>().pipe(
       mergeMap((cartData: ICart) => {
         const itemIndex = cartData.items.findIndex(item => item.productId === productId);
-        
+
         if (itemIndex > -1) {
           cartData.items[itemIndex].quantity = quantity;
           cartData.totalItems = cartData.items.reduce((total, item) => total + item.quantity, 0);
           cartData.totalPrice = cartData.items.reduce((total, item) => total + (item.product.price * item.quantity), 0);
         }
-        
+
         return this.httpClient.put<T>(`${this.apiBaseUrl}${ApiConstants.CART_ITEMS_ENDPOINT}`, cartData);
       })
     );

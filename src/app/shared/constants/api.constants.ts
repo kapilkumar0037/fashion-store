@@ -15,5 +15,5 @@ export class ApiConstants {
   static readonly CART_ITEMS_ENDPOINT = '/cartItems';
   static readonly CART_CHECKOUT_ENDPOINT = '/cart/checkout';
   static readonly CART_DISCOUNT_ENDPOINT = '/cart/discount';
-
+  static readonly LOGIN = '/auth/login';
 }

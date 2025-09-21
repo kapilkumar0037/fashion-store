@@ -1,8 +1,10 @@
 import { ProductState } from "./product/product.state";
 import { CartState } from "./cart/cart.state";
+import { IUser } from "@shared/models/general.models";
 
 export interface AppState {
     isAuthenticated: boolean;
+    userDetails?: IUser
 }
 export interface AppStore {
     app: AppState;
@@ -11,5 +13,5 @@ export interface AppStore {
 }
 
 export const initialAuthState: AppState = {
-    isAuthenticated: true
+    isAuthenticated: false
 };
