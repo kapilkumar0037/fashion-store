@@ -28,7 +28,6 @@ export default class LoginComponent {
     this.userDetails$.subscribe(userDetails => {
       if (userDetails?.firstName){
       this.router.navigate(['/']);
-
       } else {
         this.errorMessage = 'Invalid username or password';
       }
