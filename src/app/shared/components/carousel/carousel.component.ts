@@ -1,11 +1,10 @@
 import { Component, input, output } from '@angular/core';
 import { IProduct } from '@shared/models/general.models';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { ImageComponent } from "../image/image.component";
 import { DecimalPipe } from '@angular/common';
 @Component({
   selector: 'app-carousel',
-  imports: [CarouselModule, ImageComponent, DecimalPipe],
+  imports: [CarouselModule, DecimalPipe],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'
 })
